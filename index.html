@@ -206,15 +206,6 @@ const COL = {
 };
 
 /* ================= 유틸 ================= */
-/**
- * 시리얼 비교용 키 생성
- * - 전체 문자열을 대문자/공백제거
- * - 4번째·5번째 위치의 알파벳만 제거
- *   RD20D2560002 -> RD202560002
- *   RD20B2560002 -> RD202560002
- *   RD202560002  -> RD202560002
- *   SA20D2560002 -> SA202560002  (RD와 구분)
- */
 function buildKey(raw){
   if (!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g, "").trim();
@@ -225,7 +216,7 @@ function buildKey(raw){
     const pos = i + 1; // 1-based index
 
     if ((pos === 4 || pos === 5) && /[A-Z]/.test(ch)) {
-      continue; // 4·5번째 알파벳만 스킵
+      continue;
     }
     result += ch;
   }
@@ -278,6 +269,9 @@ async function search(){
         `<div class="empty">❌ '${input}' 검색 결과가 없습니다.</div>`;
       return;
     }
+
+    // 여기에 히트된 전체 행 로그
+    console.log("HIT_ROWS", JSON.stringify(hits));
 
     hits.forEach(hit=>{
       const row = hit.row;
