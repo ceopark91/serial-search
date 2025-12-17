@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>시리얼 넘버 검색기</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    body {
+      font-family: "Pretendard", Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1220, #05070d);
+      color: #fff;
+      padding: 30px;
+    }
+
+    .wrap {
+      max-width: 820px;
+      margin: auto;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    .desc {
+      color: #9aa4b2;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .search-box {
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      flex: 1;
+      padding: 14px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      padding: 14px 18px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+      background: #2563eb;
+      color: white;
+    }
+
+    button.reset {
+      background: #374151;
+    }
+
+    .result {
+      margin-top: 24px;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      border: 1px solid #1e293b;
+      white-space: pre-line;
+    }
+
+    .error {
+      color: #f87171;
+    }
+
+    .success {
+      color: #a7f3d0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>시리얼 넘버 검색기</h1>
+    <div class="desc">
+      구형 / 신형 시트를 통합 검색합니다.<br>
+      시리얼에 영문이 포함되어도 자동 제거 후 검색합니다.
+    </div>
+
+    <div class="search-box">
+      <input id="serialInput" placeholder="예: DM15D2203104" />
+      <button onclick="search()">검색</button>
+      <button class="reset" onclick="resetForm()">초기화</button>
+    </div>
+
+    <div id="result" class="result"></div>
+  </div>
+
+<script>
+/************** 설정 **************/
+const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
+const TARGET_SHEETS = ["구형", "신형"];
+
+/************** 유틸 **************/
+function normalizeSerial(v) {
+  return v
+    .toUpperCase()
+    .replace(/[A-Z]/g, "") // 영문 제거
+    .replace(/\s+/g, "")
+    .trim();
+}
+
+/************** 검색 **************/
+async function search() {
+  const input = document.getElementById("serialInput").value;
+  const resultBox = document.getElementById("result");
+
+  if (!input) {
+    resultBox.innerHTML = `<span class="error">⚠ 시리얼 넘버를 입력하세요.</span>`;
+    return;
+  }
+
+  const keyword = normalizeSerial(input);
+  let results = [];
+
+  try {
+    for (const sheet of TARGET_SHEETS) {
+      const url =
+        `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?` +
+        `sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
+
+      const text = await fetch(url).then(r => r.text());
+
+      // GViz JSONP 껍데기 제거
+      const json = JSON.parse(
+        text.substring(text.indexOf("{"), text.lastIndexOf("}") + 1)
+      );
+
+      const rows = json.table.rows;
+
+      rows.forEach(r => {
+        const serialCell = r.c[17]?.v; // R열
+        if (!serialCell) return;
+
+        const serials = serialCell
+          .split(",")
+          .map(s => normalizeSerial(s));
+
+        if (serials.includes(keyword)) {
+          results.push({
+            company: r.c[3]?.v || "-",
+            wpDate: r.c[5]?.v || "-",
+            delivery: r.c[7]?.v || "-",
+            spec: r.c[11]?.v || "-"
+          });
+        }
+      });
+    }
+
+    if (results.length === 0) {
+      resultBox.innerHTML = `<span class="error">❌ '${input}' 검색 결과가 없습니다.</span>`;
+      return;
+    }
+
+    resultBox.innerHTML =
+      `<div class="success">🔎 요청하신 '${input}' 검색결과</div>\n\n` +
+      results.map(r => `
+🏢 업체명 : ${r.company}
+📦 W/P 납품일 : ${r.wpDate}
+🚚 납품일 : ${r.delivery}
+🛠 프로젝트 사양 :
+${r.spec}
+────────────────────
+      `).join("\n");
+
+  } catch (e) {
+    resultBox.innerHTML =
+      `<span class="error">❌ 데이터 로드 실패<br>${e.message}</span>`;
+  }
+}
+
+function resetForm() {
+  document.getElementById("serialInput").value = "";
+  document.getElementById("result").innerHTML = "";
+}
+</script>
+
+</body>
+</html>
