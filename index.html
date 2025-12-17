@@ -184,7 +184,7 @@ const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
 const SHEETS = ["구형","신형"];
 
 /*
-각 시트 컬럼(0부터 시작 인덱스)
+열 인덱스 (0부터)
 A:0 B:1 C:2 D:3 E:4 F:5 G:6 H:7 I:8 J:9 K:10 L:11 ... R:17
 
 D: 업체명
@@ -196,28 +196,24 @@ L: 프로젝트명
 R: S/N
 */
 const COL = {
-  company: 3,
-  wp: 5,
-  delivery: 7,
-  model: 9,
-  qty: 10,
-  project: 11,
-  serial: 17
+  company: 3,   // D
+  wp: 5,        // F
+  delivery: 7,  // H
+  model: 9,     // J
+  project: 11,  // L
+  serial: 17    // R
 };
+const K_INDEX = 10; // K열(납기 수량)
 
 /* ================= 유틸 ================= */
 function buildKey(raw){
   if (!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g, "").trim();
   let result = "";
-
   for (let i = 0; i < v.length; i++) {
     const ch = v[i];
-    const pos = i + 1; // 1-based index
-
-    if ((pos === 4 || pos === 5) && /[A-Z]/.test(ch)) {
-      continue;
-    }
+    const pos = i + 1;
+    if ((pos === 4 || pos === 5) && /[A-Z]/.test(ch)) continue;
     result += ch;
   }
   return result;
@@ -270,9 +266,6 @@ async function search(){
       return;
     }
 
-    // 여기에 히트된 전체 행 로그
-    console.log("HIT_ROWS", JSON.stringify(hits));
-
     hits.forEach(hit=>{
       const row = hit.row;
       resultBox.innerHTML += `
@@ -301,7 +294,7 @@ async function search(){
 
         <div class="row">
           <div class="label">납기 수량</div>
-          <div class="value">${row[COL.qty] ?? "-"}</div>
+          <div class="value">${row[K_INDEX] ?? "-"}</div>
         </div>
 
         <div class="row">
