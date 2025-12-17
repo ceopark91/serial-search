@@ -181,25 +181,30 @@ footer {
 <script>
 /* ================= 설정 ================= */
 const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
-/* RAW_ALL에서 가져온 구형/신형 시트 이름 */
 const SHEETS = ["구형","신형"];
 
-/* RAW_ALL 컬럼 순서에 맞게 인덱스 꼭 확인해서 수정
-   예시는 다음 순서라고 가정:
-   0 업체명 | 1 W/P 납품일 | 2 납품일 | 3 납기 수량 | 4 프로젝트명 | 5 모델명 | 6 시리얼
+/*
+각 시트 컬럼(0부터 시작 인덱스)
+A:0 B:1 C:2 D:3 E:4 F:5 G:6 H:7 I:8 J:9 K:10 L:11 ... R:17
+D: 업체명
+F: W/P 납품일
+H: 제품 납품일
+J: 모델명
+K: 납기 수량
+L: 프로젝트명
+R: S/N
 */
 const COL = {
-  company: 0,   // 업체명
-  wp: 1,        // W/P 납품일
-  delivery: 2,  // 납품일
-  qty: 3,       // 납기 수량
-  project: 4,   // 프로젝트명
-  model: 5,     // 모델명
-  serial: 6     // 시리얼
+  company: 3,
+  wp: 5,
+  delivery: 7,
+  model: 9,
+  qty: 10,
+  project: 11,
+  serial: 17
 };
 
 /* ================= 유틸 ================= */
-/* 입력 시리얼에서 알파벳/공백 제거해서 통일 */
 function normalize(v){
   return v.toUpperCase().replace(/[A-Z]/g,"").replace(/\s+/g,"").trim();
 }
@@ -220,9 +225,8 @@ async function search(){
 
   try{
     for(const sheet of SHEETS){
-      const url =
-        `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
-      const txt  = await fetch(url).then(r=>r.text());
+      const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
+      const txt = await fetch(url).then(r=>r.text());
       const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
       const rows = json.table.rows || [];
 
@@ -232,7 +236,9 @@ async function search(){
           .toString()
           .split(",")
           .map(s => normalize(s));
-        if(serials.includes(key)) hits.push(row);
+        if(serials.includes(key)){
+          hits.push({sheet, row});
+        }
       });
     }
 
@@ -242,10 +248,11 @@ async function search(){
       return;
     }
 
-    hits.forEach(row=>{
+    hits.forEach(hit=>{
+      const row = hit.row;
       resultBox.innerHTML += `
       <div class="card">
-        <h2>🔎 검색 결과 <span class="tag">MATCH</span></h2>
+        <h2>🔎 검색 결과 <span class="tag">${hit.sheet}</span></h2>
 
         <div class="row">
           <div class="label">업체명</div>
@@ -281,7 +288,8 @@ async function search(){
 
   }catch(e){
     console.error(e);
-    resultBox.innerHTML = `<div class="empty">❌ 데이터 로드 실패 (CORS, 공개 설정, 시트 이름 확인 필요)</div>`;
+    const resultBox = document.getElementById("result");
+    resultBox.innerHTML = `<div class="empty">❌ 데이터 로드 실패 (시트 공개 여부 / ID / 시트명 확인 필요)</div>`;
   }
 }
 
