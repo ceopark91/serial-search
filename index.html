@@ -287,40 +287,32 @@ async function search(){
 
         <div class="row">
           <div class="label">업체명</div>
-          <div class="value">${row[COL.company] || "-"}</div>
+          <div class="value">${row[COL.company] ?? "-"}</div>
         </div>
 
         <div class="row">
           <div class="label">납품일</div>
-          <div class="value">${row[COL.delivery] || "-"}</div>
+          <div class="value">${row[COL.delivery] ?? "-"}</div>
         </div>
 
         <div class="row">
           <div class="label">W/P 납품일</div>
-          <div class="value">${row[COL.wp] || "-"}</div>
+          <div class="value">${row[COL.wp] ?? "-"}</div>
         </div>
 
         <div class="row">
           <div class="label">모델명</div>
-          <div class="value">${row[COL.model] || "-"}</div>
+          <div class="value">${row[COL.model] ?? "-"}</div>
         </div>
 
         <div class="row">
           <div class="label">납기 수량</div>
-          <div class="value">${
-            row[COL.qty]
-              ? row[COL.qty].toString().replace(/\r?\n/g, "<br>")
-              : "-"
-          }</div>
+          <div class="value">${row[COL.qty] ?? "-"}</div>
         </div>
 
         <div class="row">
           <div class="label">프로젝트명</div>
-          <div class="value">${
-            row[COL.project]
-              ? row[COL.project].toString().replace(/\r?\n/g, "<br>")
-              : "-"
-          }</div>
+          <div class="value">${row[COL.project] ?? "-"}</div>
         </div>
       </div>`;
     });
