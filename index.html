@@ -1,287 +1,210 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>시리얼 넘버 검색기 | Serial Number Search</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <title>시리얼 넘버 검색기 (Serial Number Search)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<style>
-:root {
-  --bg:#0b1020;
-  --card:#111a33;
-  --line:#23305a;
-  --text:#eaf0ff;
-  --muted:#9aa7c2;
-  --accent:#38bdf8;
-  --danger:#fb7185;
-}
-
-* { box-sizing:border-box; }
-
-body {
-  margin:0;
-  background:linear-gradient(180deg,#0b1020,#05070d);
-  font-family: "Pretendard","Noto Sans KR",system-ui,Arial,sans-serif;
-  color:var(--text);
-}
-
-.wrapper {
-  max-width: 900px;
-  margin: auto;
-  padding: 32px 16px 80px;
-}
-
-header h1 {
-  margin:0;
-  font-size:26px;
-  letter-spacing:-0.3px;
-}
-
-header p {
-  margin:8px 0 24px;
-  color:var(--muted);
-  font-size:14px;
-  line-height:1.5;
-}
-
-.search-box {
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-}
-
-.search-box input {
-  flex:1;
-  min-width:240px;
-  padding:14px 16px;
-  border-radius:12px;
-  border:1px solid var(--line);
-  background:#070a14;
-  color:var(--text);
-  font-size:16px;
-}
-
-.search-box button {
-  padding:14px 18px;
-  border-radius:12px;
-  border:1px solid var(--accent);
-  background:rgba(56,189,248,.15);
-  color:var(--text);
-  font-weight:700;
-  cursor:pointer;
-}
-
-.search-box button.reset {
-  border-color:#374151;
-  background:#1f2937;
-}
-
-.notice {
-  margin-top:14px;
-  font-size:13px;
-  color:var(--muted);
-}
-
-.result-area {
-  margin-top:28px;
-}
-
-.card {
-  background:var(--card);
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:18px;
-  margin-bottom:16px;
-}
-
-.card h2 {
-  margin:0 0 14px;
-  font-size:16px;
-  display:flex;
-  gap:8px;
-  align-items:center;
-}
-
-.tag {
-  font-size:11px;
-  padding:4px 10px;
-  border-radius:999px;
-  border:1px solid var(--accent);
-  color:var(--accent);
-}
-
-.row {
-  display:grid;
-  grid-template-columns: 170px 1fr;
-  gap:8px 12px;
-  margin-bottom:10px;
-  font-size:14px;
-}
-
-.label {
-  color:var(--muted);
-}
-
-.value {
-  white-space:pre-wrap;
-  word-break:break-word;
-}
-
-.spec {
-  margin-top:14px;
-  padding-top:12px;
-  border-top:1px dashed var(--line);
-  font-size:14px;
-}
-
-.empty {
-  padding:20px;
-  border-radius:14px;
-  border:1px dashed var(--line);
-  color:var(--danger);
-  font-size:14px;
-}
-
-footer {
-  margin-top:40px;
-  font-size:12px;
-  color:var(--muted);
-  text-align:center;
-}
-
-@media (max-width:520px){
-  .row { grid-template-columns:1fr; }
-}
-</style>
+  <style>
+    * { box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #1a2a4f, #050b1c);
+      color: #fff;
+    }
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      padding: 40px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 32px;
+    }
+    .sub {
+      color: #b8c3ff;
+      margin-bottom: 30px;
+    }
+    .search-box {
+      display: flex;
+      gap: 10px;
+    }
+    input {
+      flex: 1;
+      padding: 14px 16px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    button {
+      padding: 14px 20px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 15px;
+    }
+    .btn-search {
+      background: #2563eb;
+      color: #fff;
+    }
+    .btn-reset {
+      background: #374151;
+      color: #fff;
+    }
+    .hint {
+      margin-top: 12px;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+    .result {
+      margin-top: 30px;
+      padding: 24px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      white-space: pre-wrap;
+      line-height: 1.6;
+    }
+    .error {
+      color: #ff6b6b;
+    }
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 13px;
+      color: #9ca3af;
+    }
+  </style>
 </head>
 
 <body>
-<div class="wrapper">
+  <div class="container">
+    <h1>시리얼 넘버 검색기 (Serial Number Search)</h1>
+    <div class="sub">
+      구형 / 신형 통합 데이터 검색<br>
+      Alphabet characters in serial numbers are automatically ignored.
+    </div>
 
-<header>
-  <h1>시리얼 넘버 검색기 (Serial Number Search)</h1>
-  <p>
-    구형 / 신형 시트를 통합 검색합니다.<br>
-    Search across legacy and current sheets.  
-    Alphabet characters in serial numbers are automatically ignored.
-  </p>
-</header>
+    <div class="search-box">
+      <input id="keyword" placeholder="예: RF152511004, DM152203104" />
+      <button class="btn-search" onclick="search()">검색 (Search)</button>
+      <button class="btn-reset" onclick="reset()">초기화 (Reset)</button>
+    </div>
 
-<section class="search-box">
-  <input id="serialInput" placeholder="예: DM15B2203104 / DM152203104">
-  <button onclick="search()">검색 (Search)</button>
-  <button class="reset" onclick="resetForm()">초기화 (Reset)</button>
-</section>
+    <div class="hint">
+      • 영문 자동 제거 (Alphabet ignored)<br>
+      • 콤마 시리얼 지원 (Comma supported)
+    </div>
 
-<div class="notice">
-  • 영문 자동 제거 (Alphabet ignored) &nbsp; • 콤마 시리얼 지원 (Comma supported)
-</div>
+    <div id="result" class="result"></div>
 
-<section id="result" class="result-area"></section>
-
-<footer>
-  © SEDNAENG · Internal Serial Search Tool
-</footer>
-
-</div>
+    <footer>
+      © SEDNAENG · Internal Serial Search Tool
+    </footer>
+  </div>
 
 <script>
-/* ================= 설정 ================= */
+/* ===========================
+   🔧 환경 설정
+=========================== */
 const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
-const SHEETS = ["구형","신형"];
+const SHEET_NAME = "RAW_ALL";
 
-/* RAW_ALL QUERY 컬럼 순서
-0 업체명 | 1 W/P | 2 납품일 | 3 사양 | 4 모델명 | 5 시리얼
+/* RAW_ALL 컬럼 구조
+A 업체명
+B W/P 납품일
+C 납품일
+D 프로젝트
+E 모델명
+F S/N
 */
 const COL = {
-  company:0,
-  wp:1,
-  delivery:2,
-  spec:3,
-  model:4,
-  serial:5
+  company: 0,
+  wp: 1,
+  delivery: 2,
+  project: 3,
+  model: 4,
+  serial: 5
 };
 
-/* ================= 유틸 ================= */
-function normalize(v){
-  return v.toUpperCase().replace(/[A-Z]/g,"").replace(/\s+/g,"").trim();
+/* ===========================
+   🔎 유틸
+=========================== */
+function normalizeSerial(v) {
+  return String(v || "")
+    .toUpperCase()
+    .replace(/[A-Z]/g, "")
+    .replace(/\s+/g, "");
 }
 
-/* ================= 검색 ================= */
-async function search(){
-  const input = document.getElementById("serialInput").value;
+/* ===========================
+   🔍 검색
+=========================== */
+async function search() {
+  const input = document.getElementById("keyword").value.trim();
   const resultBox = document.getElementById("result");
-  resultBox.innerHTML = "";
 
-  if(!input){
-    resultBox.innerHTML = `<div class="empty">⚠ 시리얼 넘버를 입력하세요.</div>`;
+  if (!input) {
+    resultBox.innerHTML = "<span class='error'>⚠ 시리얼 넘버를 입력하세요.</span>";
     return;
   }
 
-  const key = normalize(input);
-  let hits = [];
+  const target = normalizeSerial(input);
 
-  try{
-    for(const sheet of SHEETS){
-      const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${sheet}&tqx=out:json`;
-      const txt = await fetch(url).then(r=>r.text());
-      const json = JSON.parse(txt.substring(txt.indexOf("{"),txt.lastIndexOf("}")+1));
-      const rows = json.table.rows || [];
+  try {
+    const url =
+      `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(SHEET_NAME)}&tqx=out:json`;
+    const res = await fetch(url);
+    const text = await res.text();
+    const json = JSON.parse(text.substring(47).slice(0, -2));
+    const rows = json.table.rows;
 
-      rows.forEach(r=>{
-        const row = r.c.map(c=>c?c.v:"");
-        const serials = row[COL.serial]?.split(",").map(s=>normalize(s));
-        if(serials?.includes(key)) hits.push(row);
-      });
-    }
+    let hits = [];
 
-    if(hits.length===0){
-      resultBox.innerHTML = `<div class="empty">❌ '${input}' 검색 결과가 없습니다.</div>`;
+    rows.forEach(r => {
+      if (!r.c || !r.c[COL.serial]) return;
+
+      const serials = String(r.c[COL.serial].v || "")
+        .split(",")
+        .map(s => normalizeSerial(s));
+
+      if (serials.includes(target)) {
+        hits.push({
+          company: r.c[COL.company]?.v || "-",
+          wp: r.c[COL.wp]?.v || "-",
+          delivery: r.c[COL.delivery]?.v || "-",
+          project: r.c[COL.project]?.v || "-",
+          model: r.c[COL.model]?.v || "-"
+        });
+      }
+    });
+
+    if (!hits.length) {
+      resultBox.innerHTML = `<span class="error">❌ '${input}' 검색 결과가 없습니다.</span>`;
       return;
     }
 
-    hits.forEach(row=>{
-      resultBox.innerHTML += `
-      <div class="card">
-        <h2>🔎 검색 결과 <span class="tag">MATCH</span></h2>
+    resultBox.innerHTML = hits.map((h, i) => `
+📌 요청하신 '${input}' 검색 결과 (${i + 1})
+────────────────────
+🏢 업체명 (Company) : ${h.company}
+📦 W/P 납품일 (W/P Date) : ${h.wp}
+🚚 납품일 (Delivery Date) : ${h.delivery}
+📦 모델명 (Model) : ${h.model}
+🛠 프로젝트 사양 (Project) :
+${h.project}
+────────────────────
+`).join("\n");
 
-        <div class="row">
-          <div class="label">모델명 (Model)</div>
-          <div class="value">${row[COL.model]||"-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">업체명 (Company)</div>
-          <div class="value">${row[COL.company]||"-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">W/P 납품일 (W/P Delivery)</div>
-          <div class="value">${row[COL.wp]||"-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">납품일 (Delivery Date)</div>
-          <div class="value">${row[COL.delivery]||"-"}</div>
-        </div>
-
-        <div class="spec">
-          <b>프로젝트 사양 (Project Specification)</b>
-          <pre>${row[COL.spec]||"-"}</pre>
-        </div>
-      </div>`;
-    });
-
-  }catch(e){
-    resultBox.innerHTML = `<div class="empty">❌ 데이터 로드 실패</div>`;
+  } catch (e) {
+    resultBox.innerHTML = "<span class='error'>❌ 데이터 로드 실패 (시트 공유/ID 확인)</span>";
   }
 }
 
-function resetForm(){
-  document.getElementById("serialInput").value="";
-  document.getElementById("result").innerHTML="";
+function reset() {
+  document.getElementById("keyword").value = "";
+  document.getElementById("result").innerHTML = "";
 }
 </script>
-
 </body>
 </html>
