@@ -1,181 +1,209 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>시리얼 넘버 검색기 (Serial Number Search)</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Serial Number Search</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b1220, #020617);
-      color: #e5e7eb;
-    }
-    .container {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 30px;
-    }
-    h1 {
-      margin-bottom: 6px;
-    }
-    .subtitle {
-      color: #9ca3af;
-      margin-bottom: 30px;
-    }
-    .search-box {
-      display: flex;
-      gap: 10px;
-    }
-    input {
-      flex: 1;
-      padding: 14px;
-      border-radius: 10px;
-      border: none;
-      font-size: 16px;
-    }
-    button {
-      padding: 14px 20px;
-      border-radius: 10px;
-      border: none;
-      cursor: pointer;
-      font-size: 15px;
-      background: #2563eb;
-      color: white;
-    }
-    button.reset {
-      background: #374151;
-    }
-    .result {
-      margin-top: 30px;
-      padding: 20px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.1);
-    }
-    .error {
-      color: #f87171;
-    }
-    .item {
-      margin-top: 12px;
-      line-height: 1.6;
-    }
-    .label {
-      color: #93c5fd;
-      font-weight: bold;
-    }
-    footer {
-      margin-top: 40px;
-      text-align: center;
-      color: #6b7280;
-      font-size: 13px;
-    }
-  </style>
+<style>
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: radial-gradient(circle at top, #0f1c3a, #020617);
+    color: #e5e7eb;
+  }
+
+  .container {
+    max-width: 920px;
+    margin: 80px auto;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  .subtitle {
+    color: #9ca3af;
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+
+  .search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  input {
+    flex: 1;
+    padding: 14px 16px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+  }
+
+  button {
+    padding: 14px 18px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .btn-search {
+    background: #2563eb;
+    color: #fff;
+  }
+
+  .btn-reset {
+    background: #374151;
+    color: #e5e7eb;
+  }
+
+  .result {
+    background: rgba(15, 23, 42, 0.9);
+    border-radius: 14px;
+    padding: 20px;
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .error {
+    color: #f87171;
+    font-weight: 600;
+  }
+
+  .card {
+    border-left: 4px solid #2563eb;
+    padding-left: 16px;
+    margin-bottom: 18px;
+  }
+
+  .row {
+    margin: 6px 0;
+    font-size: 14px;
+  }
+
+  .label {
+    color: #93c5fd;
+    font-weight: 600;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 12px;
+    color: #6b7280;
+  }
+</style>
 </head>
-<body>
 
+<body>
 <div class="container">
   <h1>시리얼 넘버 검색기 (Serial Number Search)</h1>
   <div class="subtitle">
-    구형 / 신형 데이터를 통합 검색합니다.  
-    영문자는 자동 제거 후 검색됩니다.
+    RAW_ALL 시트를 기준으로 검색합니다.  
+    중간 영문 자동 제거 · 콤마 시리얼 지원
   </div>
 
   <div class="search-box">
-    <input id="serialInput" placeholder="예: DM152308230" />
-    <button onclick="search()">검색 (Search)</button>
-    <button class="reset" onclick="resetSearch()">초기화</button>
+    <input id="serialInput" placeholder="예: SA15D2509268" />
+    <button class="btn-search" onclick="search()">검색</button>
+    <button class="btn-reset" onclick="resetAll()">초기화</button>
   </div>
 
-  <div id="result"></div>
+  <div id="output" class="result"></div>
 
-  <footer>
-    © SEDNAENG · Internal Serial Search Tool
-  </footer>
+  <footer>© SEDNAENG · Internal Serial Search Tool</footer>
 </div>
 
 <script>
-  // 🔴 여기에 너 스프레드시트 ID 그대로 유지
-  const SHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
-  const SHEET_NAME = "RAW_ALL";
+/* 🔧 네가 요구한 정확한 시리얼 정규화 */
+function normalizeSerial(v) {
+  if (!v) return "";
+  const s = v.toUpperCase().trim();
+  const prefixMatch = s.match(/^[A-Z]{1,2}/);
+  const prefix = prefixMatch ? prefixMatch[0] : "";
+  const rest = s.slice(prefix.length).replace(/[A-Z]/g, "");
+  return prefix + rest;
+}
 
-  const DATA_URL =
-    `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_NAME}`;
+/* 🔗 RAW_ALL JSON URL (gid는 RAW_ALL 시트 gid) */
+const DATA_URL =
+  "https://docs.google.com/spreadsheets/d/1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU/gviz/tq?tqx=out:json&gid=333636994";
 
-  function normalizeSerial(v) {
-    return v
-      .toString()
-      .toUpperCase()
-      .replace(/[A-Z]/g, "")
-      .replace(/\s+/g, "");
+let cachedRows = null;
+
+async function loadData() {
+  if (cachedRows) return cachedRows;
+
+  const res = await fetch(DATA_URL);
+  const text = await res.text();
+  const json = JSON.parse(text.substring(47, text.length - 2));
+  cachedRows = json.table.rows;
+  return cachedRows;
+}
+
+async function search() {
+  const input = document.getElementById("serialInput").value;
+  const output = document.getElementById("output");
+  output.innerHTML = "";
+
+  if (!input) {
+    output.innerHTML = "<div class='error'>시리얼 넘버를 입력하세요.</div>";
+    return;
   }
 
-  async function search() {
-    const input = document.getElementById("serialInput").value.trim();
-    const resultBox = document.getElementById("result");
-    resultBox.innerHTML = "";
+  const key = normalizeSerial(input);
+  const rows = await loadData();
+  let found = [];
 
-    if (!input) return;
+  rows.forEach(r => {
+    const snCell = r.c[6]?.v; // G열 S/N
+    if (!snCell) return;
 
-    const keyword = normalizeSerial(input);
-
-    try {
-      const res = await fetch(DATA_URL);
-      const text = await res.text();
-      const json = JSON.parse(text.substring(47, text.length - 2));
-
-      const rows = json.table.rows;
-      const matches = [];
-
-      rows.forEach(r => {
-        const row = r.c.map(c => (c ? c.v : ""));
-        const serialCell = row[6]; // G열 S/N
-
-        if (!serialCell) return;
-
-        const serials = serialCell
-          .toString()
-          .split(",")
-          .map(s => normalizeSerial(s));
-
-        if (serials.includes(keyword)) {
-          matches.push(row);
-        }
+    const serials = snCell.split(",").map(s => normalizeSerial(s));
+    if (serials.includes(key)) {
+      found.push({
+        company: r.c[0]?.v || "-",
+        wp: r.c[1]?.v || "-",
+        delivery: r.c[2]?.v || "-",
+        model: r.c[3]?.v || "-",
+        qty: r.c[4]?.v || "-",
+        project: r.c[5]?.v || "-"
       });
-
-      if (matches.length === 0) {
-        resultBox.innerHTML =
-          `<div class="result error">❌ '${input}' 검색 결과가 없습니다.</div>`;
-        return;
-      }
-
-      matches.forEach(row => {
-        resultBox.innerHTML += `
-          <div class="result">
-            <div class="item"><span class="label">업체명 (Company)</span> : ${row[0]}</div>
-            <div class="item"><span class="label">W/P 납품일</span> : ${row[1]}</div>
-            <div class="item"><span class="label">납품일</span> : ${row[2]}</div>
-            <div class="item"><span class="label">모델명 (Model)</span> : ${row[3]}</div>
-            <div class="item"><span class="label">납기수량 (Qty)</span> : ${row[4]}</div>
-            <div class="item"><span class="label">프로젝트 (Project)</span><br>${row[5]}</div>
-            <div class="item"><span class="label">S/N</span> : ${row[6]}</div>
-          </div>
-        `;
-      });
-
-    } catch (e) {
-      resultBox.innerHTML =
-        `<div class="result error">❌ 데이터 로드 실패 (Failed to fetch)</div>`;
     }
+  });
+
+  if (!found.length) {
+    output.innerHTML = `<div class="error">'${input}' 검색 결과가 없습니다.</div>`;
+    return;
   }
 
-  function resetSearch() {
-    document.getElementById("serialInput").value = "";
-    document.getElementById("result").innerHTML = "";
-  }
+  found.forEach((f, i) => {
+    output.innerHTML += `
+      <div class="card">
+        <div class="row"><span class="label">업체명:</span> ${f.company}</div>
+        <div class="row"><span class="label">W/P 납품일:</span> ${f.wp}</div>
+        <div class="row"><span class="label">제품 납품일:</span> ${f.delivery}</div>
+        <div class="row"><span class="label">모델명:</span> ${f.model}</div>
+        <div class="row"><span class="label">납기 수량:</span> ${f.qty}</div>
+        <div class="row"><span class="label">프로젝트:</span><br>${f.project}</div>
+      </div>
+    `;
+  });
+}
+
+function resetAll() {
+  document.getElementById("serialInput").value = "";
+  document.getElementById("output").innerHTML = "";
+}
 </script>
-
 </body>
 </html>
+
+
 
