@@ -307,12 +307,20 @@ async function search(){
 
         <div class="row">
           <div class="label">납기 수량</div>
-          <div class="value">${row[COL.qty] || "-"}</div>
+          <div class="value">${
+            row[COL.qty]
+              ? row[COL.qty].toString().replace(/\r?\n/g, "<br>")
+              : "-"
+          }</div>
         </div>
 
         <div class="row">
           <div class="label">프로젝트명</div>
-          <div class="value">${row[COL.project] || "-"}</div>
+          <div class="value">${
+            row[COL.project]
+              ? row[COL.project].toString().replace(/\r?\n/g, "<br>")
+              : "-"
+          }</div>
         </div>
       </div>`;
     });
