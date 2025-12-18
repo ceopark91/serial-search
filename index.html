@@ -315,7 +315,24 @@ function resetForm(){
   document.getElementById("serialInput").value = "";
   document.getElementById("result").innerHTML = "";
 }
+
+/* ================= 쿼리스트링 자동 검색 ================= */
+// URL: https://ceopark91.github.io/serial-search/?sn=DM152509276 이런 식으로 호출
+function getSerialFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  return params.get('sn');   // ?sn= 뒤 값
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  const serial = getSerialFromQuery();
+  if (serial) {
+    const input = document.getElementById('serialInput');
+    input.value = serial;
+    search();   // 페이지 로드시 자동 검색
+  }
+});
 </script>
 
 </body>
 </html>
+
