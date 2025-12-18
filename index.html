@@ -125,7 +125,6 @@ async function loadGradeMap(){
       .filter(Boolean);
 
     const rawUrl = row[11]; // L열
-
     if(!rawUrl) return;
 
     const cleanUrl = rawUrl.toString().trim();
@@ -216,6 +215,20 @@ function resetForm(){
   document.getElementById("serialInput").value="";
   document.getElementById("result").innerHTML="";
 }
+
+/* ================= QR / URL 자동 검색 ================= */
+function getSerialFromQuery(){
+  const params = new URLSearchParams(window.location.search);
+  return params.get("sn");
+}
+
+window.addEventListener("load", ()=>{
+  const serial = getSerialFromQuery();
+  if(serial){
+    document.getElementById("serialInput").value = serial;
+    search();
+  }
+});
 </script>
 
 </body>
