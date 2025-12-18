@@ -221,16 +221,16 @@ function buildKey(raw){
 
 /* ================= 검색 ================= */
 async function search(){
-  const input = document.getElementById("serialInput").value;
+  const inputVal = document.getElementById("serialInput").value;
   const resultBox = document.getElementById("result");
   resultBox.innerHTML = "";
 
-  if(!input){
+  if(!inputVal){
     resultBox.innerHTML = `<div class="empty">⚠ 시리얼 넘버를 입력하세요.</div>`;
     return;
   }
 
-  const key = buildKey(input);
+  const key = buildKey(inputVal);
   if(!key){
     resultBox.innerHTML = `<div class="empty">⚠ 유효한 시리얼 넘버가 아닙니다.</div>`;
     return;
@@ -262,7 +262,7 @@ async function search(){
 
     if(hits.length === 0){
       resultBox.innerHTML =
-        `<div class="empty">❌ '${input}' 검색 결과가 없습니다.</div>`;
+        `<div class="empty">❌ '${inputVal}' 검색 결과가 없습니다.</div>`;
       return;
     }
 
@@ -317,22 +317,22 @@ function resetForm(){
 }
 
 /* ================= 쿼리스트링 자동 검색 ================= */
-// URL: https://ceopark91.github.io/serial-search/?sn=DM152509276 이런 식으로 호출
+// URL 예시: https://ceopark91.github.io/serial-search/?sn=DM152509276
 function getSerialFromQuery() {
   const params = new URLSearchParams(window.location.search);
   return params.get('sn');   // ?sn= 뒤 값
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+// 모든 리소스 로드가 끝난 후 자동 검색
+window.onload = () => {
   const serial = getSerialFromQuery();
   if (serial) {
     const input = document.getElementById('serialInput');
     input.value = serial;
-    search();   // 페이지 로드시 자동 검색
+    search();   // 자동 검색 실행
   }
-});
+};
 </script>
 
 </body>
 </html>
-
