@@ -12,12 +12,15 @@
 }
 *{box-sizing:border-box}
 body{
-  margin:0;background:linear-gradient(180deg,#0b1020,#05070d);
-  font-family:Pretendard,"Noto Sans KR",system-ui;color:var(--text)
+  margin:0;
+  background:linear-gradient(180deg,#0b1020,#05070d);
+  font-family:Pretendard,"Noto Sans KR",system-ui;
+  color:var(--text);
 }
 .wrapper{max-width:900px;margin:auto;padding:32px 16px 80px}
 header h1{margin:0;font-size:26px}
 header p{margin:8px 0 24px;color:var(--muted);font-size:14px}
+
 .search-box{display:flex;gap:10px;flex-wrap:wrap}
 .search-box input{
   flex:1;min-width:240px;padding:14px 16px;border-radius:12px;
@@ -28,6 +31,7 @@ header p{margin:8px 0 24px;color:var(--muted);font-size:14px}
   background:rgba(56,189,248,.15);color:var(--text);font-weight:700;cursor:pointer
 }
 .search-box button.reset{border-color:#374151;background:#1f2937}
+
 .result-area{margin-top:28px}
 .card{
   background:var(--card);border:1px solid var(--line);
@@ -68,10 +72,11 @@ footer{margin-top:40px;font-size:12px;color:var(--muted);text-align:center}
 
 <section id="result" class="result-area"></section>
 <footer>© SEDNAENG</footer>
+
 </div>
 
 <script>
-/* ===== 설정 ===== */
+/* ================= 설정 ================= */
 const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
 const SHEETS = ["구형","신형"];
 const GRADE_SHEET = "성적서";
@@ -86,20 +91,21 @@ const COL = {
 };
 const K_INDEX = 10; // K
 
-/* ===== 유틸 ===== */
+/* ================= 유틸 ================= */
 function buildKey(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
   let out="";
   for(let i=0;i<v.length;i++){
-    const pos=i+1,ch=v[i];
+    const pos=i+1, ch=v[i];
     if((pos===4||pos===5)&&/[A-Z]/.test(ch)) continue;
     out+=ch;
   }
   return out;
 }
 
-/* ===== 성적서 맵 (C=시리얼, L=주소) ===== */
+/* ================= 성적서 맵 ================= */
+/* 성적서 시트: C = 시리얼, L = 주소 */
 async function loadGradeMap(){
   const url =
     `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(GRADE_SHEET)}&tqx=out:json`;
@@ -115,20 +121,24 @@ async function loadGradeMap(){
     const serials = (row[2] || "")
       .toString()
       .split(/,|\n/)
-      .map(s=>buildKey(s))
+      .map(s => buildKey(s))
       .filter(Boolean);
 
-    const url = row[11]; // L열
+    const rawUrl = row[11]; // L열
+
+    if(!rawUrl) return;
+
+    const cleanUrl = rawUrl.toString().trim();
 
     serials.forEach(s=>{
-      if(s && url) map.set(s, url);
+      if(s && cleanUrl) map.set(s, cleanUrl);
     });
   });
 
   return map;
 }
 
-/* ===== 검색 ===== */
+/* ================= 검색 ================= */
 async function search(){
   const input = document.getElementById("serialInput").value;
   const box = document.getElementById("result");
@@ -158,7 +168,9 @@ async function search(){
         .map(s=>buildKey(s));
 
       serials.forEach(s=>{
-        if(s===key) hits.push({sheet,row,matchedSerial:s});
+        if(s === key){
+          hits.push({sheet,row,matchedSerial:s});
+        }
       });
     });
   }
@@ -169,7 +181,8 @@ async function search(){
   }
 
   hits.forEach(hit=>{
-    const gUrl = gradeMap.get(hit.matchedSerial) || "";
+    const gUrlRaw = gradeMap.get(hit.matchedSerial) || "";
+    const gUrl = gUrlRaw.toString().trim();
     const isFolder = gUrl.includes("/drive/folders/");
 
     box.innerHTML += `
@@ -186,11 +199,12 @@ async function search(){
       <div class="row">
         <div class="label">성적서</div>
         <div class="value">
-          ${gUrl
-            ? `<a href="${gUrl}" target="_blank">
-                 ${hit.matchedSerial} ${isFolder ? "성적서 폴더 열기" : "성적서 다운로드"}
-               </a>`
-            : `${hit.matchedSerial} 미등록`
+          ${
+            gUrl
+              ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer">
+                   ${hit.matchedSerial} ${isFolder ? "성적서 폴더 열기" : "성적서 다운로드"}
+                 </a>`
+              : `${hit.matchedSerial} 미등록`
           }
         </div>
       </div>
@@ -203,5 +217,6 @@ function resetForm(){
   document.getElementById("result").innerHTML="";
 }
 </script>
+
 </body>
 </html>
