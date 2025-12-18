@@ -183,6 +183,13 @@ footer {
 const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
 const SHEETS = ["구형","신형"];
 
+// 성적서 시트 (C: 시리얼, D: 성적서 주소)
+const GRADE_SHEET = "성적서";
+const GRADE_COL = {
+  serial: 2,   // C열 (0부터: A:0 B:1 C:2)
+  url: 3       // D열
+};
+
 /*
 열 인덱스 (0부터)
 A:0 B:1 C:2 D:3 E:4 F:5 G:6 H:7 I:8 J:9 K:10 L:11 ... R:17
@@ -219,6 +226,36 @@ function buildKey(raw){
   return result;
 }
 
+// 성적서 시트에서 "정규화된 시리얼 → 성적서 URL" 맵 만들기
+async function loadGradeMap() {
+  const url =
+    `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(GRADE_SHEET)}&tqx=out:json`;
+  const txt  = await fetch(url).then(r => r.text());
+  const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1));
+  const rows = json.table.rows || [];
+
+  const map = new Map();
+
+  rows.forEach(r => {
+    const row = r.c.map(c => c ? c.v : "");
+    const rawSerial = row[GRADE_COL.serial] || "";
+    const gradeUrl = row[GRADE_COL.url] || "";
+    if (!rawSerial || !gradeUrl) return;
+
+    const serials = rawSerial
+      .toString()
+      .split(",")
+      .map(s => buildKey(s))
+      .filter(s => s);
+
+    serials.forEach(s => {
+      if (!map.has(s)) map.set(s, gradeUrl);
+    });
+  });
+
+  return map;
+}
+
 /* ================= 검색 ================= */
 async function search(){
   const inputVal = document.getElementById("serialInput").value;
@@ -239,6 +276,10 @@ async function search(){
   let hits = [];
 
   try{
+    // 성적서 맵 먼저 로드
+    const gradeMap = await loadGradeMap();
+
+    // 기존 구형/신형 검색
     for(const sheet of SHEETS){
       const url =
         `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
@@ -268,6 +309,8 @@ async function search(){
 
     hits.forEach(hit=>{
       const row = hit.row;
+      const gradeUrl = gradeMap.get(key) || "";
+
       resultBox.innerHTML += `
       <div class="card">
         <h2>🔎 검색 결과 <span class="tag">${hit.sheet}</span></h2>
@@ -300,6 +343,16 @@ async function search(){
         <div class="row">
           <div class="label">프로젝트명</div>
           <div class="value">${row[COL.project] ?? "-"}</div>
+        </div>
+
+        <div class="row">
+          <div class="label">성적서</div>
+          <div class="value">
+            ${gradeUrl
+              ? `<a href="${gradeUrl}" target="_blank" rel="noopener noreferrer">성적서 열기</a>`
+              : "-"
+            }
+          </div>
         </div>
       </div>`;
     });
