@@ -21,27 +21,25 @@
 body {
   margin:0;
   background:linear-gradient(180deg,#0b1020,#05070d);
-  font-family: "Pretendard","Noto Sans KR",system-ui,Arial,sans-serif;
+  font-family:"Pretendard","Noto Sans KR",system-ui,Arial,sans-serif;
   color:var(--text);
 }
 
 .wrapper {
-  max-width: 900px;
-  margin: auto;
-  padding: 32px 16px 80px;
+  max-width:900px;
+  margin:auto;
+  padding:32px 16px 80px;
 }
 
 header h1 {
   margin:0;
   font-size:26px;
-  letter-spacing:-0.3px;
 }
 
 header p {
   margin:8px 0 24px;
   color:var(--muted);
   font-size:14px;
-  line-height:1.5;
 }
 
 .search-box {
@@ -112,20 +110,14 @@ header p {
 
 .row {
   display:grid;
-  grid-template-columns: 170px 1fr;
+  grid-template-columns:170px 1fr;
   gap:8px 12px;
   margin-bottom:10px;
   font-size:14px;
 }
 
-.label {
-  color:var(--muted);
-}
-
-.value {
-  white-space:pre-wrap;
-  word-break:break-word;
-}
+.label { color:var(--muted); }
+.value { white-space:pre-wrap; word-break:break-word; }
 
 .empty {
   padding:20px;
@@ -141,10 +133,6 @@ footer {
   color:var(--muted);
   text-align:center;
 }
-
-@media (max-width:520px){
-  .row { grid-template-columns:1fr; }
-}
 </style>
 </head>
 
@@ -155,237 +143,134 @@ footer {
   <h1>시리얼 넘버 검색기 (Serial Number Search)</h1>
   <p>
     구형 / 신형 시트를 통합 검색합니다.<br>
-    Search across legacy and current sheets.  
-    Alphabet characters in specific positions of serial numbers are automatically ignored.
+    Search across legacy and current sheets.
   </p>
 </header>
 
 <section class="search-box">
-  <input id="serialInput" placeholder="예: RD20D2560002 / RD202560002">
-  <button onclick="search()">검색 (Search)</button>
-  <button class="reset" onclick="resetForm()">초기화 (Reset)</button>
+  <input id="serialInput" placeholder="예: DM222510125">
+  <button onclick="search()">검색</button>
+  <button class="reset" onclick="resetForm()">초기화</button>
 </section>
-
-<div class="notice">
-  • 4번째·5번째 위치의 영문만 무시 &nbsp; • 콤마로 구분된 복수 S/N 지원
-</div>
 
 <section id="result" class="result-area"></section>
 
-<footer>
-  © SEDNAENG · Internal Serial Search Tool
-</footer>
-
+<footer>© SEDNAENG</footer>
 </div>
 
 <script>
-/* ================= 설정 ================= */
+/* ===== 설정 ===== */
 const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
 const SHEETS = ["구형","신형"];
-
-// 성적서 시트 (C: 시리얼, D: 성적서 주소)
 const GRADE_SHEET = "성적서";
-const GRADE_COL = {
-  serial: 2,   // C열 (0부터: A:0 B:1 C:2)
-  url: 3       // D열
-};
 
-/*
-열 인덱스 (0부터)
-A:0 B:1 C:2 D:3 E:4 F:5 G:6 H:7 I:8 J:9 K:10 L:11 ... R:17
-
-D: 업체명
-F: W/P 납품일
-H: 제품 납품일
-J: 모델명
-K: 납기 수량
-L: 프로젝트명
-R: S/N
-*/
 const COL = {
-  company: 3,   // D
-  wp: 5,        // F
-  delivery: 7,  // H
-  model: 9,     // J
-  project: 11,  // L
-  serial: 17    // R
+  company: 3,
+  wp: 5,
+  delivery: 7,
+  model: 9,
+  project: 11,
+  serial: 17
 };
-const K_INDEX = 10; // K열(납기 수량)
+const K_INDEX = 10;
 
-/* ================= 유틸 ================= */
+/* ===== 유틸 ===== */
 function buildKey(raw){
-  if (!raw) return "";
-  let v = raw.toUpperCase().replace(/\s+/g, "").trim();
-  let result = "";
-  for (let i = 0; i < v.length; i++) {
-    const ch = v[i];
-    const pos = i + 1;
-    if ((pos === 4 || pos === 5) && /[A-Z]/.test(ch)) continue;
-    result += ch;
+  if(!raw) return "";
+  let v = raw.toUpperCase().replace(/\s+/g,"");
+  let out = "";
+  for(let i=0;i<v.length;i++){
+    const pos=i+1, ch=v[i];
+    if((pos===4||pos===5)&&/[A-Z]/.test(ch)) continue;
+    out+=ch;
   }
-  return result;
+  return out;
 }
 
-// 성적서 시트에서 "정규화된 시리얼 → 성적서 URL" 맵 만들기
-async function loadGradeMap() {
-  const url =
-    `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(GRADE_SHEET)}&tqx=out:json`;
-  const txt  = await fetch(url).then(r => r.text());
-  const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}") + 1));
-  const rows = json.table.rows || [];
+/* ===== 성적서 맵 ===== */
+async function loadGradeMap(){
+  const url=`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(GRADE_SHEET)}&tqx=out:json`;
+  const txt=await fetch(url).then(r=>r.text());
+  const json=JSON.parse(txt.substring(txt.indexOf("{"),txt.lastIndexOf("}")+1));
+  const rows=json.table.rows||[];
+  const map=new Map();
 
-  const map = new Map();
-
-  rows.forEach(r => {
-    const row = r.c.map(c => c ? c.v : "");
-    const rawSerial = row[GRADE_COL.serial] || "";
-    const gradeUrl = row[GRADE_COL.url] || "";
-    if (!rawSerial || !gradeUrl) return;
-
-    const serials = rawSerial
-      .toString()
-      .split(",")
-      .map(s => buildKey(s))
-      .filter(s => s);
-
-    serials.forEach(s => {
-      if (!map.has(s)) map.set(s, gradeUrl);
-    });
+  rows.forEach(r=>{
+    const row=r.c.map(c=>c?c.v:"");
+    const serials=(row[2]||"").toString().split(",").map(buildKey);
+    const url=row[3];
+    serials.forEach(s=>{ if(s && url) map.set(s,url); });
   });
-
   return map;
 }
 
-/* ================= 검색 ================= */
+/* ===== 검색 ===== */
 async function search(){
-  const inputVal = document.getElementById("serialInput").value;
-  const resultBox = document.getElementById("result");
-  resultBox.innerHTML = "";
+  const input=document.getElementById("serialInput").value;
+  const box=document.getElementById("result");
+  box.innerHTML="";
 
-  if(!inputVal){
-    resultBox.innerHTML = `<div class="empty">⚠ 시리얼 넘버를 입력하세요.</div>`;
-    return;
-  }
-
-  const key = buildKey(inputVal);
+  const key=buildKey(input);
   if(!key){
-    resultBox.innerHTML = `<div class="empty">⚠ 유효한 시리얼 넘버가 아닙니다.</div>`;
+    box.innerHTML=`<div class="empty">시리얼 입력 필요</div>`;
     return;
   }
 
-  let hits = [];
+  const gradeMap=await loadGradeMap();
+  let hits=[];
 
-  try{
-    // 성적서 맵 먼저 로드
-    const gradeMap = await loadGradeMap();
+  for(const sheet of SHEETS){
+    const url=`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${sheet}&tqx=out:json`;
+    const txt=await fetch(url).then(r=>r.text());
+    const json=JSON.parse(txt.substring(txt.indexOf("{"),txt.lastIndexOf("}")+1));
+    const rows=json.table.rows||[];
 
-    // 기존 구형/신형 검색
-    for(const sheet of SHEETS){
-      const url =
-        `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
-      const txt  = await fetch(url).then(r=>r.text());
-      const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
-      const rows = json.table.rows || [];
-
-      rows.forEach(r=>{
-        const row = r.c.map(c => c ? c.v : "");
-        const serials = (row[COL.serial] || "")
-          .toString()
-          .split(",")
-          .map(s => buildKey(s))
-          .filter(s => s);
-
-        if (serials.some(s => s === key)) {
-          hits.push({sheet, row});
+    rows.forEach(r=>{
+      const row=r.c.map(c=>c?c.v:"");
+      const serials=(row[COL.serial]||"").toString().split(",").map(buildKey);
+      serials.forEach(s=>{
+        if(s===key){
+          hits.push({sheet,row,matchedSerial:s});
         }
       });
-    }
-
-    if(hits.length === 0){
-      resultBox.innerHTML =
-        `<div class="empty">❌ '${inputVal}' 검색 결과가 없습니다.</div>`;
-      return;
-    }
-
-    hits.forEach(hit=>{
-      const row = hit.row;
-      const gradeUrl = gradeMap.get(key) || "";
-
-      resultBox.innerHTML += `
-      <div class="card">
-        <h2>🔎 검색 결과 <span class="tag">${hit.sheet}</span></h2>
-
-        <div class="row">
-          <div class="label">업체명</div>
-          <div class="value">${row[COL.company] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">납품일</div>
-          <div class="value">${row[COL.delivery] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">W/P 납품일</div>
-          <div class="value">${row[COL.wp] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">모델명</div>
-          <div class="value">${row[COL.model] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">납기 수량</div>
-          <div class="value">${row[K_INDEX] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">프로젝트명</div>
-          <div class="value">${row[COL.project] ?? "-"}</div>
-        </div>
-
-        <div class="row">
-          <div class="label">성적서</div>
-          <div class="value">
-            ${gradeUrl
-              ? `<a href="${gradeUrl}" target="_blank" rel="noopener noreferrer">성적서 열기</a>`
-              : "-"
-            }
-          </div>
-        </div>
-      </div>`;
     });
-
-  }catch(e){
-    console.error(e);
-    resultBox.innerHTML =
-      `<div class="empty">❌ 데이터 로드 실패 (시트 공개 여부 / ID / 시트명 확인 필요)</div>`;
   }
+
+  if(!hits.length){
+    box.innerHTML=`<div class="empty">검색 결과 없음</div>`;
+    return;
+  }
+
+  hits.forEach(hit=>{
+    const gUrl=gradeMap.get(hit.matchedSerial)||"";
+    box.innerHTML+=`
+    <div class="card">
+      <h2>🔎 검색 결과 <span class="tag">${hit.sheet}</span></h2>
+
+      <div class="row"><div class="label">업체명</div><div class="value">${hit.row[COL.company]||"-"}</div></div>
+      <div class="row"><div class="label">납품일</div><div class="value">${hit.row[COL.delivery]||"-"}</div></div>
+      <div class="row"><div class="label">W/P 납품일</div><div class="value">${hit.row[COL.wp]||"-"}</div></div>
+      <div class="row"><div class="label">모델명</div><div class="value">${hit.row[COL.model]||"-"}</div></div>
+      <div class="row"><div class="label">납기 수량</div><div class="value">${hit.row[K_INDEX]||"-"}</div></div>
+      <div class="row"><div class="label">프로젝트명</div><div class="value">${hit.row[COL.project]||"-"}</div></div>
+
+      <div class="row">
+        <div class="label">성적서</div>
+        <div class="value">
+          ${gUrl
+            ? `<a href="${gUrl}" target="_blank">${hit.matchedSerial} 성적서 다운로드</a>`
+            : `${hit.matchedSerial} 미등록`
+          }
+        </div>
+      </div>
+    </div>`;
+  });
 }
 
 function resetForm(){
-  document.getElementById("serialInput").value = "";
-  document.getElementById("result").innerHTML = "";
+  document.getElementById("serialInput").value="";
+  document.getElementById("result").innerHTML="";
 }
-
-/* ================= 쿼리스트링 자동 검색 ================= */
-// URL 예시: https://ceopark91.github.io/serial-search/?sn=DM152509276
-function getSerialFromQuery() {
-  const params = new URLSearchParams(window.location.search);
-  return params.get('sn');   // ?sn= 뒤 값
-}
-
-// 모든 리소스 로드가 끝난 후 자동 검색
-window.onload = () => {
-  const serial = getSerialFromQuery();
-  if (serial) {
-    const input = document.getElementById('serialInput');
-    input.value = serial;
-    search();   // 자동 검색 실행
-  }
-};
 </script>
-
 </body>
 </html>
