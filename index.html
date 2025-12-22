@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>시리얼 넘버 검색기 | Serial Number Search</title>
+
 <style>
 :root{
   --bg:#0b1020; --card:#111a33; --line:#23305a;
@@ -12,282 +13,150 @@
 *{box-sizing:border-box}
 body{margin:0; background:linear-gradient(180deg,#0b1020,#05070d); font-family:Pretendard,"Noto Sans KR",system-ui; color:var(--text)}
 .wrapper{max-width:1200px; margin:auto; padding:32px 16px 80px}
-
-/* 헤더 */
 header{margin-bottom:32px; border-bottom:1px solid var(--line); padding-bottom:24px}
-header h1{margin:0; font-size:28px; display:flex; align-items:center; gap:12px}
-header .logo{width:40px; height:40px; background:var(--accent); border-radius:8px}
+header h1{margin:0; font-size:28px}
 header p{margin:8px 0 0; color:var(--muted); font-size:14px}
-
-/* 검색 박스 */
 .search-box{
   background:var(--card); border:1px solid var(--line); border-radius:16px;
-  padding:24px; margin-bottom:32px; display:flex; gap:12px; flex-wrap:wrap;
-  align-items:center;
+  padding:24px; margin-bottom:32px; display:flex; gap:12px;
 }
 .search-box input{
-  flex:1; min-width:300px; padding:12px 16px; border-radius:10px;
-  border:1px solid var(--line); background:#070a14; color:var(--text); font-size:15px;
+  flex:1; padding:12px 16px; border-radius:10px;
+  border:1px solid var(--line); background:#070a14; color:var(--text);
 }
-.search-box input:focus{outline:none; border-color:var(--accent); box-shadow:0 0 0 3px rgba(56,189,248,0.4)}
 .search-box button{
   padding:12px 20px; border-radius:10px; border:none;
-  font-weight:700; cursor:pointer; transition:all 150ms; font-size:14px;
+  font-weight:700; cursor:pointer;
 }
-.search-box .btn-search{
-  background:var(--accent); color:#000; min-width:100px;
-}
-.search-box .btn-search:hover{background:#60d5ff; transform:translateY(-2px)}
-.search-box .btn-reset{
-  background:var(--line); color:var(--text); min-width:80px;
-}
-.search-box .btn-reset:hover{background:#2d3f5d}
-
-/* 결과 영역 */
-.result-area{margin-top:24px}
-.result-grid{
-  display:grid; grid-template-columns:repeat(2, 1fr); gap:20px;
-}
-
-/* 결과 카드 (2열) */
-.card{
-  background:var(--card); border:1px solid var(--line); border-radius:14px;
-  padding:20px; display:flex; flex-direction:column; gap:16px;
-}
-.card-header{
-  display:flex; align-items:center; gap:12px; padding-bottom:16px;
-  border-bottom:1px solid var(--line);
-}
-.card-title{margin:0; font-size:16px; font-weight:600; color:var(--accent)}
-.tag{
-  font-size:11px; padding:4px 10px; border-radius:6px;
-  background:rgba(56,189,248,0.15); color:var(--accent); border:1px solid var(--accent);
-}
-
-/* 정보 그룹 (카드 내부 2열) */
-.info-grid{
-  display:grid; grid-template-columns:1fr 1fr; gap:12px;
-}
-.info-item{
-  background:rgba(7,10,20,0.5); border:1px solid var(--line); border-radius:10px;
-  padding:12px; display:flex; flex-direction:column; gap:6px;
-}
-.info-label{
-  font-size:12px; color:var(--muted); font-weight:500; text-transform:uppercase;
-  letter-spacing:0.5px;
-}
-.info-value{
-  font-size:14px; color:var(--text); font-weight:500; word-break:break-word;
-  white-space:normal; line-height:1.4;
-}
-
-/* 성적서 (전체 폭) */
-.cert-section{
-  background:rgba(7,10,20,0.5); border:1px solid var(--line); border-radius:10px;
-  padding:12px; grid-column:1/-1;
-}
-.cert-label{
-  font-size:12px; color:var(--muted); font-weight:500; margin-bottom:8px;
-}
+.btn-search{background:var(--accent); color:#000}
+.btn-reset{background:var(--line); color:var(--text)}
+.result-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:20px}
+.card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px}
+.card-header{border-bottom:1px solid var(--line); padding-bottom:12px; margin-bottom:12px}
+.card-title{color:var(--accent); font-weight:600}
+.info-grid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.info-item{background:#070a14; border:1px solid var(--line); border-radius:10px; padding:10px}
+.info-label{font-size:12px; color:var(--muted)}
+.info-value{font-size:14px; white-space:normal; line-height:1.4}
+.cert-section{margin-top:12px; padding-top:12px; border-top:1px solid var(--line)}
 .cert-btn{
-  display:inline-flex; align-items:center; gap:8px;
-  padding:10px 16px; background:var(--accent); color:#000;
-  border-radius:8px; text-decoration:none; font-weight:600;
-  cursor:pointer; border:none; font-size:14px; transition:all 150ms;
+  display:inline-block; padding:10px 16px;
+  background:var(--accent); color:#000; border-radius:8px;
+  text-decoration:none; font-weight:600;
 }
-.cert-btn:hover{background:#60d5ff; transform:translateY(-2px)}
-.cert-text{color:var(--muted); font-size:13px}
-
-/* 빈 결과 */
 .empty{
-  padding:40px 20px; text-align:center;
-  border:2px dashed var(--line); border-radius:12px;
-  color:var(--danger); font-size:15px;
+  padding:40px; border:2px dashed var(--line);
+  border-radius:12px; text-align:center; color:var(--danger);
 }
-
-/* 푸터 */
-footer{margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
-  text-align:center; font-size:12px; color:var(--muted)}
-
-/* 한글/영문 폰트 크기 */
-.eng{font-size:13px; opacity:0.75; margin-left:4px}
-
-/* 모바일 반응형 (768px 이하) */
+footer{margin-top:40px; text-align:center; color:var(--muted); font-size:12px}
 @media(max-width:768px){
-  .wrapper{padding:20px 12px 60px}
-  header h1{font-size:22px}
-  .search-box{
-    flex-direction:column; padding:16px;
-  }
-  .search-box input, .search-box button{width:100%}
-  .result-grid{
-    grid-template-columns:1fr; gap:16px;
-  }
-  .info-grid{
-    grid-template-columns:1fr; gap:10px;
-  }
-}
-
-/* 태블릿 (768px ~ 1024px) */
-@media(max-width:1024px){
-  .result-grid{gap:16px; padding:0 12px}
-  .info-grid{gap:10px}
+  .result-grid{grid-template-columns:1fr}
 }
 </style>
 </head>
+
 <body>
 <div class="wrapper">
 <header>
-  <h1>🔍 시리얼 넘버 검색기 <span class="eng">(Serial Number Search)</span></h1>
-  <p>구형/신형 시트를 통합 검색합니다. <span class="eng">(Unified search)</span></p>
+  <h1>🔍 시리얼 넘버 검색기</h1>
+  <p>JSON DB 기반 검색</p>
 </header>
 
 <section class="search-box">
-  <input id="serialInput" type="text" placeholder="예: DM202510117">
-  <button class="btn-search" onclick="search()">검색 (Search)</button>
-  <button class="btn-reset" onclick="resetForm()">초기화 (Reset)</button>
+  <input id="serialInput" placeholder="예: DM202510117">
+  <button class="btn-search" onclick="search()">검색</button>
+  <button class="btn-reset" onclick="resetForm()">초기화</button>
 </section>
 
-<section id="result" class="result-area"></section>
-
+<section id="result"></section>
 <footer>© SEDNAENG</footer>
 </div>
 
 <script>
-const SPREADSHEET_ID = "1S6NfRpDYdBJgnfdweINyqVs_NQhZi-T2uOABSx_3JnU";
-const SHEETS = ["구형","신형"];
-const GRADE_SHEET = "성적서";
-const COL = {company:3, wp:5, delivery:7, model:9, project:11, serial:17};
-const K_INDEX = 10;
+/* =========================
+   🔧 DB 위치 (중요)
+   ========================= */
+const SERIAL_DB_URL =
+  "https://ceopark91.github.io/serial-search/serial_db.json";
+const CERT_DB_URL =
+  "https://ceopark91.github.io/serial-search/certificate_db.json";
 
-function buildKey(raw){
+let SERIAL_DB = {};
+let CERT_DB = {};
+
+/* ===== 시리얼 정규화 ===== */
+function normalizeSerial(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
   let out = "";
-  for(let i=0; i<v.length; i++){
-    const ch = v[i];
-    if((i===3 || i===4) && /[A-Z]/.test(ch)) continue;
-    out += ch;
+  for(let i=0;i<v.length;i++){
+    const ch=v[i];
+    if((i===3||i===4)&&/[A-Z]/.test(ch)) continue;
+    out+=ch;
   }
   return out;
 }
 
-// 수량: 줄바꿈 기준으로 나누고 각 줄 뒤에 ea
-function formatQty(raw){
-  if(raw === undefined || raw === null) return "-";
-  const text = raw.toString().trim();
-  if(!text) return "-";
-  const lines = text.split(/(\r\n|\r|\n)/); // 줄바꿈 보존
-  const out = lines.map(part=>{
-    if(/^\r\n$|^\r$|^\n$/.test(part)) return "<br>"; // 줄바꿈은 <br>
-    const t = part.trim();
-    if(!t) return "";
-    return t + "ea";
-  }).join("");
-  return out || "-";
+/* ===== 줄바꿈 표시 ===== */
+const nl = t => (t||"").replace(/\n/g,"<br>");
+
+/* ===== DB 로드 ===== */
+async function loadDB(){
+  [SERIAL_DB, CERT_DB] = await Promise.all([
+    fetch(SERIAL_DB_URL).then(r=>r.json()),
+    fetch(CERT_DB_URL).then(r=>r.json())
+  ]);
 }
 
-async function loadGradeMap(){
-  const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(GRADE_SHEET)}&tqx=out:json`;
-  const txt = await fetch(url).then(r=>r.text());
-  const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
-  const rows = json.table.rows || [];
-  const map = new Map();
-  rows.forEach(r=>{
-    const row = r.c.map(c=>c?c.v:"");
-    const serials = (row[2]||"").toString().split(/,|\n/).map(s=>buildKey(s)).filter(Boolean);
-    const rawUrl = row[11];
-    if(!rawUrl) return;
-    const cleanUrl = rawUrl.toString().trim();
-    serials.forEach(s=>{
-      if(s && cleanUrl) map.set(s, cleanUrl);
-    });
-  });
-  return map;
+/* ===== 검색 ===== */
+function findSerial(input){
+  const key = normalizeSerial(input);
+  for(const k in SERIAL_DB){
+    const row = SERIAL_DB[k];
+    if(row.sn_list.includes(key)){
+      return {
+        ...row,
+        certificate: CERT_DB[key] || ""
+      };
+    }
+  }
+  return null;
 }
 
-async function search(){
-  const input = document.getElementById("serialInput").value;
-  const box = document.getElementById("result");
-  box.innerHTML = '<div class="empty">검색 중입니다... <span class="spinner"></span></div>';
-  const key = buildKey(input);
-  if(!key){
-    box.innerHTML = `<div class="empty">시리얼 입력 필요 <span class="eng">(Please enter serial number)</span></div>`;
-    return;
-  }
-  const gradeMap = await loadGradeMap();
-  let hits = [];
-  for(const sheet of SHEETS){
-    const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
-    const txt = await fetch(url).then(r=>r.text());
-    const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
-    const rows = json.table.rows || [];
-    rows.forEach(r=>{
-      const row = r.c.map(c=>c?c.v:"");
-      const serials = (row[COL.serial]||"").toString().split(",").map(s=>buildKey(s));
-      serials.forEach(s=>{
-        if(s === key){
-          hits.push({sheet,row,matchedSerial:s});
-        }
-      });
-    });
-  }
-  if(!hits.length){
-    box.innerHTML = `<div class="empty">검색 결과 없음 <span class="eng">(No results found)</span></div>`;
-    return;
-  }
-  
-  let html = '<div class="result-grid">';
-  hits.forEach(hit=>{
-    const gUrl = (gradeMap.get(hit.matchedSerial)||"").toString().trim();
-    const isFolder = gUrl.includes("/drive/folders/");
-    const sheetTag = hit.sheet === "구형" ? "구형 (Old)" : "신형 (New)";
-    
-    html += `
+/* ===== 결과 렌더 ===== */
+function render(hit){
+  if(!hit) return `<div class="empty">검색 결과 없음</div>`;
+  return `
+  <div class="result-grid">
     <div class="card">
       <div class="card-header">
-        <div class="card-title">🔎 검색 결과 <span class="eng">(Result)</span></div>
-        <span class="tag">${sheetTag}</span>
+        <div class="card-title">검색 결과</div>
       </div>
       <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">업체명 (Company)</div>
-          <div class="info-value">${hit.row[COL.company]||"-"}</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">모델명 (Model)</div>
-          <div class="info-value">${hit.row[COL.model]||"-"}</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">납품일 (Delivery)</div>
-          <div class="info-value">${hit.row[COL.delivery]||"-"}</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">W/P 납품일 (WP Date)</div>
-          <div class="info-value">${hit.row[COL.wp]||"-"}</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">수량 (Qty)</div>
-          <div class="info-value">${formatQty(hit.row[K_INDEX])}</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">프로젝트 (Project)</div>
-          <div class="info-value">${hit.row[COL.project]||"-"}</div>
-        </div>
+        <div class="info-item"><div class="info-label">업체명</div><div class="info-value">${nl(hit.company)}</div></div>
+        <div class="info-item"><div class="info-label">모델명</div><div class="info-value">${nl(hit.model)}</div></div>
+        <div class="info-item"><div class="info-label">납품일</div><div class="info-value">${nl(hit.delivery_date)}</div></div>
+        <div class="info-item"><div class="info-label">W/P 납품일</div><div class="info-value">${nl(hit.wp_date)}</div></div>
+        <div class="info-item"><div class="info-label">수량</div><div class="info-value">${nl(hit.qty)}</div></div>
+        <div class="info-item"><div class="info-label">프로젝트</div><div class="info-value">${nl(hit.project)}</div></div>
       </div>
       <div class="cert-section">
-        <div class="cert-label">성적서 (Certificate)</div>
-        ${gUrl 
-          ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer" class="cert-btn">
-               📥 ${isFolder ? '폴더 열기 (Open Folder)' : '다운로드 (Download)'}
-             </a>`
-          : `<span class="cert-text">미등록 (Not Registered)</span>`
+        ${hit.certificate
+          ? `<a href="${hit.certificate}" target="_blank" class="cert-btn">📥 성적서 다운로드</a>`
+          : `<span class="info-label">성적서 미등록</span>`
         }
       </div>
-    </div>`;
-  });
-  html += '</div>';
-  box.innerHTML = html;
+    </div>
+  </div>`;
+}
+
+/* ===== 버튼 ===== */
+async function search(){
+  const v = document.getElementById("serialInput").value;
+  const box = document.getElementById("result");
+  if(!v){ box.innerHTML=`<div class="empty">시리얼 입력 필요</div>`; return; }
+  const hit = findSerial(v);
+  box.innerHTML = render(hit);
 }
 
 function resetForm(){
@@ -295,21 +164,16 @@ function resetForm(){
   document.getElementById("result").innerHTML="";
 }
 
-window.addEventListener("load", ()=>{  
-  const params = new URLSearchParams(window.location.search);
-  const serial = params.get("sn");
-  if(serial){
-    document.getElementById("serialInput").value = serial;
+/* ===== 초기 ===== */
+window.addEventListener("load", async ()=>{
+  await loadDB();
+  const p = new URLSearchParams(location.search);
+  if(p.get("sn")){
+    document.getElementById("serialInput").value = p.get("sn");
     search();
   }
-  
-  document.getElementById("serialInput").addEventListener("keydown", function(e) {
-    if (e.key === "Enter") {
-      e.preventDefault();
-      search();
-    }
-  });
 });
 </script>
 </body>
 </html>
+
