@@ -120,13 +120,9 @@ footer{margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
     flex-direction:column; padding:16px;
   }
   .search-box input, .search-box button{width:100%}
-  
-  /* 모바일: 1열 레이아웃 */
   .result-grid{
     grid-template-columns:1fr; gap:16px;
   }
-  
-  /* 모바일: 정보도 1열 */
   .info-grid{
     grid-template-columns:1fr; gap:10px;
   }
@@ -174,6 +170,21 @@ function buildKey(raw){
     out += ch;
   }
   return out;
+}
+
+// 수량: 줄바꿈 기준으로 나누고 각 줄 뒤에 ea
+function formatQty(raw){
+  if(raw === undefined || raw === null) return "-";
+  const text = raw.toString().trim();
+  if(!text) return "-";
+  const lines = text.split(/(\r\n|\r|\n)/); // 줄바꿈 보존
+  const out = lines.map(part=>{
+    if(/^\r\n$|^\r$|^\n$/.test(part)) return "<br>"; // 줄바꿈은 <br>
+    const t = part.trim();
+    if(!t) return "";
+    return t + "ea";
+  }).join("");
+  return out || "-";
 }
 
 async function loadGradeMap(){
@@ -257,7 +268,7 @@ async function search(){
         </div>
         <div class="info-item">
           <div class="info-label">수량 (Qty)</div>
-          <div class="info-value">${hit.row[K_INDEX]||"-"}</div>
+          <div class="info-value">${formatQty(hit.row[K_INDEX])}</div>
         </div>
         <div class="info-item">
           <div class="info-label">프로젝트 (Project)</div>
@@ -284,7 +295,7 @@ function resetForm(){
   document.getElementById("result").innerHTML="";
 }
 
-window.addEventListener("load", ()=>{
+window.addEventListener("load", ()=>{  
   const params = new URLSearchParams(window.location.search);
   const serial = params.get("sn");
   if(serial){
@@ -302,4 +313,3 @@ window.addEventListener("load", ()=>{
 </script>
 </body>
 </html>
-
