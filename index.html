@@ -58,24 +58,21 @@ footer{margin-top:40px; text-align:center; color:var(--muted); font-size:12px}
 <body>
 <div class="wrapper">
 <header>
-  <h1>🔍 시리얼 넘버 검색기</h1>
-  <p>JSON DB 기반 검색</p>
+  <h1>🔍 시리얼 넘버 검색기 <span style="opacity:.7;font-size:14px">(Serial Number Search)</span></h1>
+  <p>JSON DB 기반 검색 <span style="opacity:.7">(Search based on JSON database)</span></p>
 </header>
 
 <section class="search-box">
-  <input id="serialInput" placeholder="예: DM202510117">
-  <button class="btn-search" onclick="search()">검색</button>
-  <button class="btn-reset" onclick="resetForm()">초기화</button>
+  <input id="serialInput" placeholder="예: DM202510117 (e.g. DM202510117)">
+  <button class="btn-search" onclick="search()">검색 (Search)</button>
+  <button class="btn-reset" onclick="resetForm()">초기화 (Reset)</button>
 </section>
 
 <section id="result"></section>
-<footer>© SEDNAENG</footer>
+<footer>© SEDNAENG · Serial Number Lookup System</footer>
 </div>
 
 <script>
-/* =========================
-   🔧 DB 위치 (중요)
-   ========================= */
 const SERIAL_DB_URL =
   "https://ceopark91.github.io/serial-search/serial_db.json";
 const CERT_DB_URL =
@@ -84,7 +81,6 @@ const CERT_DB_URL =
 let SERIAL_DB = {};
 let CERT_DB = {};
 
-/* ===== 시리얼 정규화 ===== */
 function normalizeSerial(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
@@ -97,10 +93,8 @@ function normalizeSerial(raw){
   return out;
 }
 
-/* ===== 줄바꿈 표시 ===== */
 const nl = t => (t||"").replace(/\n/g,"<br>");
 
-/* ===== DB 로드 ===== */
 async function loadDB(){
   [SERIAL_DB, CERT_DB] = await Promise.all([
     fetch(SERIAL_DB_URL).then(r=>r.json()),
@@ -108,7 +102,6 @@ async function loadDB(){
   ]);
 }
 
-/* ===== 검색 ===== */
 function findSerial(input){
   const key = normalizeSerial(input);
   for(const k in SERIAL_DB){
@@ -123,38 +116,39 @@ function findSerial(input){
   return null;
 }
 
-/* ===== 결과 렌더 ===== */
 function render(hit){
-  if(!hit) return `<div class="empty">검색 결과 없음</div>`;
+  if(!hit) return `<div class="empty">검색 결과 없음 (No results found)</div>`;
   return `
   <div class="result-grid">
     <div class="card">
       <div class="card-header">
-        <div class="card-title">검색 결과</div>
+        <div class="card-title">검색 결과 (Search Result)</div>
       </div>
       <div class="info-grid">
-        <div class="info-item"><div class="info-label">업체명</div><div class="info-value">${nl(hit.company)}</div></div>
-        <div class="info-item"><div class="info-label">모델명</div><div class="info-value">${nl(hit.model)}</div></div>
-        <div class="info-item"><div class="info-label">납품일</div><div class="info-value">${nl(hit.delivery_date)}</div></div>
-        <div class="info-item"><div class="info-label">W/P 납품일</div><div class="info-value">${nl(hit.wp_date)}</div></div>
-        <div class="info-item"><div class="info-label">수량</div><div class="info-value">${nl(hit.qty)}</div></div>
-        <div class="info-item"><div class="info-label">프로젝트</div><div class="info-value">${nl(hit.project)}</div></div>
+        <div class="info-item"><div class="info-label">업체명 (Company)</div><div class="info-value">${nl(hit.company)}</div></div>
+        <div class="info-item"><div class="info-label">모델명 (Model)</div><div class="info-value">${nl(hit.model)}</div></div>
+        <div class="info-item"><div class="info-label">납품일 (Delivery Date)</div><div class="info-value">${nl(hit.delivery_date)}</div></div>
+        <div class="info-item"><div class="info-label">W/P 납품일 (W/P Date)</div><div class="info-value">${nl(hit.wp_date)}</div></div>
+        <div class="info-item"><div class="info-label">수량 (Quantity)</div><div class="info-value">${nl(hit.qty)}</div></div>
+        <div class="info-item"><div class="info-label">프로젝트 (Project)</div><div class="info-value">${nl(hit.project)}</div></div>
       </div>
       <div class="cert-section">
         ${hit.certificate
-          ? `<a href="${hit.certificate}" target="_blank" class="cert-btn">📥 성적서 다운로드</a>`
-          : `<span class="info-label">성적서 미등록</span>`
+          ? `<a href="${hit.certificate}" target="_blank" class="cert-btn">📥 성적서 다운로드 (Download Certificate)</a>`
+          : `<span class="info-label">성적서 미등록 (Not Registered)</span>`
         }
       </div>
     </div>
   </div>`;
 }
 
-/* ===== 버튼 ===== */
 async function search(){
   const v = document.getElementById("serialInput").value;
   const box = document.getElementById("result");
-  if(!v){ box.innerHTML=`<div class="empty">시리얼 입력 필요</div>`; return; }
+  if(!v){
+    box.innerHTML=`<div class="empty">시리얼 입력 필요 (Please enter a serial number)</div>`;
+    return;
+  }
   const hit = findSerial(v);
   box.innerHTML = render(hit);
 }
@@ -164,7 +158,6 @@ function resetForm(){
   document.getElementById("result").innerHTML="";
 }
 
-/* ===== 초기 ===== */
 window.addEventListener("load", async ()=>{
   await loadDB();
   const p = new URLSearchParams(location.search);
@@ -176,4 +169,3 @@ window.addEventListener("load", async ()=>{
 </script>
 </body>
 </html>
-
