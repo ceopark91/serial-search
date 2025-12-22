@@ -147,7 +147,7 @@ footer{margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
 </header>
 
 <section class="search-box">
-  <input id="serialInput" placeholder="예: DM202510117">
+  <input id="serialInput" type="text" placeholder="예: DM202510117">
   <button class="btn-search" onclick="search()">검색 (Search)</button>
   <button class="btn-reset" onclick="resetForm()">초기화 (Reset)</button>
 </section>
@@ -292,9 +292,9 @@ window.addEventListener("load", ()=>{
     search();
   }
   
-  // 엔터 키로 검색
   document.getElementById("serialInput").addEventListener("keydown", function(e) {
     if (e.key === "Enter") {
+      e.preventDefault();
       search();
     }
   });
@@ -302,3 +302,4 @@ window.addEventListener("load", ()=>{
 </script>
 </body>
 </html>
+
