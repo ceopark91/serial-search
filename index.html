@@ -98,26 +98,11 @@ header p{margin:8px 0 0; color:var(--muted); font-size:14px}
 .cert-btn:hover{background:#60d5ff; transform:translateY(-2px)}
 .cert-text{color:var(--muted); font-size:13px}
 
-/* 빈 결과 / 로딩 */
+/* 빈 결과 */
 .empty{
   padding:40px 20px; text-align:center;
   border:2px dashed var(--line); border-radius:12px;
   color:var(--danger); font-size:15px;
-}
-
-/* 로딩 스피너 */
-.spinner{
-  display:inline-block;
-  width:16px; height:16px;
-  border:2px solid rgba(154,167,194,0.6);
-  border-top-color:var(--accent);
-  border-radius:50%;
-  margin-left:8px;
-  animation:spin 0.8s linear infinite;
-}
-@keyframes spin{
-  0%{transform:rotate(0deg)}
-  100%{transform:rotate(360deg)}
 }
 
 /* 푸터 */
@@ -135,9 +120,13 @@ footer{margin-top:48px; padding-top:24px; border-top:1px solid var(--line);
     flex-direction:column; padding:16px;
   }
   .search-box input, .search-box button{width:100%}
+  
+  /* 모바일: 1열 레이아웃 */
   .result-grid{
     grid-template-columns:1fr; gap:16px;
   }
+  
+  /* 모바일: 정보도 1열 */
   .info-grid{
     grid-template-columns:1fr; gap:10px;
   }
@@ -175,7 +164,6 @@ const GRADE_SHEET = "성적서";
 const COL = {company:3, wp:5, delivery:7, model:9, project:11, serial:17};
 const K_INDEX = 10;
 
-// 시리얼 정규화
 function buildKey(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
@@ -186,29 +174,6 @@ function buildKey(raw){
     out += ch;
   }
   return out;
-}
-
-// 줄바꿈 → <br>
-function nl2br(text){
-  if(!text) return "";
-  return text.toString().replace(/(\r\n|\r|\n)/g, "<br>");
-}
-
-// 수량: 줄바꿈 유지 + 각 숫자 뒤에 'ea'
-function formatQtyWithEa(raw){
-  if(raw === undefined || raw === null) return "-";
-  const text = raw.toString().trim();
-  if(!text) return "-";
-  // 줄 단위로 나눠서 각 줄 뒤에 ea 부착
-  const lines = text.split(/(\r\n|\r|\n)/); // 구분자도 살리기 위해 캡쳐
-  const result = lines.map(part => {
-    // 줄바꿈 문자면 그대로 반환
-    if (/^\r\n$|^\r$|^\n$/.test(part)) return "<br>";
-    const trimmed = part.trim();
-    if(!trimmed) return "";
-    return trimmed + "ea";
-  }).join("");
-  return result || "-";
 }
 
 async function loadGradeMap(){
@@ -233,93 +198,85 @@ async function loadGradeMap(){
 async function search(){
   const input = document.getElementById("serialInput").value;
   const box = document.getElementById("result");
-  box.innerHTML = '<div class="empty" style="color:var(--muted);border-style:solid">검색 중입니다...<span class="spinner"></span></div>';
+  box.innerHTML = '<div class="empty">검색 중입니다... <span class="spinner"></span></div>';
   const key = buildKey(input);
   if(!key){
     box.innerHTML = `<div class="empty">시리얼 입력 필요 <span class="eng">(Please enter serial number)</span></div>`;
     return;
   }
-
-  try{
-    const gradeMap = await loadGradeMap();
-    let hits = [];
-    for(const sheet of SHEETS){
-      const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
-      const txt = await fetch(url).then(r=>r.text());
-      const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
-      const rows = json.table.rows || [];
-      rows.forEach(r=>{
-        const row = r.c.map(c=>c?c.v:"");
-        const serials = (row[COL.serial]||"").toString().split(",").map(s=>buildKey(s));
-        serials.forEach(s=>{
-          if(s === key){
-            hits.push({sheet,row,matchedSerial:s});
-          }
-        });
+  const gradeMap = await loadGradeMap();
+  let hits = [];
+  for(const sheet of SHEETS){
+    const url = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?sheet=${encodeURIComponent(sheet)}&tqx=out:json`;
+    const txt = await fetch(url).then(r=>r.text());
+    const json = JSON.parse(txt.substring(txt.indexOf("{"), txt.lastIndexOf("}")+1));
+    const rows = json.table.rows || [];
+    rows.forEach(r=>{
+      const row = r.c.map(c=>c?c.v:"");
+      const serials = (row[COL.serial]||"").toString().split(",").map(s=>buildKey(s));
+      serials.forEach(s=>{
+        if(s === key){
+          hits.push({sheet,row,matchedSerial:s});
+        }
       });
-    }
-
-    if(!hits.length){
-      box.innerHTML = `<div class="empty">검색 결과 없음 <span class="eng">(No results found)</span></div>`;
-      return;
-    }
-    
-    let html = '<div class="result-grid">';
-    hits.forEach(hit=>{
-      const gUrl = (gradeMap.get(hit.matchedSerial)||"").toString().trim();
-      const isFolder = gUrl.includes("/drive/folders/");
-      const sheetTag = hit.sheet === "구형" ? "구형 (Old)" : "신형 (New)";
-      
-      html += `
-      <div class="card">
-        <div class="card-header">
-          <div class="card-title">🔎 검색 결과 <span class="eng">(Result)</span></div>
-          <span class="tag">${sheetTag}</span>
-        </div>
-        <div class="info-grid">
-          <div class="info-item">
-            <div class="info-label">업체명 (Company)</div>
-            <div class="info-value">${nl2br(hit.row[COL.company]||"-")}</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">모델명 (Model)</div>
-            <div class="info-value">${nl2br(hit.row[COL.model]||"-")}</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">납품일 (Delivery)</div>
-            <div class="info-value">${hit.row[COL.delivery]||"-"}</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">W/P 납품일 (WP Date)</div>
-            <div class="info-value">${hit.row[COL.wp]||"-"}</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">수량 (Qty)</div>
-            <div class="info-value">${formatQtyWithEa(hit.row[K_INDEX])}</div>
-          </div>
-          <div class="info-item">
-            <div class="info-label">프로젝트 (Project)</div>
-            <div class="info-value">${nl2br(hit.row[COL.project]||"-")}</div>
-          </div>
-        </div>
-        <div class="cert-section">
-          <div class="cert-label">성적서 (Certificate)</div>
-          ${
-            gUrl 
-              ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer" class="cert-btn">
-                   📥 ${isFolder ? '폴더 열기 (Open Folder)' : '다운로드 (Download)'}
-                 </a>`
-              : `<span class="cert-text">미등록 (Not Registered)</span>`
-          }
-        </div>
-      </div>`;
     });
-    html += '</div>';
-    box.innerHTML = html;
-  }catch(e){
-    console.error(e);
-    box.innerHTML = `<div class="empty">검색 중 오류가 발생했습니다 <span class="eng">(Error)</span></div>`;
   }
+  if(!hits.length){
+    box.innerHTML = `<div class="empty">검색 결과 없음 <span class="eng">(No results found)</span></div>`;
+    return;
+  }
+  
+  let html = '<div class="result-grid">';
+  hits.forEach(hit=>{
+    const gUrl = (gradeMap.get(hit.matchedSerial)||"").toString().trim();
+    const isFolder = gUrl.includes("/drive/folders/");
+    const sheetTag = hit.sheet === "구형" ? "구형 (Old)" : "신형 (New)";
+    
+    html += `
+    <div class="card">
+      <div class="card-header">
+        <div class="card-title">🔎 검색 결과 <span class="eng">(Result)</span></div>
+        <span class="tag">${sheetTag}</span>
+      </div>
+      <div class="info-grid">
+        <div class="info-item">
+          <div class="info-label">업체명 (Company)</div>
+          <div class="info-value">${hit.row[COL.company]||"-"}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">모델명 (Model)</div>
+          <div class="info-value">${hit.row[COL.model]||"-"}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">납품일 (Delivery)</div>
+          <div class="info-value">${hit.row[COL.delivery]||"-"}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">W/P 납품일 (WP Date)</div>
+          <div class="info-value">${hit.row[COL.wp]||"-"}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">수량 (Qty)</div>
+          <div class="info-value">${hit.row[K_INDEX]||"-"}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">프로젝트 (Project)</div>
+          <div class="info-value">${hit.row[COL.project]||"-"}</div>
+        </div>
+      </div>
+      <div class="cert-section">
+        <div class="cert-label">성적서 (Certificate)</div>
+        ${gUrl 
+          ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer" class="cert-btn">
+               📥 ${isFolder ? '폴더 열기 (Open Folder)' : '다운로드 (Download)'}
+             </a>`
+          : `<span class="cert-text">미등록 (Not Registered)</span>`
+        }
+      </div>
+    </div>`;
+  });
+  html += '</div>';
+  box.innerHTML = html;
 }
 
 function resetForm(){
@@ -334,10 +291,9 @@ window.addEventListener("load", ()=>{
     document.getElementById("serialInput").value = serial;
     search();
   }
-
-  const input = document.getElementById("serialInput");
-  input.addEventListener("keydown", function(e){
-    if(e.key === "Enter"){
+  
+  document.getElementById("serialInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
       e.preventDefault();
       search();
     }
