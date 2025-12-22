@@ -198,7 +198,8 @@ async function loadGradeMap(){
 async function search(){
   const input = document.getElementById("serialInput").value;
   const box = document.getElementById("result");
-  box.innerHTML = "";
+  // 검색 중임을 표시
+  box.innerHTML = '<div class="empty">검색 중입니다... <span class="spinner"></span></div>';
   const key = buildKey(input);
   if(!key){
     box.innerHTML = `<div class="empty">시리얼 입력 필요 <span class="eng">(Please enter serial number)</span></div>`;
@@ -266,12 +267,11 @@ async function search(){
       </div>
       <div class="cert-section">
         <div class="cert-label">성적서 (Certificate)</div>
-        ${
-          gUrl 
-            ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer" class="cert-btn">
-                 📥 ${isFolder ? '폴더 열기 (Open Folder)' : '다운로드 (Download)'}
-               </a>`
-            : `<span class="cert-text">미등록 (Not Registered)</span>`
+        ${gUrl 
+          ? `<a href="${encodeURI(gUrl)}" target="_blank" rel="noopener noreferrer" class="cert-btn">
+               📥 ${isFolder ? '폴더 열기 (Open Folder)' : '다운로드 (Download)'}
+             </a>`
+          : `<span class="cert-text">미등록 (Not Registered)</span>`
         }
       </div>
     </div>`;
@@ -296,5 +296,3 @@ window.addEventListener("load", ()=>{
 </script>
 </body>
 </html>
-
-
