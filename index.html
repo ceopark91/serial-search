@@ -198,7 +198,6 @@ async function loadGradeMap(){
 async function search(){
   const input = document.getElementById("serialInput").value;
   const box = document.getElementById("result");
-  // 검색 중임을 표시
   box.innerHTML = '<div class="empty">검색 중입니다... <span class="spinner"></span></div>';
   const key = buildKey(input);
   if(!key){
@@ -292,6 +291,13 @@ window.addEventListener("load", ()=>{
     document.getElementById("serialInput").value = serial;
     search();
   }
+  
+  // 엔터 키로 검색
+  document.getElementById("serialInput").addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+      search();
+    }
+  });
 });
 </script>
 </body>
