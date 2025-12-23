@@ -3,147 +3,341 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>시리얼 넘버 검색기 | Serial Number Search</title>
+<title>Serial Number Lookup | 시리얼 넘버 조회</title>
 
 <style>
 :root{
   --bg:#0b1020; --card:#111a33; --line:#23305a;
-  --text:#eaf0ff; --muted:#9aa7c2; --accent:#38bdf8; --danger:#fb7185;
+  --text:#eaf0ff; --muted:#9aa7c2; --accent:#38bdf8; 
+  --accent-hover:#0ea5e9; --danger:#fb7185; --success:#34d399;
 }
-*{box-sizing:border-box}
+*{box-sizing:border-box; margin:0; padding:0}
 body{
-  margin:0;
   background:linear-gradient(180deg,#0b1020,#05070d);
-  font-family:Pretendard,"Noto Sans KR",system-ui;
-  color:var(--text)
+  font-family:Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,system-ui;
+  color:var(--text);
+  min-height:100vh;
 }
-.wrapper{max-width:1200px; margin:auto; padding:32px 16px 80px}
+.wrapper{max-width:900px; margin:auto; padding:40px 20px 80px}
 
-header{margin-bottom:32px; border-bottom:1px solid var(--line); padding-bottom:24px}
-header h1{margin:0; font-size:28px}
-header p{margin:8px 0 0; color:var(--muted); font-size:14px}
+/* ===== HEADER ===== */
+header{
+  text-align:center; 
+  margin-bottom:48px;
+  padding-bottom:32px;
+  border-bottom:2px solid var(--line);
+  position:relative;
+}
+header::after{
+  content:'';
+  position:absolute;
+  bottom:-2px;
+  left:50%;
+  transform:translateX(-50%);
+  width:80px;
+  height:2px;
+  background:linear-gradient(90deg,transparent,var(--accent),transparent);
+}
+header h1{
+  font-size:clamp(24px,5vw,32px);
+  font-weight:700;
+  margin-bottom:12px;
+  background:linear-gradient(135deg,var(--accent),#60a5fa);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  line-height:1.3;
+}
+header p{
+  color:var(--muted); 
+  font-size:clamp(13px,3vw,15px);
+  line-height:1.5;
+}
 
+/* ===== STATUS BADGE ===== */
+.status-badge{
+  display:inline-block;
+  background:rgba(56,189,248,0.1);
+  color:var(--accent);
+  padding:6px 14px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+  margin-top:12px;
+  border:1px solid rgba(56,189,248,0.3);
+}
+
+/* ===== SEARCH BOX ===== */
 .search-box{
   background:var(--card);
   border:1px solid var(--line);
   border-radius:16px;
-  padding:24px;
-  margin-bottom:32px;
-  display:flex;
-  gap:12px;
+  padding:clamp(20px,4vw,32px);
+  margin-bottom:40px;
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
 }
-
-.search-box input{
-  flex:1;
-  padding:12px 16px;
-  border-radius:10px;
-  border:1px solid var(--line);
+.input-wrapper{
+  position:relative;
+  margin-bottom:16px;
+}
+.input-wrapper::before{
+  content:'🔍';
+  position:absolute;
+  left:16px;
+  top:50%;
+  transform:translateY(-50%);
+  font-size:18px;
+  pointer-events:none;
+  opacity:0.5;
+}
+.input-wrapper input{
+  width:100%;
+  padding:16px 20px 16px 48px;
+  border-radius:12px;
+  border:2px solid var(--line);
   background:#070a14;
   color:var(--text);
+  font-size:clamp(14px,3vw,16px);
+  transition:all 0.3s ease;
 }
-
-.search-box button{
-  padding:12px 20px;
-  border-radius:10px;
-  border:none;
-  font-weight:700;
-  cursor:pointer;
+.input-wrapper input:focus{
+  outline:none;
+  border-color:var(--accent);
+  box-shadow:0 0 0 3px rgba(56,189,248,0.1);
 }
-
-.btn-search{background:var(--accent); color:#000}
-.btn-reset{background:var(--line); color:var(--text)}
-
-.result-grid{
+.input-wrapper input::placeholder{
+  color:var(--muted);
+  opacity:0.6;
+}
+.btn-group{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:20px
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+.btn{
+  padding:14px 24px;
+  border-radius:12px;
+  border:none;
+  font-weight:600;
+  font-size:clamp(14px,3vw,15px);
+  cursor:pointer;
+  transition:all 0.3s ease;
+  position:relative;
+  overflow:hidden;
+  white-space:nowrap;
+}
+.btn::before{
+  content:'';
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:0;
+  height:0;
+  border-radius:50%;
+  background:rgba(255,255,255,0.2);
+  transform:translate(-50%,-50%);
+  transition:width 0.6s, height 0.6s;
+}
+.btn:active::before{
+  width:300px;
+  height:300px;
+}
+.btn-search{
+  background:var(--accent); 
+  color:#000;
+}
+.btn-search:hover:not(:disabled){
+  background:var(--accent-hover);
+  transform:translateY(-2px);
+  box-shadow:0 8px 16px rgba(56,189,248,0.3);
+}
+.btn-search:disabled{
+  opacity:0.5;
+  cursor:not-allowed;
+}
+.btn-reset{
+  background:var(--line); 
+  color:var(--text);
+}
+.btn-reset:hover{
+  background:#2d3e6d;
+  transform:translateY(-2px);
+}
+.btn:active{transform:translateY(0)}
+
+/* ===== LOADING ===== */
+.loading{
+  text-align:center;
+  padding:60px 20px;
+  color:var(--muted);
+}
+.spinner{
+  width:40px;
+  height:40px;
+  margin:0 auto 16px;
+  border:3px solid var(--line);
+  border-top-color:var(--accent);
+  border-radius:50%;
+  animation:spin 0.8s linear infinite;
+}
+@keyframes spin{
+  to{transform:rotate(360deg)}
 }
 
-.card{
+/* ===== RESULT CARD ===== */
+.result-card{
   background:var(--card);
   border:1px solid var(--line);
-  border-radius:14px;
-  padding:20px
+  border-radius:16px;
+  padding:clamp(24px,4vw,32px);
+  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  animation:fadeIn 0.4s ease;
+}
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(20px)}
+  to{opacity:1; transform:translateY(0)}
 }
 
-.card-header{
-  border-bottom:1px solid var(--line);
-  padding-bottom:12px;
-  margin-bottom:12px
+.card-title{
+  font-size:clamp(18px,4vw,20px);
+  font-weight:700;
+  color:var(--success);
+  margin-bottom:24px;
+  padding-bottom:16px;
+  border-bottom:2px solid var(--line);
+  display:flex;
+  align-items:center;
+  gap:8px;
 }
-
-.card-title{color:var(--accent); font-weight:600}
 
 .info-grid{
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:12px
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
+  gap:16px;
+  margin-bottom:24px;
 }
-
 .info-item{
   background:#070a14;
   border:1px solid var(--line);
-  border-radius:10px;
-  padding:10px
-}
-
-.info-label{font-size:12px; color:var(--muted)}
-.info-value{font-size:14px; white-space:normal; line-height:1.4}
-
-.cert-section{
-  margin-top:12px;
-  padding-top:12px;
-  border-top:1px solid var(--line)
-}
-
-.cert-btn{
-  display:inline-block;
-  padding:10px 16px;
-  background:var(--accent);
-  color:#000;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
-}
-
-.empty{
-  padding:40px;
-  border:2px dashed var(--line);
   border-radius:12px;
-  text-align:center;
-  color:var(--danger)
+  padding:16px;
+  transition:all 0.3s ease;
+  min-width:0;
+}
+.info-item:hover{
+  border-color:var(--accent);
+  transform:translateY(-2px);
+  box-shadow:0 4px 12px rgba(56,189,248,0.2);
+}
+.info-label{
+  font-size:11px; 
+  color:var(--muted);
+  margin-bottom:6px;
+  text-transform:uppercase;
+  letter-spacing:0.5px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.info-value{
+  font-size:clamp(14px,3vw,15px);
+  line-height:1.5;
+  color:var(--text);
+  font-weight:500;
+  word-break:break-word;
 }
 
+/* ===== CERTIFICATE ===== */
+.cert-section{
+  padding-top:24px;
+  border-top:2px solid var(--line);
+}
+.cert-btn{
+  display:block;
+  padding:16px 24px;
+  background:linear-gradient(135deg,var(--accent),#0ea5e9);
+  color:#000;
+  border-radius:12px;
+  text-decoration:none;
+  font-weight:700;
+  font-size:clamp(14px,3vw,16px);
+  text-align:center;
+  transition:all 0.3s ease;
+  box-shadow:0 4px 12px rgba(56,189,248,0.3);
+}
+.cert-btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(56,189,248,0.5);
+}
+.cert-unavailable{
+  text-align:center;
+  padding:16px;
+  color:var(--muted);
+  background:#070a14;
+  border-radius:12px;
+  border:1px dashed var(--line);
+  font-size:clamp(13px,3vw,14px);
+}
+
+/* ===== EMPTY STATE ===== */
+.empty{
+  padding:clamp(40px,8vw,60px) clamp(20px,4vw,32px);
+  border:2px dashed var(--line);
+  border-radius:16px;
+  text-align:center;
+  background:rgba(251,113,133,0.05);
+}
+.empty-icon{
+  font-size:clamp(40px,8vw,48px);
+  margin-bottom:16px;
+  opacity:0.5;
+}
+.empty-text{
+  font-size:clamp(16px,4vw,18px);
+  color:var(--danger);
+  font-weight:600;
+  margin-bottom:8px;
+  line-height:1.4;
+}
+.empty-sub{
+  color:var(--muted);
+  font-size:clamp(13px,3vw,14px);
+  line-height:1.5;
+}
+
+/* ===== FOOTER ===== */
 footer{
-  margin-top:40px;
+  margin-top:60px;
+  padding-top:24px;
   text-align:center;
   color:var(--muted);
-  font-size:12px
+  font-size:clamp(12px,2.5vw,13px);
+  border-top:1px solid var(--line);
+  line-height:1.6;
 }
 
-/* 📱 모바일 최적화 */
+/* ===== MOBILE OPTIMIZATIONS ===== */
 @media(max-width:768px){
-  .search-box{
-    flex-direction:column;
-    padding:16px;
-  }
-  .search-box input,
-  .search-box button{
-    width:100%;
-    min-width:0;
-    font-size:15px;
-  }
-  .result-grid{
-    grid-template-columns:1fr;
-    gap:16px;
-  }
-  .info-grid{
-    grid-template-columns:1fr;
-  }
-  .cert-btn{
-    width:100%;
-    text-align:center;
-  }
+  .wrapper{padding:24px 16px 60px}
+  header{margin-bottom:32px; padding-bottom:24px}
+  .search-box{padding:20px; margin-bottom:32px}
+  .btn-group{gap:10px}
+  .btn{padding:12px 20px}
+  .info-grid{gap:12px}
+  .result-card{padding:20px}
+  footer{margin-top:40px}
+}
+
+@media(max-width:480px){
+  .btn-group{grid-template-columns:1fr}
+  .status-badge{font-size:11px; padding:4px 10px}
+}
+
+/* ===== PRINT ===== */
+@media print{
+  .search-box, .btn-group{display:none}
+  body{background:#fff; color:#000}
+  .result-card{border:1px solid #000; box-shadow:none}
 }
 </style>
 </head>
@@ -151,32 +345,42 @@ footer{
 <body>
 <div class="wrapper">
 <header>
-  <h1>🔍 시리얼 넘버 검색기 <span style="opacity:.7;font-size:14px">(Serial Number Search)</span></h1>
-  <p>JSON DB 기반 검색 <span style="opacity:.7">(Search based on JSON database)</span></p>
+  <h1>🔍 Serial Number Lookup</h1>
+  <p>Powered by JSON Database · 시리얼 넘버 조회 시스템</p>
+  <div class="status-badge">✓ System Active</div>
 </header>
 
 <section class="search-box">
-  <input id="serialInput" placeholder="예: DM202510117 (e.g. DM202510117)">
-  <button class="btn-search" onclick="search()">검색 (Search)</button>
-  <button class="btn-reset" onclick="resetForm()">초기화 (Reset)</button>
+  <div class="input-wrapper">
+    <input 
+      id="serialInput" 
+      placeholder="Enter serial number (예: DM202510117)"
+      autocomplete="off"
+      maxlength="50"
+    >
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-search" onclick="search()">🔎 Lookup (조회)</button>
+    <button class="btn btn-reset" onclick="resetForm()">↻ Reset (초기화)</button>
+  </div>
 </section>
 
 <section id="result"></section>
 
-<footer>© SEDNAENG · Serial Number Lookup System</footer>
+<footer>
+  © 2025 SEDNAENG · Serial Number Lookup System<br>
+  <small style="opacity:0.7">Made with precision and care</small>
+</footer>
 </div>
 
 <script>
-/* ===== DB URL ===== */
-const SERIAL_DB_URL =
-  "https://ceopark91.github.io/serial-search/serial_db.json";
-const CERT_DB_URL =
-  "https://ceopark91.github.io/serial-search/certificate_db.json";
+const SERIAL_DB_URL = "https://ceopark91.github.io/serial-search/serial_db.json";
+const CERT_DB_URL = "https://ceopark91.github.io/serial-search/certificate_db.json";
 
 let SERIAL_DB = {};
 let CERT_DB = {};
+let isLoading = false;
 
-/* ===== 시리얼 정규화 ===== */
 function normalizeSerial(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
@@ -191,20 +395,25 @@ function normalizeSerial(raw){
 
 const nl = t => (t||"").replace(/\n/g,"<br>");
 
-/* ===== DB 로드 ===== */
 async function loadDB(){
-  [SERIAL_DB, CERT_DB] = await Promise.all([
-    fetch(SERIAL_DB_URL).then(r=>r.json()),
-    fetch(CERT_DB_URL).then(r=>r.json())
-  ]);
+  try{
+    const [sdb, cdb] = await Promise.all([
+      fetch(SERIAL_DB_URL).then(r=>r.ok?r.json():{}),
+      fetch(CERT_DB_URL).then(r=>r.ok?r.json():{})
+    ]);
+    SERIAL_DB = sdb;
+    CERT_DB = cdb;
+    console.log('✓ DB loaded:', {serials: Object.keys(SERIAL_DB).length, certs: Object.keys(CERT_DB).length});
+  }catch(e){
+    console.error('✗ DB load failed:', e);
+  }
 }
 
-/* ===== 검색 ===== */
 function findSerial(input){
   const key = normalizeSerial(input);
   for(const k in SERIAL_DB){
     const row = SERIAL_DB[k];
-    if(row.sn_list.includes(key)){
+    if(row.sn_list && row.sn_list.includes(key)){
       return {
         ...row,
         certificate: CERT_DB[key] || ""
@@ -214,61 +423,111 @@ function findSerial(input){
   return null;
 }
 
-/* ===== 렌더 ===== */
 function render(hit){
-  if(!hit) return `<div class="empty">검색 결과 없음 (No results found)</div>`;
+  if(!hit) return `
+    <div class="empty">
+      <div class="empty-icon">🔍</div>
+      <div class="empty-text">No Results Found</div>
+      <div class="empty-sub">검색 결과가 없습니다. 시리얼 넘버를 다시 확인해주세요.</div>
+    </div>`;
+  
   return `
-  <div class="result-grid">
-    <div class="card">
-      <div class="card-header">
-        <div class="card-title">검색 결과 (Search Result)</div>
+    <div class="result-card">
+      <div class="card-title">
+        ✓ Lookup Result (조회 결과)
       </div>
       <div class="info-grid">
-        <div class="info-item"><div class="info-label">업체명 (Company)</div><div class="info-value">${nl(hit.company)}</div></div>
-        <div class="info-item"><div class="info-label">모델명 (Model)</div><div class="info-value">${nl(hit.model)}</div></div>
-        <div class="info-item"><div class="info-label">납품일 (Delivery Date)</div><div class="info-value">${nl(hit.delivery_date)}</div></div>
-        <div class="info-item"><div class="info-label">W/P 납품일 (W/P Date)</div><div class="info-value">${nl(hit.wp_date)}</div></div>
-        <div class="info-item"><div class="info-label">수량 (Quantity)</div><div class="info-value">${nl(hit.qty)}</div></div>
-        <div class="info-item"><div class="info-label">프로젝트 (Project)</div><div class="info-value">${nl(hit.project)}</div></div>
+        <div class="info-item">
+          <div class="info-label">Company (업체명)</div>
+          <div class="info-value">${nl(hit.company)||'-'}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Model (모델명)</div>
+          <div class="info-value">${nl(hit.model)||'-'}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Delivery Date (납품일)</div>
+          <div class="info-value">${nl(hit.delivery_date)||'-'}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">W/P Date (W/P 납품일)</div>
+          <div class="info-value">${nl(hit.wp_date)||'-'}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Quantity (수량)</div>
+          <div class="info-value">${nl(hit.qty)||'-'}</div>
+        </div>
+        <div class="info-item">
+          <div class="info-label">Project (프로젝트)</div>
+          <div class="info-value">${nl(hit.project)||'-'}</div>
+        </div>
       </div>
       <div class="cert-section">
         ${hit.certificate
-          ? `<a href="${hit.certificate}" target="_blank" class="cert-btn">📥 성적서 다운로드 (Download Certificate)</a>`
-          : `<span class="info-label">성적서 미등록 (Not Registered)</span>`
+          ? `<a href="${hit.certificate}" target="_blank" rel="noopener" class="cert-btn">📥 Download Certificate (성적서 다운로드)</a>`
+          : `<div class="cert-unavailable">📄 Certificate Not Available (성적서 미등록)</div>`
         }
       </div>
-    </div>
-  </div>`;
+    </div>`;
 }
 
-/* ===== 버튼 ===== */
 async function search(){
-  const v = document.getElementById("serialInput").value;
+  if(isLoading) return;
+  
+  const input = document.getElementById("serialInput");
+  const v = input.value.trim();
   const box = document.getElementById("result");
+  
   if(!v){
-    box.innerHTML=`<div class="empty">시리얼 입력 필요 (Please enter a serial number)</div>`;
+    box.innerHTML=`
+      <div class="empty">
+        <div class="empty-icon">⚠️</div>
+        <div class="empty-text">Input Required</div>
+        <div class="empty-sub">시리얼 넘버를 입력해주세요.</div>
+      </div>`;
+    input.focus();
     return;
   }
+  
+  isLoading = true;
+  const searchBtn = document.querySelector('.btn-search');
+  searchBtn.disabled = true;
+  searchBtn.textContent = '⏳ Searching...';
+  
+  box.innerHTML = `
+    <div class="loading">
+      <div class="spinner"></div>
+      <div>Searching database...</div>
+    </div>`;
+  
+  await new Promise(r=>setTimeout(r,400));
+  
   const hit = findSerial(v);
   box.innerHTML = render(hit);
+  
+  searchBtn.disabled = false;
+  searchBtn.textContent = '🔎 Lookup (조회)';
+  isLoading = false;
 }
 
 function resetForm(){
   document.getElementById("serialInput").value="";
   document.getElementById("result").innerHTML="";
+  document.getElementById("serialInput").focus();
 }
 
-/* ===== 초기 ===== */
+document.getElementById("serialInput").addEventListener("keypress", e=>{
+  if(e.key==="Enter" && !isLoading) search();
+});
+
 window.addEventListener("load", async ()=>{
   await loadDB();
   const p = new URLSearchParams(location.search);
   if(p.get("sn")){
     document.getElementById("serialInput").value = p.get("sn");
-    search();
+    setTimeout(search, 100);
   }
 });
 </script>
 </body>
 </html>
-
-
