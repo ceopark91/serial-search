@@ -3,46 +3,94 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Serial Number Lookup | 시리얼 넘버 조회</title>
+<title>SEDNAENG - Serial Number Lookup</title>
 
 <style>
 :root{
-  --bg:#0b1020; --card:#111a33; --line:#23305a;
-  --text:#eaf0ff; --muted:#9aa7c2; --accent:#38bdf8; 
-  --accent-hover:#0ea5e9; --danger:#fb7185; --success:#34d399;
+  --sedna-blue:#0066cc;
+  --sedna-red:#e63946;
+  --sedna-green:#06d6a0;
+  --sedna-yellow:#ffd60a;
 }
+
+/* ===== LIGHT MODE (기본) ===== */
+body{
+  --bg:#f8f9fa;
+  --card:#ffffff;
+  --border:#e0e4e8;
+  --text:#1a1d23;
+  --muted:#6b7280;
+  --accent:#0066cc;
+  --accent-hover:#0052a3;
+  --input-bg:#f8f9fa;
+  --shadow:rgba(0,102,204,0.08);
+}
+
+/* ===== DARK MODE ===== */
+body.dark-mode{
+  --bg:#0b1020;
+  --card:#111a33;
+  --border:#23305a;
+  --text:#eaf0ff;
+  --muted:#9aa7c2;
+  --accent:#38bdf8;
+  --accent-hover:#0ea5e9;
+  --input-bg:#070a14;
+  --shadow:rgba(0,0,0,0.3);
+}
+
 *{box-sizing:border-box; margin:0; padding:0}
 body{
-  background:linear-gradient(180deg,#0b1020,#05070d);
-  font-family:Pretendard,"Noto Sans KR",-apple-system,BlinkMacSystemFont,system-ui;
+  background:var(--bg);
+  font-family:Pretendard,"Noto Sans KR",-apple-system,system-ui;
   color:var(--text);
   min-height:100vh;
+  transition:background 0.3s ease, color 0.3s ease;
 }
-.wrapper{max-width:900px; margin:auto; padding:40px 20px 80px}
+.wrapper{max-width:900px; margin:auto; padding:40px 20px 80px; position:relative}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle{
+  position:fixed;
+  top:20px;
+  right:20px;
+  background:var(--card);
+  border:2px solid var(--border);
+  border-radius:30px;
+  padding:8px 16px;
+  cursor:pointer;
+  font-size:20px;
+  box-shadow:0 4px 12px var(--shadow);
+  transition:all 0.3s ease;
+  z-index:100;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.theme-toggle:hover{
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px var(--shadow);
+}
+.theme-text{
+  font-size:12px;
+  font-weight:600;
+  color:var(--text);
+}
 
 /* ===== HEADER ===== */
 header{
   text-align:center; 
   margin-bottom:48px;
   padding-bottom:32px;
-  border-bottom:2px solid var(--line);
+  border-bottom:3px solid transparent;
+  border-image:linear-gradient(90deg,var(--sedna-blue),var(--sedna-green),var(--sedna-red),var(--sedna-yellow)) 1;
   position:relative;
-}
-header::after{
-  content:'';
-  position:absolute;
-  bottom:-2px;
-  left:50%;
-  transform:translateX(-50%);
-  width:80px;
-  height:2px;
-  background:linear-gradient(90deg,transparent,var(--accent),transparent);
 }
 header h1{
   font-size:clamp(24px,5vw,32px);
   font-weight:700;
   margin-bottom:12px;
-  background:linear-gradient(135deg,var(--accent),#60a5fa);
+  background:linear-gradient(135deg,var(--accent),var(--sedna-green));
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
   background-clip:text;
@@ -53,28 +101,40 @@ header p{
   font-size:clamp(13px,3vw,15px);
   line-height:1.5;
 }
-
-/* ===== STATUS BADGE ===== */
 .status-badge{
-  display:inline-block;
-  background:rgba(56,189,248,0.1);
-  color:var(--accent);
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  background:rgba(6,214,160,0.15);
+  color:var(--sedna-green);
   padding:6px 14px;
   border-radius:20px;
   font-size:12px;
   font-weight:600;
   margin-top:12px;
-  border:1px solid rgba(56,189,248,0.3);
+  border:1px solid rgba(6,214,160,0.3);
+}
+.status-dot{
+  width:6px;
+  height:6px;
+  background:var(--sedna-green);
+  border-radius:50%;
+  animation:pulse 2s infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1}
+  50%{opacity:0.4}
 }
 
 /* ===== SEARCH BOX ===== */
 .search-box{
   background:var(--card);
-  border:1px solid var(--line);
+  border:2px solid var(--border);
   border-radius:16px;
   padding:clamp(20px,4vw,32px);
   margin-bottom:40px;
-  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  box-shadow:0 8px 32px var(--shadow);
+  transition:all 0.3s ease;
 }
 .input-wrapper{
   position:relative;
@@ -94,8 +154,8 @@ header p{
   width:100%;
   padding:16px 20px 16px 48px;
   border-radius:12px;
-  border:2px solid var(--line);
-  background:#070a14;
+  border:2px solid var(--border);
+  background:var(--input-bg);
   color:var(--text);
   font-size:clamp(14px,3vw,16px);
   transition:all 0.3s ease;
@@ -122,32 +182,14 @@ header p{
   font-size:clamp(14px,3vw,15px);
   cursor:pointer;
   transition:all 0.3s ease;
-  position:relative;
-  overflow:hidden;
   white-space:nowrap;
 }
-.btn::before{
-  content:'';
-  position:absolute;
-  top:50%;
-  left:50%;
-  width:0;
-  height:0;
-  border-radius:50%;
-  background:rgba(255,255,255,0.2);
-  transform:translate(-50%,-50%);
-  transition:width 0.6s, height 0.6s;
-}
-.btn:active::before{
-  width:300px;
-  height:300px;
-}
 .btn-search{
-  background:var(--accent); 
-  color:#000;
+  background:linear-gradient(135deg,var(--accent),var(--accent-hover));
+  color:#fff;
+  box-shadow:0 4px 12px rgba(56,189,248,0.3);
 }
 .btn-search:hover:not(:disabled){
-  background:var(--accent-hover);
   transform:translateY(-2px);
   box-shadow:0 8px 16px rgba(56,189,248,0.3);
 }
@@ -156,11 +198,11 @@ header p{
   cursor:not-allowed;
 }
 .btn-reset{
-  background:var(--line); 
+  background:var(--border); 
   color:var(--text);
 }
 .btn-reset:hover{
-  background:#2d3e6d;
+  opacity:0.8;
   transform:translateY(-2px);
 }
 .btn:active{transform:translateY(0)}
@@ -175,7 +217,7 @@ header p{
   width:40px;
   height:40px;
   margin:0 auto 16px;
-  border:3px solid var(--line);
+  border:3px solid var(--border);
   border-top-color:var(--accent);
   border-radius:50%;
   animation:spin 0.8s linear infinite;
@@ -187,76 +229,143 @@ header p{
 /* ===== RESULT CARD ===== */
 .result-card{
   background:var(--card);
-  border:1px solid var(--line);
+  border:2px solid var(--border);
   border-radius:16px;
   padding:clamp(24px,4vw,32px);
-  box-shadow:0 8px 32px rgba(0,0,0,0.3);
+  box-shadow:0 8px 32px var(--shadow);
   animation:fadeIn 0.4s ease;
+  transition:all 0.3s ease;
 }
 @keyframes fadeIn{
   from{opacity:0; transform:translateY(20px)}
   to{opacity:1; transform:translateY(0)}
 }
 
+.card-header{
+  margin-bottom:20px;
+  padding-bottom:16px;
+  border-bottom:2px solid var(--border);
+}
 .card-title{
   font-size:clamp(18px,4vw,20px);
   font-weight:700;
-  color:var(--success);
-  margin-bottom:24px;
-  padding-bottom:16px;
-  border-bottom:2px solid var(--line);
-  display:flex;
-  align-items:center;
-  gap:8px;
+  color:var(--sedna-green);
+  margin-bottom:8px;
+}
+.copy-notice{
+  font-size:12px;
+  color:var(--muted);
+  opacity:0.8;
 }
 
-.info-grid{
+/* ===== PRIMARY INFO ===== */
+.primary-info{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
-  gap:16px;
-  margin-bottom:24px;
+  gap:14px;
+  margin-bottom:20px;
+  padding-bottom:20px;
+  border-bottom:1px solid var(--border);
 }
-.info-item{
-  background:#070a14;
-  border:1px solid var(--line);
+.primary-item{
+  background:linear-gradient(135deg,rgba(56,189,248,0.12),rgba(6,214,160,0.08));
+  border:2px solid rgba(56,189,248,0.25);
   border-radius:12px;
   padding:16px;
   transition:all 0.3s ease;
+  cursor:pointer;
+  position:relative;
   min-width:0;
 }
-.info-item:hover{
+.primary-item:hover{
   border-color:var(--accent);
+  transform:translateY(-3px);
+  box-shadow:0 8px 20px rgba(56,189,248,0.25);
+}
+.primary-item:active{
+  transform:scale(0.97);
+}
+
+/* ===== SECONDARY INFO ===== */
+.secondary-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));
+  gap:14px;
+  margin-bottom:24px;
+}
+.secondary-item{
+  background:var(--input-bg);
+  border:2px solid var(--border);
+  border-radius:12px;
+  padding:14px;
+  transition:all 0.3s ease;
+  cursor:pointer;
+  position:relative;
+  min-width:0;
+}
+.secondary-item:hover{
+  border-color:rgba(56,189,248,0.4);
   transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(56,189,248,0.2);
 }
+.secondary-item:active{
+  transform:scale(0.97);
+}
+
 .info-label{
   font-size:11px; 
   color:var(--muted);
   margin-bottom:6px;
   text-transform:uppercase;
   letter-spacing:0.5px;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
+  font-weight:500;
 }
 .info-value{
   font-size:clamp(14px,3vw,15px);
-  line-height:1.5;
+  line-height:1.6;
   color:var(--text);
   font-weight:500;
   word-break:break-word;
+}
+.primary-item .info-value{
+  font-size:clamp(15px,3.5vw,17px);
+  font-weight:600;
+}
+
+/* 복사 피드백 */
+.copy-feedback{
+  position:absolute;
+  top:-36px;
+  left:50%;
+  transform:translateX(-50%);
+  background:var(--sedna-green);
+  color:#fff;
+  padding:6px 14px;
+  border-radius:8px;
+  font-size:12px;
+  font-weight:600;
+  white-space:nowrap;
+  pointer-events:none;
+  opacity:0;
+  animation:copyPop 1.5s ease;
+  box-shadow:0 4px 12px rgba(6,214,160,0.4);
+  z-index:10;
+}
+@keyframes copyPop{
+  0%,100%{opacity:0; transform:translateX(-50%) translateY(8px)}
+  15%,85%{opacity:1; transform:translateX(-50%) translateY(0)}
 }
 
 /* ===== CERTIFICATE ===== */
 .cert-section{
   padding-top:24px;
-  border-top:2px solid var(--line);
+  border-top:2px solid var(--border);
 }
 .cert-btn{
   display:block;
   padding:16px 24px;
-  background:linear-gradient(135deg,var(--accent),#0ea5e9);
-  color:#000;
+  background:linear-gradient(135deg,var(--accent),var(--accent-hover));
+  color:#fff;
   border-radius:12px;
   text-decoration:none;
   font-weight:700;
@@ -273,19 +382,19 @@ header p{
   text-align:center;
   padding:16px;
   color:var(--muted);
-  background:#070a14;
+  background:var(--input-bg);
   border-radius:12px;
-  border:1px dashed var(--line);
+  border:2px dashed var(--border);
   font-size:clamp(13px,3vw,14px);
 }
 
 /* ===== EMPTY STATE ===== */
 .empty{
   padding:clamp(40px,8vw,60px) clamp(20px,4vw,32px);
-  border:2px dashed var(--line);
+  border:2px dashed var(--border);
   border-radius:16px;
   text-align:center;
-  background:rgba(251,113,133,0.05);
+  background:rgba(230,57,70,0.05);
 }
 .empty-icon{
   font-size:clamp(40px,8vw,48px);
@@ -294,7 +403,7 @@ header p{
 }
 .empty-text{
   font-size:clamp(16px,4vw,18px);
-  color:var(--danger);
+  color:var(--sedna-red);
   font-weight:600;
   margin-bottom:8px;
   line-height:1.4;
@@ -312,42 +421,46 @@ footer{
   text-align:center;
   color:var(--muted);
   font-size:clamp(12px,2.5vw,13px);
-  border-top:1px solid var(--line);
+  border-top:2px solid var(--border);
   line-height:1.6;
 }
 
-/* ===== MOBILE OPTIMIZATIONS ===== */
+/* ===== MOBILE ===== */
 @media(max-width:768px){
   .wrapper{padding:24px 16px 60px}
   header{margin-bottom:32px; padding-bottom:24px}
   .search-box{padding:20px; margin-bottom:32px}
   .btn-group{gap:10px}
   .btn{padding:12px 20px}
-  .info-grid{gap:12px}
+  .secondary-info{gap:12px}
   .result-card{padding:20px}
   footer{margin-top:40px}
+  .theme-toggle{top:16px; right:16px; padding:6px 12px}
+  .theme-text{display:none}
 }
 
 @media(max-width:480px){
   .btn-group{grid-template-columns:1fr}
   .status-badge{font-size:11px; padding:4px 10px}
 }
-
-/* ===== PRINT ===== */
-@media print{
-  .search-box, .btn-group{display:none}
-  body{background:#fff; color:#000}
-  .result-card{border:1px solid #000; box-shadow:none}
-}
 </style>
 </head>
 
 <body>
 <div class="wrapper">
+
+<button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme">
+  <span id="themeIcon">🌙</span>
+  <span class="theme-text" id="themeText">Dark</span>
+</button>
+
 <header>
   <h1>🔍 Serial Number Lookup</h1>
   <p>Powered by SEDNA Database · 시리얼 넘버 조회 시스템</p>
-  <div class="status-badge">✓ System Active</div>
+  <div class="status-badge">
+    <span class="status-dot"></span>
+    System Active
+  </div>
 </header>
 
 <section class="search-box">
@@ -369,7 +482,7 @@ footer{
 
 <footer>
   © 2025 SEDNAENG Co., Ltd. · All Rights Reserved<br>
-  <small style="opacity:0.7">Serial Number Lookup</small>
+  <small style="opacity:0.7">Serial Number Lookup System</small>
 </footer>
 </div>
 
@@ -380,6 +493,35 @@ const CERT_DB_URL = "https://ceopark91.github.io/serial-search/certificate_db.js
 let SERIAL_DB = {};
 let CERT_DB = {};
 let isLoading = false;
+
+// ===== THEME TOGGLE =====
+function toggleTheme(){
+  const body = document.body;
+  const icon = document.getElementById('themeIcon');
+  const text = document.getElementById('themeText');
+  
+  body.classList.toggle('dark-mode');
+  
+  if(body.classList.contains('dark-mode')){
+    icon.textContent = '☀️';
+    text.textContent = 'Light';
+    localStorage.setItem('theme', 'dark');
+  }else{
+    icon.textContent = '🌙';
+    text.textContent = 'Dark';
+    localStorage.setItem('theme', 'light');
+  }
+}
+
+// 페이지 로드 시 저장된 테마 적용
+function loadTheme(){
+  const savedTheme = localStorage.getItem('theme');
+  if(savedTheme === 'dark'){
+    document.body.classList.add('dark-mode');
+    document.getElementById('themeIcon').textContent = '☀️';
+    document.getElementById('themeText').textContent = 'Light';
+  }
+}
 
 function normalizeSerial(raw){
   if(!raw) return "";
@@ -423,6 +565,19 @@ function findSerial(input){
   return null;
 }
 
+function copyToClipboard(text, el){
+  const cleanText = text.replace(/<br>/g, '\n');
+  navigator.clipboard.writeText(cleanText).then(()=>{
+    const feedback = document.createElement('div');
+    feedback.className = 'copy-feedback';
+    feedback.textContent = '✓ Copied!';
+    el.appendChild(feedback);
+    setTimeout(()=>feedback.remove(), 1500);
+  }).catch(()=>{
+    alert('복사 실패 / Copy failed');
+  });
+}
+
 function render(hit){
   if(!hit) return `
     <div class="empty">
@@ -433,35 +588,41 @@ function render(hit){
   
   return `
     <div class="result-card">
-      <div class="card-title">
-        ✓ Lookup Result (조회 결과)
+      <div class="card-header">
+        <div class="card-title">✓ Lookup Result (조회 결과)</div>
+        <div class="copy-notice">💡 Click any field to copy to clipboard</div>
       </div>
-      <div class="info-grid">
-        <div class="info-item">
+      
+      <div class="primary-info">
+        <div class="primary-item" onclick="copyToClipboard('${(hit.company||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">Company (업체명)</div>
           <div class="info-value">${nl(hit.company)||'-'}</div>
         </div>
-        <div class="info-item">
+        <div class="primary-item" onclick="copyToClipboard('${(hit.model||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">Model (모델명)</div>
           <div class="info-value">${nl(hit.model)||'-'}</div>
         </div>
-        <div class="info-item">
+      </div>
+      
+      <div class="secondary-info">
+        <div class="secondary-item" onclick="copyToClipboard('${(hit.delivery_date||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">Delivery Date (납품일)</div>
           <div class="info-value">${nl(hit.delivery_date)||'-'}</div>
         </div>
-        <div class="info-item">
+        <div class="secondary-item" onclick="copyToClipboard('${(hit.wp_date||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">W/P Date (W/P 납품일)</div>
           <div class="info-value">${nl(hit.wp_date)||'-'}</div>
         </div>
-        <div class="info-item">
+        <div class="secondary-item" onclick="copyToClipboard('${(hit.qty||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">Quantity (수량)</div>
           <div class="info-value">${nl(hit.qty)||'-'}</div>
         </div>
-        <div class="info-item">
+        <div class="secondary-item" onclick="copyToClipboard('${(hit.project||'').replace(/'/g,"\\'")}', this)">
           <div class="info-label">Project (프로젝트)</div>
           <div class="info-value">${nl(hit.project)||'-'}</div>
         </div>
       </div>
+      
       <div class="cert-section">
         ${hit.certificate
           ? `<a href="${hit.certificate}" target="_blank" rel="noopener" class="cert-btn">📥 Download Certificate (성적서 다운로드)</a>`
@@ -521,6 +682,7 @@ document.getElementById("serialInput").addEventListener("keypress", e=>{
 });
 
 window.addEventListener("load", async ()=>{
+  loadTheme(); // 테마 로드
   await loadDB();
   const p = new URLSearchParams(location.search);
   if(p.get("sn")){
@@ -531,4 +693,3 @@ window.addEventListener("load", async ()=>{
 </script>
 </body>
 </html>
-
