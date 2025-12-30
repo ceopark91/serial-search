@@ -6,27 +6,60 @@
 <title>SEDNAENG - Serial Number Lookup</title>
 
 <style>
-/* ==== (스타일은 네가 준 그대로, 생략 없이 유지) ==== */
+/* ===== 네가 만든 디자인 원본 유지 ===== */
+:root{
+  --sedna-blue:#0066cc;
+  --sedna-red:#e63946;
+  --sedna-green:#06d6a0;
+  --sedna-yellow:#ffd60a;
+}
 body{
+  --bg:#f8f9fa;
+  --card:#ffffff;
+  --border:#e0e4e8;
+  --text:#1a1d23;
+  --muted:#6b7280;
+  --accent:#0066cc;
+}
+body.dark-mode{
+  --bg:#0b1020;
+  --card:#111a33;
+  --border:#23305a;
+  --text:#eaf0ff;
+  --muted:#9aa7c2;
+  --accent:#38bdf8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  background:var(--bg);
   font-family:Pretendard,"Noto Sans KR",-apple-system,system-ui;
-  background:#f8f9fa;
-  color:#111;
+  color:var(--text);
 }
 .wrapper{max-width:900px;margin:auto;padding:40px 20px}
-.result-card{background:#fff;border-radius:12px;padding:24px}
-.empty{padding:40px;text-align:center;color:#999}
+.result-card{
+  background:var(--card);
+  border-radius:16px;
+  padding:32px;
+  border:2px solid var(--border);
+}
+.empty{padding:60px;text-align:center;color:var(--muted)}
 </style>
 </head>
 
 <body>
 <div class="wrapper">
 
-<h2>🔍 Serial Number Lookup</h2>
+<header>
+  <h1>🔍 Serial Number Lookup</h1>
+  <p>SEDNAENG · 시리얼 넘버 조회 시스템</p>
+</header>
 
-<input id="serialInput" placeholder="Enter Serial Number" />
-<button onclick="search()">Lookup</button>
+<section>
+  <input id="serialInput" placeholder="Enter serial number" />
+  <button onclick="search()">Lookup</button>
+</section>
 
-<div id="result"></div>
+<section id="result"></section>
 
 </div>
 
@@ -38,8 +71,9 @@ const CERT_DB_URL   = "https://ceopark91.github.io/serial-search/certificate_db.
 /* ================== STATE ================== */
 let SERIAL_DB = {};
 let CERT_DB = {};
+let isLoading = false;
 
-/* ================== CORE ================== */
+/* ================== UTIL ================== */
 function normalizeSerial(raw){
   if(!raw) return "";
   let v = raw.toUpperCase().replace(/\s+/g,"");
@@ -50,8 +84,10 @@ function normalizeSerial(raw){
   }
   return out;
 }
+const nl = t => (t||"").replace(/\n/g,"<br>");
 
-/* ===== 🔴 한글 깨짐 해결 핵심 ===== */
+/* ================== 🔴 핵심 수정 ================== */
+/* fetch().json() ❌ → text() + JSON.parse() ✅ */
 async function loadDB(){
   try{
     const [sRes, cRes] = await Promise.all([
@@ -59,18 +95,19 @@ async function loadDB(){
       fetch(CERT_DB_URL)
     ]);
 
-    const sText = await sRes.text();   // UTF-8 강제
+    const sText = await sRes.text();
     const cText = await cRes.text();
 
     SERIAL_DB = JSON.parse(sText);
     CERT_DB   = JSON.parse(cText);
 
-    console.log("DB loaded");
+    console.log("DB loaded", Object.keys(SERIAL_DB).length);
   }catch(e){
     console.error("DB load failed", e);
   }
 }
 
+/* ================== SEARCH ================== */
 function findSerial(input){
   const key = normalizeSerial(input);
   for(const k in SERIAL_DB){
@@ -87,29 +124,28 @@ function findSerial(input){
 
 function render(hit){
   if(!hit){
-    return `<div class="empty">No Result</div>`;
+    return `<div class="empty">검색 결과 없음</div>`;
   }
 
   return `
   <div class="result-card">
-    <p><b>Company</b>: ${hit.company || '-'}</p>
-    <p><b>Model</b>: ${hit.model || '-'}</p>
+    <p><b>Company</b>: ${nl(hit.company)}</p>
+    <p><b>Model</b>: ${nl(hit.model)}</p>
     <p><b>Delivery</b>: ${hit.delivery_date || '-'}</p>
     <p><b>W/P</b>: ${hit.wp_date || '-'}</p>
     <p><b>Qty</b>: ${hit.qty || '-'}</p>
-    <p><b>Project</b>: ${hit.project || '-'}</p>
+    <p><b>Project</b>: ${nl(hit.project)}</p>
     ${
       hit.certificate
-      ? `<a href="${hit.certificate}" target="_blank">Download Certificate</a>`
+      ? `<a href="${hit.certificate}" target="_blank">📄 Certificate Download</a>`
       : `<p>Certificate 없음</p>`
     }
   </div>`;
 }
 
-async function search(){
+function search(){
   const v = document.getElementById("serialInput").value.trim();
   if(!v) return;
-
   const hit = findSerial(v);
   document.getElementById("result").innerHTML = render(hit);
 }
