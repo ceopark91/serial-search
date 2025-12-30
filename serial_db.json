@@ -43879,5 +43879,114 @@
       "DM252511099",
       "DM252511100"
     ]
+  },
+  "DM202511125,DM202511126,DM202511127,DM202511128,DM202511129,DM252511102,DM252511103": {
+    "company": "HK-FT-251124-045",
+    "wp_date": "26.01.02",
+    "delivery_date": "26.01.02",
+    "model": "SDM200\nSDM250",
+    "qty": "5EA\n2EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)\n모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202511125",
+      "DM202511126",
+      "DM202511127",
+      "DM202511128",
+      "DM202511129",
+      "DM252511102",
+      "DM252511103"
+    ]
+  },
+  "DM22511009,DM102511100,DM152511296,DM62511061": {
+    "company": "HK-HN-251125-106",
+    "wp_date": "26.01.02",
+    "delivery_date": "26.01.02",
+    "model": "SDM20\nSDM100\nSDM150\nSDM60 HO+RO",
+    "qty": "1EA\n1EA\n1EA\n1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)\n감속기사급: 0.4KW효성 2P 60HZ B5,IP55 D2G4 PTC/ NORD 7.5:1_자켓",
+    "sn_list": [
+      "DM22511009",
+      "DM102511100",
+      "DM152511296",
+      "DM62511061"
+    ]
+  },
+  "DM102511101,DM102511102": {
+    "company": "HK-HN-251125-107",
+    "wp_date": "26.01.02",
+    "delivery_date": "26.01.02",
+    "model": "SDM100",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102511101",
+      "DM102511102"
+    ]
+  },
+  "DM62512062,DM102512105,DM102512106": {
+    "company": "HK-FT-251205-047",
+    "wp_date": "26.01.02",
+    "delivery_date": "26.01.02",
+    "model": "SDM60\nSDM100",
+    "qty": "1EA\n2EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62512062",
+      "DM102512105",
+      "DM102512106"
+    ]
+  },
+  "DM62512063,DM62512064,65,DM152512301,DM152512302,DM152512303,DM202512132,DM202512133,DM222512150,DM222512151": {
+    "company": "HK-HN-251205-109",
+    "wp_date": "X",
+    "delivery_date": "26.01.02",
+    "model": "SDM60 BE(3EA)+ IM(2EA)\nSDM150 IM\nSDM200 IM+BE\nSDM220 IM+BE",
+    "qty": "3 , 2EA\n3EA\n2EA\n2EA",
+    "project": "TC/EP/EPDM",
+    "sn_list": [
+      "DM62512063",
+      "DM62512064",
+      "65",
+      "DM152512301",
+      "DM152512302",
+      "DM152512303",
+      "DM202512132",
+      "DM202512133",
+      "DM222512150",
+      "DM222512151"
+    ]
+  },
+  "DM222512153": {
+    "company": "HK-HN-251219-113",
+    "wp_date": "X",
+    "delivery_date": "26.01.02",
+    "model": "SDM220-904L BEARING",
+    "qty": "1EA",
+    "project": "SIC/EP/EPDM (소재: 904L)",
+    "sn_list": [
+      "DM222512153"
+    ]
+  },
+  "RF62512008": {
+    "company": "HANA (25-07)\n(전시회용)",
+    "wp_date": "26.01.06",
+    "delivery_date": "26.01.06",
+    "model": "SRF60 W/P + BE",
+    "qty": "1EA",
+    "project": "TC/EPDM (W-CLAMP)",
+    "sn_list": [
+      "RF62512008"
+    ]
+  },
+  "SN152512005": {
+    "company": "HANA (25-07)\n(전시회용)",
+    "wp_date": "26.01.06",
+    "delivery_date": "26.01.06",
+    "model": "SSN150 BE\nSSN150 W/P",
+    "qty": "1EA\n2EA",
+    "project": "TC/EPDM\nW-BOLT",
+    "sn_list": [
+      "SN152512005"
+    ]
   }
 }
