@@ -6,13 +6,14 @@
 <title>SEDNAENG - Serial Number Lookup</title>
 
 <style>
-/* ===== 네가 만든 디자인 원본 유지 ===== */
 :root{
   --sedna-blue:#0066cc;
   --sedna-red:#e63946;
   --sedna-green:#06d6a0;
   --sedna-yellow:#ffd60a;
 }
+
+/* ===== LIGHT MODE ===== */
 body{
   --bg:#f8f9fa;
   --card:#ffffff;
@@ -20,7 +21,12 @@ body{
   --text:#1a1d23;
   --muted:#6b7280;
   --accent:#0066cc;
+  --accent-hover:#0052a3;
+  --input-bg:#f8f9fa;
+  --shadow:rgba(0,102,204,0.08);
 }
+
+/* ===== DARK MODE ===== */
 body.dark-mode{
   --bg:#0b1020;
   --card:#111a33;
@@ -28,35 +34,140 @@ body.dark-mode{
   --text:#eaf0ff;
   --muted:#9aa7c2;
   --accent:#38bdf8;
+  --accent-hover:#0ea5e9;
+  --input-bg:#070a14;
+  --shadow:rgba(0,0,0,0.3);
 }
+
 *{box-sizing:border-box;margin:0;padding:0}
 body{
   background:var(--bg);
   font-family:Pretendard,"Noto Sans KR",-apple-system,system-ui;
   color:var(--text);
+  min-height:100vh;
+  transition:background .3s,color .3s;
 }
-.wrapper{max-width:900px;margin:auto;padding:40px 20px}
-.result-card{
+.wrapper{max-width:900px;margin:auto;padding:40px 20px 80px}
+
+/* ===== THEME TOGGLE ===== */
+.theme-toggle{
+  position:fixed;top:20px;right:20px;
   background:var(--card);
+  border:2px solid var(--border);
+  border-radius:30px;
+  padding:8px 16px;
+  cursor:pointer;
+  box-shadow:0 4px 12px var(--shadow);
+  display:flex;align-items:center;gap:8px;
+}
+.theme-text{font-size:12px;font-weight:600}
+
+/* ===== HEADER ===== */
+header{text-align:center;margin-bottom:48px;padding-bottom:32px;
+  border-bottom:3px solid transparent;
+  border-image:linear-gradient(90deg,var(--sedna-blue),var(--sedna-green),var(--sedna-red),var(--sedna-yellow)) 1;
+}
+header h1{
+  font-size:32px;font-weight:700;margin-bottom:12px;
+  background:linear-gradient(135deg,var(--accent),var(--sedna-green));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+}
+header p{color:var(--muted)}
+
+/* ===== SEARCH BOX ===== */
+.search-box{
+  background:var(--card);
+  border:2px solid var(--border);
   border-radius:16px;
   padding:32px;
-  border:2px solid var(--border);
+  margin-bottom:40px;
+  box-shadow:0 8px 32px var(--shadow);
 }
-.empty{padding:60px;text-align:center;color:var(--muted)}
+.input-wrapper{position:relative;margin-bottom:16px}
+.input-wrapper::before{
+  content:'🔍';position:absolute;left:16px;top:50%;
+  transform:translateY(-50%);opacity:.5
+}
+.input-wrapper input{
+  width:100%;padding:16px 20px 16px 48px;
+  border-radius:12px;border:2px solid var(--border);
+  background:var(--input-bg);color:var(--text)
+}
+.btn-group{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{
+  padding:14px;border-radius:12px;border:none;
+  font-weight:600;cursor:pointer
+}
+.btn-search{
+  background:linear-gradient(135deg,var(--accent),var(--accent-hover));
+  color:#fff
+}
+.btn-reset{background:var(--border);color:var(--text)}
+
+/* ===== RESULT ===== */
+.result-card{
+  background:var(--card);
+  border:2px solid var(--border);
+  border-radius:16px;
+  padding:32px;
+  box-shadow:0 8px 32px var(--shadow);
+}
+.card-header{border-bottom:2px solid var(--border);margin-bottom:20px}
+.card-title{color:var(--sedna-green);font-weight:700}
+
+/* ===== GRID ===== */
+.primary-info,.secondary-info{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:14px;margin-bottom:20px
+}
+.primary-item,.secondary-item{
+  background:var(--input-bg);
+  border:2px solid var(--border);
+  border-radius:12px;
+  padding:16px;cursor:pointer
+}
+.info-label{font-size:11px;color:var(--muted)}
+.info-value{font-weight:600}
+
+/* ===== CERT ===== */
+.cert-btn{
+  display:block;text-align:center;
+  padding:16px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-hover));
+  color:#fff;text-decoration:none;font-weight:700
+}
+.cert-unavailable{
+  text-align:center;padding:16px;
+  border:2px dashed var(--border);color:var(--muted)
+}
+
+/* ===== EMPTY ===== */
+.empty{text-align:center;padding:60px;border:2px dashed var(--border)}
 </style>
 </head>
 
 <body>
 <div class="wrapper">
 
+<button class="theme-toggle" onclick="toggleTheme()">
+  <span id="themeIcon">🌙</span>
+  <span class="theme-text" id="themeText">Dark</span>
+</button>
+
 <header>
   <h1>🔍 Serial Number Lookup</h1>
-  <p>SEDNAENG · 시리얼 넘버 조회 시스템</p>
+  <p>Powered by SEDNA Database</p>
 </header>
 
-<section>
-  <input id="serialInput" placeholder="Enter serial number" />
-  <button onclick="search()">Lookup</button>
+<section class="search-box">
+  <div class="input-wrapper">
+    <input id="serialInput" placeholder="Enter serial number">
+  </div>
+  <div class="btn-group">
+    <button class="btn btn-search" onclick="search()">Lookup</button>
+    <button class="btn btn-reset" onclick="resetForm()">Reset</button>
+  </div>
 </section>
 
 <section id="result"></section>
@@ -64,94 +175,94 @@ body{
 </div>
 
 <script>
-/* ================== CONFIG ================== */
-const SERIAL_DB_URL = "https://ceopark91.github.io/serial-search/serial_db.json";
-const CERT_DB_URL   = "https://ceopark91.github.io/serial-search/certificate_db.json";
+const SERIAL_DB_URL="https://ceopark91.github.io/serial-search/serial_db.json";
+const CERT_DB_URL="https://ceopark91.github.io/serial-search/certificate_db.json";
+let SERIAL_DB={},CERT_DB={},isLoading=false;
 
-/* ================== STATE ================== */
-let SERIAL_DB = {};
-let CERT_DB = {};
-let isLoading = false;
+function toggleTheme(){
+  document.body.classList.toggle("dark-mode");
+  const dark=document.body.classList.contains("dark-mode");
+  themeIcon.textContent=dark?"☀️":"🌙";
+  themeText.textContent=dark?"Light":"Dark";
+  localStorage.setItem("theme",dark?"dark":"light");
+}
+function loadTheme(){
+  if(localStorage.getItem("theme")==="dark") toggleTheme();
+}
 
-/* ================== UTIL ================== */
-function normalizeSerial(raw){
-  if(!raw) return "";
-  let v = raw.toUpperCase().replace(/\s+/g,"");
-  let out = "";
+function normalizeSerial(v){
+  if(!v)return"";
+  v=v.toUpperCase().replace(/\s+/g,"");
+  let o="";
   for(let i=0;i<v.length;i++){
-    if((i===3||i===4)&&/[A-Z]/.test(v[i])) continue;
-    out+=v[i];
+    if((i===3||i===4)&&/[A-Z]/.test(v[i]))continue;
+    o+=v[i];
   }
-  return out;
+  return o;
 }
-const nl = t => (t||"").replace(/\n/g,"<br>");
+const nl=t=>(t||"").replace(/\n/g,"<br>");
 
-/* ================== 🔴 핵심 수정 ================== */
-/* fetch().json() ❌ → text() + JSON.parse() ✅ */
 async function loadDB(){
-  try{
-    const [sRes, cRes] = await Promise.all([
-      fetch(SERIAL_DB_URL),
-      fetch(CERT_DB_URL)
-    ]);
-
-    const sText = await sRes.text();
-    const cText = await cRes.text();
-
-    SERIAL_DB = JSON.parse(sText);
-    CERT_DB   = JSON.parse(cText);
-
-    console.log("DB loaded", Object.keys(SERIAL_DB).length);
-  }catch(e){
-    console.error("DB load failed", e);
-  }
+  const [s,c]=await Promise.all([
+    fetch(SERIAL_DB_URL).then(r=>r.text()),
+    fetch(CERT_DB_URL).then(r=>r.text())
+  ]);
+  SERIAL_DB=JSON.parse(s);
+  CERT_DB=JSON.parse(c);
 }
 
-/* ================== SEARCH ================== */
 function findSerial(input){
-  const key = normalizeSerial(input);
+  const key=normalizeSerial(input);
   for(const k in SERIAL_DB){
-    const row = SERIAL_DB[k];
-    if(row.sn_list && row.sn_list.includes(key)){
-      return {
-        ...row,
-        certificate: CERT_DB[key] || ""
-      };
-    }
+    const r=SERIAL_DB[k];
+    if(r.sn_list?.includes(key))
+      return {...r,certificate:CERT_DB[key]||""};
   }
   return null;
 }
 
 function render(hit){
-  if(!hit){
-    return `<div class="empty">검색 결과 없음</div>`;
-  }
-
+  if(!hit)return `<div class="empty">No Results</div>`;
   return `
   <div class="result-card">
-    <p><b>Company</b>: ${nl(hit.company)}</p>
-    <p><b>Model</b>: ${nl(hit.model)}</p>
-    <p><b>Delivery</b>: ${hit.delivery_date || '-'}</p>
-    <p><b>W/P</b>: ${hit.wp_date || '-'}</p>
-    <p><b>Qty</b>: ${hit.qty || '-'}</p>
-    <p><b>Project</b>: ${nl(hit.project)}</p>
-    ${
-      hit.certificate
-      ? `<a href="${hit.certificate}" target="_blank">📄 Certificate Download</a>`
-      : `<p>Certificate 없음</p>`
+    <div class="card-header">
+      <div class="card-title">Lookup Result</div>
+    </div>
+    <div class="primary-info">
+      <div class="primary-item"><div class="info-label">Company</div><div class="info-value">${nl(hit.company)}</div></div>
+      <div class="primary-item"><div class="info-label">Model</div><div class="info-value">${nl(hit.model)}</div></div>
+    </div>
+    <div class="secondary-info">
+      <div class="secondary-item"><div class="info-label">Delivery</div><div class="info-value">${hit.delivery_date||"-"}</div></div>
+      <div class="secondary-item"><div class="info-label">W/P</div><div class="info-value">${hit.wp_date||"-"}</div></div>
+      <div class="secondary-item"><div class="info-label">Qty</div><div class="info-value">${hit.qty||"-"}</div></div>
+      <div class="secondary-item"><div class="info-label">Project</div><div class="info-value">${nl(hit.project)}</div></div>
+    </div>
+    ${hit.certificate
+      ? `<a class="cert-btn" href="${hit.certificate}" target="_blank">Download Certificate</a>`
+      : `<div class="cert-unavailable">Certificate Not Available</div>`
     }
   </div>`;
 }
 
-function search(){
-  const v = document.getElementById("serialInput").value.trim();
-  if(!v) return;
-  const hit = findSerial(v);
-  document.getElementById("result").innerHTML = render(hit);
+async function search(){
+  if(isLoading)return;
+  const v=serialInput.value.trim();
+  if(!v)return;
+  isLoading=true;
+  const hit=findSerial(v);
+  result.innerHTML=render(hit);
+  isLoading=false;
+}
+function resetForm(){
+  serialInput.value="";
+  result.innerHTML="";
 }
 
-/* ================== INIT ================== */
-window.addEventListener("load", loadDB);
+window.addEventListener("load",async()=>{
+  loadTheme();
+  await loadDB();
+});
 </script>
 </body>
 </html>
