@@ -43999,5 +43999,54 @@
     "sn_list": [
       "DM102512103"
     ]
+  },
+  "DF62512002,DF152512006,DF152512007,DF222512003,DF252512001,DF302512001": {
+    "company": "HK-FT-251212-049",
+    "wp_date": "26.01.09",
+    "delivery_date": "26.01.09",
+    "model": "SDF60-TC\nSDF150-TC\nSDF220-TC\nSDF250-TC\nSDF300-TC",
+    "qty": "1EA\n2EA\n1EA\n1EA\n1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)\n모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)\n모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DF62512002",
+      "DF152512006",
+      "DF152512007",
+      "DF222512003",
+      "DF252512001",
+      "DF302512001"
+    ]
+  },
+  "DM62512066": {
+    "company": "HK-HN-251217-111",
+    "wp_date": "26.01.09",
+    "delivery_date": "26.01.09",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62512066"
+    ]
+  },
+  "DM302512076": {
+    "company": "HK-FT-251217-050",
+    "wp_date": "26.01.09",
+    "delivery_date": "26.01.09",
+    "model": "SDM300-TC/EX",
+    "qty": "1EA",
+    "project": "감속기사급: 5.5KW효성 4P 60HZ D2G4,B5,IP55,PTC/ NORD 5.12:1/TC/EP/FFKM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM302512076"
+    ]
+  },
+  "DM152512304": {
+    "company": "HK-HN-251205-108",
+    "wp_date": "26.01.02",
+    "delivery_date": "26.01.15",
+    "model": "SDM150-SMO254",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ 소재: SMO254",
+    "sn_list": [
+      "DM152512304"
+    ]
   }
 }
