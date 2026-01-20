@@ -44087,5 +44087,68 @@
       "AL302509074",
       "AL302509075"
     ]
+  },
+  "SN222512010,DM252512104,DM252512105": {
+    "company": "HANA (25-06)",
+    "wp_date": "25.12.09",
+    "delivery_date": "26.01.02",
+    "model": "SSN220\nSDM250",
+    "qty": "1EA\n2EA",
+    "project": "15KW지멘스 2P 50HZ CE IE3/TC/EP/EPDM_자켓 (W-BOLT)\n3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "SN222512010",
+      "DM252512104",
+      "DM252512105"
+    ]
+  },
+  "DM102512111,DM102512112,DM102512113,DM102512114": {
+    "company": "HK-FT-251223-051",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.01.15",
+    "model": "SDM100\nSDM100 IM+BE",
+    "qty": "1EA\n3EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)\nTC/EP/EPDM",
+    "sn_list": [
+      "DM102512111",
+      "DM102512112",
+      "DM102512113",
+      "DM102512114"
+    ]
+  },
+  "DM62512067": {
+    "company": "HK-FT-251225-052",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.01.15",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62512067"
+    ]
+  },
+  "DM20T251230-01": {
+    "company": "HK-HN-251230-118",
+    "wp_date": "X",
+    "delivery_date": "26.01.15",
+    "model": "SDM200 베어링 툴",
+    "qty": "1EA",
+    "project": "",
+    "sn_list": [
+      "DM20T251230-01"
+    ]
+  },
+  "DM152512317,DM152512318,DM152512319,DM152512320": {
+    "company": "HK-FT-251230-054",
+    "wp_date": "X",
+    "delivery_date": "26.01.15",
+    "model": "SDM150 BEARING",
+    "qty": "4EA",
+    "project": "SIC/EP/EPDM",
+    "sn_list": [
+      "DM152512317",
+      "DM152512318",
+      "DM152512319",
+      "DM152512320"
+    ]
   }
 }
