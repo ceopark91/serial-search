@@ -44150,5 +44150,109 @@
       "DM152512319",
       "DM152512320"
     ]
+  },
+  "HM102511001,HM102511002": {
+    "company": "모노베이트(일본)",
+    "wp_date": "25.11.28",
+    "delivery_date": "26.01.05",
+    "model": "SHM100",
+    "qty": "2EA",
+    "project": "모터사급: 0.2KW 미츠비시 방폭 6P 200V /TC/EP/FEP_싱글 (W-BOLT)",
+    "sn_list": [
+      "HM102511001",
+      "HM102511002"
+    ]
+  },
+  "ROT62512003": {
+    "company": "HK-HN-251208-110",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.01.15",
+    "model": "SROT60-M25",
+    "qty": "1EA",
+    "project": "모터사급: 400W (1FL6042-1AF61-2AA1) 380V/SI3N4/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "ROT62512003"
+    ]
+  },
+  "DM102512110,DM152512309": {
+    "company": "HK-HN-251219-114",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.01.23",
+    "model": "SDM100\nSDM150",
+    "qty": "1EA\n1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)\n모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102512110",
+      "DM152512309"
+    ]
+  },
+  "DM152512310,DM152512311,DM152512312": {
+    "company": "HK-HN-251223-115",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.01.23",
+    "model": "SDM150",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152512310",
+      "DM152512311",
+      "DM152512312"
+    ]
+  },
+  "DM152512313": {
+    "company": "HK-HN-251230-117",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.01.23",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152512313"
+    ]
+  },
+  "DM152512316": {
+    "company": "HK-FT-251230-053",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.01.23",
+    "model": "SDM150-EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4,B5,IP55,PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM152512316"
+    ]
+  },
+  "DM102512117,DM102512118": {
+    "company": "HK-FT-251231-055",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SDM100-EX",
+    "qty": "2EA",
+    "project": "감속기사급: 0.4KW효성 2P 60HZ B5,IP55 D2G4 PTC/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102512117",
+      "DM102512118"
+    ]
+  },
+  "DM202601001": {
+    "company": "HK-HN-260105-001",
+    "wp_date": "X",
+    "delivery_date": "26.01.23",
+    "model": "SDM200-EX HO+RO+MO",
+    "qty": "1EA",
+    "project": "감속기사급: 1.5KW 효성 4P 60HZ D2G4 B5 IP55 PTC센서/ NORD 5:1_자켓",
+    "sn_list": [
+      "DM202601001"
+    ]
+  },
+  "DM202601011": {
+    "company": "HK-HN-260113-005",
+    "wp_date": "X",
+    "delivery_date": "26.01.23",
+    "model": "SDM200 BEARING",
+    "qty": "1EA",
+    "project": "SIC/EP/EPDM",
+    "sn_list": [
+      "DM202601011"
+    ]
   }
 }
