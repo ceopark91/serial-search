@@ -17234,7 +17234,7 @@
   "DP202001001": {
     "company": "동국제약(진천)",
     "wp_date": "X",
-    "delivery_date": "20.02.14\n20.03.05",
+    "delivery_date": "20.02.14",
     "model": "",
     "qty": "",
     "project": "SDP200 IM+M/B-1set (SIC열박음/EP/PTFE)",
@@ -17449,7 +17449,7 @@
   },
   "AL251905002,AL251905003,AL251905004,AL251905005,AL251905006,AL251905007,AL251905008,AL251905009,AL251905010,AL251905011,AL251905012,AL251905013,AL251905014,AL251905015,AL251905016,AL251905017,AL251905018,AL251905019,AL251905020,AL251905021,AL251905022,AL251905023": {
     "company": "태성기계(광주)\n (서울우유)",
-    "wp_date": "19.05.13-10EA\n \n 19.06.20-12EA",
+    "wp_date": "19.05.13-10EA",
     "delivery_date": "20.06.01",
     "model": "",
     "qty": "",
@@ -17626,8 +17626,8 @@
   },
   "SA201907001,SA201907002": {
     "company": "윤성에프엔씨\n (서울우유 신양주)",
-    "wp_date": "19.08.12\n (SHM220-8\n 나머지W/P출고)\n \n 19.08.23 (SHM220-20EA 완료)",
-    "delivery_date": "19.11.01\n 19.11.20\n20.02.13",
+    "wp_date": "19.08.12",
+    "delivery_date": "19.11.01",
     "model": "",
     "qty": "",
     "project": "SA200-2set (1.5KW지멘스 2P 60HZ/7.5:1/SIC열박음/EPDM)_자켓",
@@ -17638,8 +17638,8 @@
   },
   "AL221907003,AL221907004,AL221907005": {
     "company": "윤성에프엔씨\n (서울우유 신양주)",
-    "wp_date": "19.08.12\n (SHM220-8\n 나머지W/P출고)\n \n 19.08.23 (SHM220-20EA 완료)",
-    "delivery_date": "19.11.01\n 19.11.20\n20.02.13",
+    "wp_date": "(SHM220-8",
+    "delivery_date": "19.11.20",
     "model": "",
     "qty": "",
     "project": "SAL220-3set (0.75KW지멘스 4P 60HZ/063 80B5 15:1/SIC열박음/EPDM)_자켓 (IM-420Φ)",
@@ -17651,8 +17651,8 @@
   },
   "SN221907003": {
     "company": "윤성에프엔씨\n (서울우유 신양주)",
-    "wp_date": "19.08.12\n (SHM220-8\n 나머지W/P출고)\n \n 19.08.23 (SHM220-20EA 완료)",
-    "delivery_date": "19.11.01\n 19.11.20\n20.02.13",
+    "wp_date": "나머지W/P출고)",
+    "delivery_date": "20.02.13",
     "model": "",
     "qty": "",
     "project": "SSN220-1set (15KW지멘스 2P 60HZ/SIC열박음/PTFE)_자켓",
@@ -17662,8 +17662,8 @@
   },
   "HM221907001,HM221907002,HM221907003,HM221907004,HM221907005,HM221907006,HM221907007,HM221907008,HM221907009,HM221907010,HM221907011,HM221907012,HM221907013,HM221907014,HM221907015,HM221907016,HM221907017,HM221907018,HM221907019,HM221907020,HM221907021,HM221907022,HM221907023,HM221907024,HM221907025,HM221907026,HM221907027,HM221907028": {
     "company": "윤성에프엔씨\n (서울우유 신양주)",
-    "wp_date": "19.08.12\n (SHM220-8\n 나머지W/P출고)\n \n 19.08.23 (SHM220-20EA 완료)",
-    "delivery_date": "19.11.01\n 19.11.20\n20.02.13",
+    "wp_date": "",
+    "delivery_date": "19.11.01",
     "model": "",
     "qty": "",
     "project": "SRFS220(SHM)-28set (5.5KW지멘스 6P 60HZ/TC/EPDM)_자켓",
@@ -17700,8 +17700,8 @@
   },
   "AL301907006,AL301907007,AL301907008,AL301907009": {
     "company": "윤성에프엔씨\n (서울우유 신양주)",
-    "wp_date": "19.08.12\n (SHM220-8\n 나머지W/P출고)\n \n 19.08.23 (SHM220-20EA 완료)",
-    "delivery_date": "19.11.01\n 19.11.20\n20.02.13",
+    "wp_date": "19.08.23 (SHM220-20EA 완료)",
+    "delivery_date": "19.11.01",
     "model": "",
     "qty": "",
     "project": "SAL300-4set (2.2KW지멘스 4P 60HZ/090 15:1/SIC열박음/EPDM)_자켓",
@@ -17715,7 +17715,7 @@
   "전체,처리,아직": {
     "company": "동아ST",
     "wp_date": "X",
-    "delivery_date": "19.12.12\n20.02.17",
+    "delivery_date": "19.12.12",
     "model": "",
     "qty": "",
     "project": "SDM100 BEARING-3set (Impeller 회수후 작업진행) TC(구헝타입 단없는것)",
@@ -17728,7 +17728,7 @@
   "전체,완료되면,사이트,접속후,검수요청,까지,해야,완료,됨": {
     "company": "동아ST",
     "wp_date": "X",
-    "delivery_date": "19.12.12\n20.02.17",
+    "delivery_date": "20.02.17",
     "model": "",
     "qty": "",
     "project": "SDM60 BEARING-3set (Impeller 회수후 작업진행) TC(구형타입 단없는것)",
@@ -18714,7 +18714,7 @@
   "DM101804017,DM101804018,DM101804019,DM101804020": {
     "company": "제이아이테크",
     "wp_date": "18.05.08",
-    "delivery_date": "20.05.19\n 19.08.01",
+    "delivery_date": "20.05.19",
     "model": "",
     "qty": "",
     "project": "SDM100-4set (0.75KW효성 2P 60HZ D2G4/7.5:1/TC/EP/FEP)_자켓",
@@ -18728,7 +18728,7 @@
   "DM151804030,DM151804031": {
     "company": "제이아이테크",
     "wp_date": "18.05.08",
-    "delivery_date": "20.05.19\n 19.08.01",
+    "delivery_date": "19.08.01",
     "model": "",
     "qty": "",
     "project": "SDM150-2set (0.75KW효성 2P 60HZ D2G4/7.5:1/TC/EP/FEP)_자켓",
@@ -19027,7 +19027,7 @@
   "DM102004041,DM102004042,DM102004043,DM102004044": {
     "company": "나노인텍\n(폴란드 수출건)",
     "wp_date": "X",
-    "delivery_date": "20.06.04\n20.06.09(택배)-IM-3개",
+    "delivery_date": "20.06.04",
     "model": "",
     "qty": "",
     "project": "SDM100(W/P제외)-4set (0.37KW지멘스 4P 50HZ/5:1/SIC열박음/PTFE)_싱글",
@@ -19041,7 +19041,7 @@
   "DM102004045,DM102004046,DM102004047": {
     "company": "나노인텍\n(폴란드 수출건)",
     "wp_date": "X",
-    "delivery_date": "20.06.04\n20.06.09(택배)-IM-3개",
+    "delivery_date": "20.06.09(택배)-IM-3개",
     "model": "",
     "qty": "",
     "project": "* IM-코팅용처리_제일윈텍 발송/ Shaft, housi",
@@ -19054,7 +19054,7 @@
   "DM102004048": {
     "company": "나노인텍\n(폴란드 수출건)",
     "wp_date": "X",
-    "delivery_date": "20.06.04\n20.06.09(택배)-IM-3개",
+    "delivery_date": "20.06.04",
     "model": "",
     "qty": "",
     "project": "g 조립식용으로 제작",
@@ -19281,7 +19281,7 @@
   "DM402005002,DM402005003,DM402005004,DM402005005,DM402005006,DM402005007": {
     "company": "SEDNA-CHINA\n(20200506-033)",
     "wp_date": "20.05.15",
-    "delivery_date": "20.06.12\nX",
+    "delivery_date": "20.06.12",
     "model": "",
     "qty": "",
     "project": "SDM400-TC -6set 모터감속기사급: 7.5KW NORD 4P 50HZ/NORD 7.18/TC열박음/EP/PTFE)_자켓 (BOLT타입)",
@@ -19432,7 +19432,7 @@
   "SN222003004,SN222003005,SN222003006": {
     "company": "보광산업",
     "wp_date": "20.03.10",
-    "delivery_date": "20.04.09-1\n20.07.22-2",
+    "delivery_date": "20.04.09-1",
     "model": "",
     "qty": "",
     "project": "SSN220-3set (15KW지멘스 2P 60HZ 380V/SIC/EP)_자켓",
@@ -19500,7 +19500,7 @@
   "DM62005012,DM62005013": {
     "company": "에스이씨\n(큐라티스))",
     "wp_date": "20.06.03",
-    "delivery_date": "20.07.10\n\n\n20.07.24",
+    "delivery_date": "20.07.10",
     "model": "",
     "qty": "",
     "project": "SDM60-2set (0.18KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE)_자켓(W-클램프)  감속기-FOOD OIL사용",
@@ -19512,7 +19512,7 @@
   "DM102005056,DM102005057,DM102005058": {
     "company": "에스이씨\n(큐라티스))",
     "wp_date": "20.06.03",
-    "delivery_date": "20.07.10\n\n\n20.07.24",
+    "delivery_date": "20.07.24",
     "model": "",
     "qty": "",
     "project": "SDM100-3set (0.37KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE)_자켓(W-클램프)  감속기-FOOD OIL사용",
@@ -19525,7 +19525,7 @@
   "DM152005044,DM152005045,DM152005046,DM152005047,DM152005048,DM152005049,DM152005050,DM152005051,DM152005052,DM152005053,DM152005054,DM152005055,DM152005056,DM152005057,DM152005058": {
     "company": "에스이씨\n(큐라티스))",
     "wp_date": "20.06.03",
-    "delivery_date": "20.07.10\n\n\n20.07.24",
+    "delivery_date": "20.07.10",
     "model": "",
     "qty": "",
     "project": "SDM150-15set (0.75KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE)_자켓(W-클램프)  감속기-FOOD OIL사용",
@@ -19550,7 +19550,7 @@
   "DM202005042,DM202005043": {
     "company": "에스이씨\n(큐라티스))",
     "wp_date": "20.06.03",
-    "delivery_date": "20.07.10\n\n\n20.07.24",
+    "delivery_date": "20.07.10",
     "model": "",
     "qty": "",
     "project": "SDM200-2set (0.75KW지멘스 4P 60HZ/5:1/SIC열박음/EP/PTFE)_자켓(W-클램프)  감속기-FOOD OIL사용",
@@ -19562,7 +19562,7 @@
   "SN102005001": {
     "company": "에스이씨\n(큐라티스))",
     "wp_date": "20.06.03",
-    "delivery_date": "20.07.10\n\n\n20.07.24",
+    "delivery_date": "20.07.10",
     "model": "",
     "qty": "",
     "project": "SSN100-1set (1.5KW지멘스 2P 60HZ/SIC열박음/EP/PTFE)_자켓 (W-클램프)",
@@ -19696,7 +19696,7 @@
   "DM102007073": {
     "company": "비티알\n(동아ST)",
     "wp_date": "20.07.14",
-    "delivery_date": "20.08.10\n변경",
+    "delivery_date": "20.08.10",
     "model": "",
     "qty": "",
     "project": "SDM100-1set (0.37KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE)_싱글",
@@ -20380,7 +20380,7 @@
   "AL152008114": {
     "company": "에코비즈넷",
     "wp_date": "20.09.12",
-    "delivery_date": "20.08.13\n20.09.17",
+    "delivery_date": "20.08.13",
     "model": "",
     "qty": "",
     "project": "SAL150-1set (0.37KW지멘스 4P 50HZ/7.5:1/TC/PTFE_자켓 (IM-250Φ)",
@@ -20515,7 +20515,7 @@
   "RFT62007007,RFT62007008,RFT62007009,RFT62007010,RFT62007011,RFT62007012,RFT62007013,RFT62007014,RFT62007015,RFT62007016,RFT62007017,RFT62007018,RFT62007019": {
     "company": "정현프랜트\n(삼성바이오로직스)",
     "wp_date": "20.09.20",
-    "delivery_date": "20.08.31\n20.10.08",
+    "delivery_date": "20.08.31",
     "model": "",
     "qty": "",
     "project": "SRFT60-13set (alle",
@@ -21792,7 +21792,7 @@
   "AL252009041,AL252009042": {
     "company": "신정엔지니어링\n(코카콜라 여주/광주)",
     "wp_date": "20.09.18",
-    "delivery_date": "20.11.09\n20.12.30\n21.01.06",
+    "delivery_date": "20.11.09",
     "model": "",
     "qty": "",
     "project": "SCO250-2set (2.2KW SEW 4P 60HZ/5.22:1헬리컬베벨/TC열박음/PTFE_싱글 (IM-288Φ)",
@@ -21804,7 +21804,7 @@
   "AL302009015,AL302009016": {
     "company": "신정엔지니어링\n(코카콜라 여주/광주)",
     "wp_date": "20.09.18",
-    "delivery_date": "20.11.09\n20.12.30\n21.01.06",
+    "delivery_date": "20.12.30",
     "model": "",
     "qty": "",
     "project": "SCO300-2set (3.7KW SEW 4P 60HZ/15:1헬리컬베벨/TC열박음/PTFE_싱글 (IM-450Φ)",
@@ -21983,8 +21983,8 @@
   },
   "RFT62010027,RFT62010028,RFT62010029": {
     "company": "SEDNA-CHINA\n(20201023-093)",
-    "wp_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
-    "delivery_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
+    "wp_date": "20.12.14",
+    "delivery_date": "20.12.14",
     "model": "",
     "qty": "",
     "project": "SRFT60-C30-3set (모터사급: 400W 1FL6042-1AF61-0AA1 /감속기없슴/SI3N4/EP/조도측정/PTFE)",
@@ -21996,8 +21996,8 @@
   },
   "RFT152010021,RFT152010022,RFT152010023": {
     "company": "SEDNA-CHINA\n(20201023-093)",
-    "wp_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
-    "delivery_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
+    "wp_date": "20.12.14",
+    "delivery_date": "20.12.14",
     "model": "",
     "qty": "",
     "project": "SRFT150-C150-3set (모터사급: 1.5KW 1FL6064-1AC61-0AG1 / 감속기없슴/SI3N4/EP/조도측정/PTFE)",
@@ -22009,8 +22009,8 @@
   },
   "RFT202010035,RFT202010036,RFT202010037,RFT202010038,RFT202010039,RFT202010040": {
     "company": "SEDNA-CHINA\n(20201023-093)",
-    "wp_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
-    "delivery_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
+    "wp_date": "20.12.25",
+    "delivery_date": "20.12.25",
     "model": "",
     "qty": "",
     "project": "SRFT200-C750-6set (모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 12.96:1/SI3N4/EP/조도측정/PTFE)",
@@ -22025,8 +22025,8 @@
   },
   "DM152010138,DM152010139": {
     "company": "SEDNA-CHINA\n(20201023-093)",
-    "wp_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
-    "delivery_date": "20.12.14\n20.12.14\n20.12.25\n20.12.25",
+    "wp_date": "20.12.25",
+    "delivery_date": "20.12.25",
     "model": "",
     "qty": "",
     "project": "SDM150-2set (모터감속기사급: 0.75KW NORD 2P 50HZ/NORD 7.5:1/SIC열박음/EP/PTFE)_자켓 (W-CLAMP)",
@@ -23012,7 +23012,7 @@
   "RF402012011": {
     "company": "와이텍\n(이연제약)",
     "wp_date": "21.01.12",
-    "delivery_date": "21.02.26\n(SDF)\n\n21.03.12\n(SRF)",
+    "delivery_date": "21.02.26",
     "model": "",
     "qty": "",
     "project": "SRF400-1set (3.7KW지멘스 4P 60HZ/ 110 10:1/세라믹볼/EP/PTFE/모터커버/근접센서_자켓 (Blade 총 4개)",
@@ -23023,7 +23023,7 @@
   "RF252012004": {
     "company": "와이텍\n(이연제약)",
     "wp_date": "21.01.12",
-    "delivery_date": "21.02.26\n(SDF)\n\n21.03.12\n(SRF)",
+    "delivery_date": "(SDF)",
     "model": "",
     "qty": "",
     "project": "SRF250-1set (1.5KW지멘스 4P 60HZ/ 063 10:1/세라믹볼/EP/PTFE/모터커버/근접센서_자켓 (Blade 총 4개)",
@@ -23034,7 +23034,7 @@
   "DF202012011,DF202012012": {
     "company": "와이텍\n(이연제약)",
     "wp_date": "21.01.12",
-    "delivery_date": "21.02.26\n(SDF)\n\n21.03.12\n(SRF)",
+    "delivery_date": "21.03.12",
     "model": "",
     "qty": "",
     "project": "SDF200-2set (0.75KW지멘스 4P 60HZ/5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)+ 자력이탈장치/근접센서/모터커버",
@@ -23046,7 +23046,7 @@
   "DF152012010": {
     "company": "와이텍\n(이연제약)",
     "wp_date": "21.01.12",
-    "delivery_date": "21.02.26\n(SDF)\n\n21.03.12\n(SRF)",
+    "delivery_date": "(SRF)",
     "model": "",
     "qty": "",
     "project": "SDF150-1set (0.75KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)+ 자력이탈장치/근접센서/모터커버",
@@ -23057,7 +23057,7 @@
   "DF102012007,DF102012008": {
     "company": "와이텍\n(이연제약)",
     "wp_date": "21.01.12",
-    "delivery_date": "21.02.26\n(SDF)\n\n21.03.12\n(SRF)",
+    "delivery_date": "21.02.26",
     "model": "",
     "qty": "",
     "project": "SDF100-2set (0.37KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)+ 자력이탈장치/근접센서/모터커버",
@@ -23069,7 +23069,7 @@
   "SA152102014,SA152102015,SA152102016,SA152102017": {
     "company": "에이피이\n(아크로스)",
     "wp_date": "21.02.09",
-    "delivery_date": "21.03.05\n\n21.03.12",
+    "delivery_date": "21.03.05",
     "model": "",
     "qty": "",
     "project": "SA150-4set (0.75KW지멘스 4P 60HZ/5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)/",
@@ -24109,8 +24109,8 @@
   },
   "DM102103037": {
     "company": "SEDNA-CHINA\n(20210317-062)",
-    "wp_date": "21.04.25\n21.04.15",
-    "delivery_date": "21.04.25\n21.04.15",
+    "wp_date": "21.04.25",
+    "delivery_date": "21.04.25",
     "model": "",
     "qty": "",
     "project": "SDM100-1set (모터감속기사급: 0.37KW NORD 2P 50HZ/NORD 7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)",
@@ -24120,8 +24120,8 @@
   },
   "DM152103054": {
     "company": "SEDNA-CHINA\n(20210317-062)",
-    "wp_date": "21.04.25\n21.04.15",
-    "delivery_date": "21.04.25\n21.04.15",
+    "wp_date": "21.04.15",
+    "delivery_date": "21.04.15",
     "model": "",
     "qty": "",
     "project": "SDM150-1set (모터감속기사급: 0.75KW NORD 2P 50HZ/NORD 7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)",
@@ -24512,7 +24512,7 @@
   },
   "DM152102019,DM152102020,DM152102021,DM152102022,DM152102023,DM152102024,DM152102025": {
     "company": "윤성에프앤씨\n(삼일제약 베트남공장)",
-    "wp_date": "21.03.16\n(SDM150)\n\n21.03.24\n(SDM220)",
+    "wp_date": "21.03.16",
     "delivery_date": "21.05.14",
     "model": "",
     "qty": "",
@@ -24529,7 +24529,7 @@
   },
   "DM222102015,DM222102016,DM222102017,DM222102018,DM222102019,DM222102020": {
     "company": "윤성에프앤씨\n(삼일제약 베트남공장)",
-    "wp_date": "21.03.16\n(SDM150)\n\n21.03.24\n(SDM220)",
+    "wp_date": "(SDM150)",
     "delivery_date": "21.05.14",
     "model": "",
     "qty": "",
@@ -25772,7 +25772,7 @@
   "DM202106110": {
     "company": "제뉴원사이언스",
     "wp_date": "X",
-    "delivery_date": "21.06.10\n21.06.24",
+    "delivery_date": "21.06.10",
     "model": "",
     "qty": "",
     "project": "SDM200 IMPELLER + M/B -1set (SIC열박음/EP/PTFE)",
@@ -25945,8 +25945,8 @@
   },
   "DM152103061,DM152103062": {
     "company": "바이오시스템이엔지",
-    "wp_date": "21.04.16\n21.04.16\n21.03.31",
-    "delivery_date": "21.07.13\n21.07.13\n21.05.12",
+    "wp_date": "21.04.16",
+    "delivery_date": "21.07.13",
     "model": "",
     "qty": "",
     "project": "SDM150-2set (0.75KW지멘스 2P 60HZ/7.5:1/SIC열박음/EP/PTFE_자켓)",
@@ -25957,8 +25957,8 @@
   },
   "DM202103045,DM202103046": {
     "company": "바이오시스템이엔지",
-    "wp_date": "21.04.16\n21.04.16\n21.03.31",
-    "delivery_date": "21.07.13\n21.07.13\n21.05.12",
+    "wp_date": "21.04.16",
+    "delivery_date": "21.07.13",
     "model": "",
     "qty": "",
     "project": "SDM200-2set (0.75KW지멘스 4P 60HZ/5:1/SIC열박음/EP/PTFE_자켓 )",
@@ -25969,8 +25969,8 @@
   },
   "RF222103002,RF222103003": {
     "company": "바이오시스템이엔지",
-    "wp_date": "21.04.16\n21.04.16\n21.03.31",
-    "delivery_date": "21.07.13\n21.07.13\n21.05.12",
+    "wp_date": "21.03.31",
+    "delivery_date": "21.05.12",
     "model": "",
     "qty": "",
     "project": "SRF220-2set (1.5KW SEW(KAF37DRN90L4) 4P 60HZ/5.36:1/TC열박음/EP/PTFE_자켓)",
@@ -25981,8 +25981,8 @@
   },
   "DM152104098": {
     "company": "SEDNA-CHINA\n(20210421-085)",
-    "wp_date": "21.05.20\n21.05.20\n21.06.20",
-    "delivery_date": "21.05.20\n21.05.20\n21.06.20",
+    "wp_date": "21.05.20",
+    "delivery_date": "21.05.20",
     "model": "",
     "qty": "",
     "project": "SDM150-1set (모터감속기사급: 0.75KW NORD 2P 50HZ/NORD 7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)",
@@ -25992,8 +25992,8 @@
   },
   "DM202104066": {
     "company": "SEDNA-CHINA\n(20210421-085)",
-    "wp_date": "21.05.20\n21.05.20\n21.06.20",
-    "delivery_date": "21.05.20\n21.05.20\n21.06.20",
+    "wp_date": "21.05.20",
+    "delivery_date": "21.05.20",
     "model": "",
     "qty": "",
     "project": "SDM200-1set (모터감속기사급: 1.5KW NORD 4P 50HZ/NORD 5:1/SIC열박음/EP/PTFE_자켓 (W-BOLT)",
@@ -26003,8 +26003,8 @@
   },
   "DM62104031": {
     "company": "SEDNA-CHINA\n(20210421-085)",
-    "wp_date": "21.05.20\n21.05.20\n21.06.20",
-    "delivery_date": "21.05.20\n21.05.20\n21.06.20",
+    "wp_date": "21.06.20",
+    "delivery_date": "21.06.20",
     "model": "",
     "qty": "",
     "project": "SDM60-EX-1set (감속기만사급: 0.4KW효성 2P 50HZ D2G4/NORD 7.5:1/SIC열박음/EP/PTFE_자켓 (W-CLAMP)",
@@ -26586,7 +26586,7 @@
   "RF222105023": {
     "company": "바이오시스템이엔지",
     "wp_date": "21.05.28",
-    "delivery_date": "21.07.29\n21.07.29\n21.07.13",
+    "delivery_date": "21.07.29",
     "model": "",
     "qty": "",
     "project": "SRF220-1set (1.5KW SEW(KAF37DRN90L4) 4P 60HZ/3.98:1/TC열박음/EP/PTFE_자켓)",
@@ -26597,7 +26597,7 @@
   "RF152105003": {
     "company": "바이오시스템이엔지",
     "wp_date": "21.05.28",
-    "delivery_date": "21.07.29\n21.07.29\n21.07.13",
+    "delivery_date": "21.07.29",
     "model": "",
     "qty": "",
     "project": "SRF150-1set (0.37KW SEW(KAF37DR2S71MS4) 4P 60HZ/3.98:1/TC열박음/EP/PTFE_자켓)",
@@ -26608,7 +26608,7 @@
   "RF222105005,RF222105006,RF222105007": {
     "company": "바이오시스템이엔지",
     "wp_date": "21.05.28",
-    "delivery_date": "21.07.29\n21.07.29\n21.07.13",
+    "delivery_date": "21.07.13",
     "model": "",
     "qty": "",
     "project": "SRF220-3set (1.5KW지멘스 4P 60HZ/7.5:1/TC열박음/EP/PTFE_자켓)",
@@ -27781,7 +27781,7 @@
   },
   "DM222106087": {
     "company": "SEDNA-CHINA\n(20210630-147)",
-    "wp_date": "X\n21.08.26",
+    "wp_date": "X",
     "delivery_date": "21.08.26",
     "model": "",
     "qty": "",
@@ -27792,7 +27792,7 @@
   },
   "DM62106079": {
     "company": "SEDNA-CHINA\n(20210630-147)",
-    "wp_date": "X\n21.08.26",
+    "wp_date": "21.08.26",
     "delivery_date": "21.08.26",
     "model": "",
     "qty": "",
@@ -29030,7 +29030,7 @@
   "DM102105083,DM102105084,DM102105085,DM102105086,DM102105087,DM102105088,DM102105089,DM102105090,DM102105091,DM102105092,DM102105093,DM102105094,DM102105095,DM102105096,DM102105097,DM102105098,DM102105099,DM102105100,DM102105101,DM102105102,DM102105103,DM102105104,DM102105105,DM102105106,DM102105107,DM102105108,DM102105109,DM102105110": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM100-28set (0.37KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/ 모터커버)",
@@ -29068,7 +29068,7 @@
   "DM102105111,DM102105112": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "21.11.01",
     "model": "",
     "qty": "",
     "project": "SDM100-2set (0.37KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/ 모터커버)",
@@ -29080,7 +29080,7 @@
   "DM152105137,DM152105138,DM152105139,DM152105140,DM152105141,DM152105142,DM152105143,DM152105144,DM152105145,DM152105146,DM152105147,DM152105148,DM152105149,DM152105150,DM152105151,DM152105152,DM152105153,DM152105154,DM152105155,DM152105156,DM152105157,DM152105158,DM152105159,DM152105160,DM152105161,DM152105162,DM152105163": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "21.08.20",
     "model": "",
     "qty": "",
     "project": "SDM150-27set (0.75KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/ 모터커버)",
@@ -29117,7 +29117,7 @@
   "DM152105164,DM152105165,DM152105166,DM152105167,DM152105168,DM152105169,DM152105170,DM152105171,DM152105172": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "21.08.25",
     "model": "",
     "qty": "",
     "project": "SDM150-9set (0.75KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/ 모터커버)",
@@ -29136,7 +29136,7 @@
   "DM202105093,DM202105094": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM200-2set (0.75KW효성 4P 60HZ D2G4/5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -29148,7 +29148,7 @@
   "DM202105095,DM202105096,DM202105097,DM202105098,DM202105099": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM200-5set (0.75KW효성 4P 60HZ D2G4/5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -29163,7 +29163,7 @@
   "DM222105070,DM222105071,DM222105072": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM220-3set (2.2KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -29176,7 +29176,7 @@
   "DM222105073,DM222105074,DM222105075,DM222105076": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM220-4set (2.2KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -29190,7 +29190,7 @@
   "DM252105023,DM252105024,DM252105025,DM252105026,DM252105027,DM252105028,DM252105029,DM252105030,DM252105031,DM252105032": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM250-10set (3.7KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -29210,7 +29210,7 @@
   "DM302105016,DM302105017,DM302105018,DM302105019,DM302105020,DM302105021,DM302105022,DM302105023,DM302105024": {
     "company": "윤성에프앤씨\n(ST팜)",
     "wp_date": "21.06.11",
-    "delivery_date": "21.11.01\n\n\n\n21.08.20\n\n\n\n\n\n\n21.08.25",
+    "delivery_date": "",
     "model": "",
     "qty": "",
     "project": "SDM300-9set (5.5KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/ 모터커버)",
@@ -31191,7 +31191,7 @@
   "DM102110173,DM102110174,DM102110175,DM102110176,DM102110177,DM102110178,DM102110179,DM102110180": {
     "company": "나노인텍\n(폴란드 LG화학)",
     "wp_date": "X",
-    "delivery_date": "21.12.15\n\n22.02.08",
+    "delivery_date": "21.12.15",
     "model": "",
     "qty": "",
     "project": "SDM100 W/P제외 - 8set (0.37KW지멘스 4P 50HZ 400V/5:1/SIC열박음/PTFE_싱글 (IM-코팅용처리: 제일윈텍 발송 / shaft, housi",
@@ -31209,7 +31209,7 @@
   "DM102110181,DM102110182,DM102110183,DM102110184,DM102110185,DM102110186": {
     "company": "나노인텍\n(폴란드 LG화학)",
     "wp_date": "X",
-    "delivery_date": "21.12.15\n\n22.02.08",
+    "delivery_date": "22.02.08",
     "model": "",
     "qty": "",
     "project": "g- 조립식용 제작)",
@@ -31225,7 +31225,7 @@
   "DM102110187,DM102110188": {
     "company": "나노인텍\n(폴란드 LG화학)",
     "wp_date": "X",
-    "delivery_date": "21.12.15\n\n22.02.08",
+    "delivery_date": "21.12.15",
     "model": "",
     "qty": "",
     "project": "SDM100 IM + BE - 6set (SIC열박음/PTFE (IM-코팅용처리: 제일윈텍 발송)",
@@ -31646,8 +31646,8 @@
   },
   "RFT102111008": {
     "company": "SEDNA-HANBAEK\n(20211126-249)",
-    "wp_date": "22.01.14\n22.01.14\n21.12.30",
-    "delivery_date": "22.01.14\n22.01.14\n21.12.30",
+    "wp_date": "22.01.14",
+    "delivery_date": "22.01.14",
     "model": "",
     "qty": "",
     "project": "SRFT100-M70-1set (모터감속기사급: 0.25KW NORD 4P 50HZ/NORD 8.91:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -31657,8 +31657,8 @@
   },
   "RFT152111052,RFT152111053,RFT152111054": {
     "company": "SEDNA-HANBAEK\n(20211126-249)",
-    "wp_date": "22.01.14\n22.01.14\n21.12.30",
-    "delivery_date": "22.01.14\n22.01.14\n21.12.30",
+    "wp_date": "22.01.14",
+    "delivery_date": "22.01.14",
     "model": "",
     "qty": "",
     "project": "SRFT150-M250-3set (모터감속기사급: 0.37KW NORD 4P 50HZ/NORD 20.37:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -31670,8 +31670,8 @@
   },
   "DM152111404,DM152111405,DM152111406": {
     "company": "SEDNA-HANBAEK\n(20211126-249)",
-    "wp_date": "22.01.14\n22.01.14\n21.12.30",
-    "delivery_date": "22.01.14\n22.01.14\n21.12.30",
+    "wp_date": "21.12.30",
+    "delivery_date": "21.12.30",
     "model": "",
     "qty": "",
     "project": "SDM150-TC-3set (모터감속기사급: 0.75KW NORD 2P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -31707,8 +31707,8 @@
   },
   "RFT222112055": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "22.01.25",
+    "delivery_date": "22.01.25",
     "model": "",
     "qty": "",
     "project": "SRFT220-E500-1set (모터감속기사급: 1.5KW NORD 4P 50HZ/NORD 5.95:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -31718,8 +31718,8 @@
   },
   "RFT302112002": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SRFT300-E1000-1set (모터감속기사급: 4.0KW NORD 4P 50HZ/NORD 5.88:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -31729,8 +31729,8 @@
   },
   "RFT402112006,RFT402112007,RFT402112008,RFT402112009": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SRFT400-E3000-4set (모터감속기사급: 7.5KW NORD 4P 50HZ/NORD 7.18:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -31743,8 +31743,8 @@
   },
   "DM202112179,DM202112180": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "22.01.10",
+    "delivery_date": "22.01.10",
     "model": "",
     "qty": "",
     "project": "SDM200-2set (모터감속기사급: 1.5KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -31755,8 +31755,8 @@
   },
   "DM222112134,DM222112135,DM222112136,DM222112137,DM222112138,DM222112139,DM222112140,DM222112141,DM222112142,DM222112143,DM222112144,DM222112145,DM222112146,DM222112147,DM222112148": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SDM220-15set (모터감속기사급: 2.2KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -31780,8 +31780,8 @@
   },
   "DM252112070,DM252112071": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SDM250-2set (모터감속기사급: 3.0KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -31792,8 +31792,8 @@
   },
   "DB252112072": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SDB250-1set (모터감속기사급: 2.2KW NORD 4P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -31803,8 +31803,8 @@
   },
   "DB302112034": {
     "company": "SEDNA-HANBAEK\n(20211202-252)",
-    "wp_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.01.25\n\"\n\"\n22.01.10\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "",
     "qty": "",
     "project": "SDB300-1set (모터감속기사급: 3.0KW NORD 4P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -31834,8 +31834,8 @@
   },
   "RFT102112009": {
     "company": "SEDNA-HANBAEK\n(20211202-253)",
-    "wp_date": "22.01.25\n22.02.02",
-    "delivery_date": "22.01.25\n22.02.02",
+    "wp_date": "22.01.25",
+    "delivery_date": "22.01.25",
     "model": "",
     "qty": "",
     "project": "SRFT100-C40-1set (모터사급: 1.5KW (1FL6064-1AC61-2AA1) 380V/SI3N4/EP/EPDM_자켓 (W-BOLT)/ PRCM12-2DP PNP)",
@@ -31845,8 +31845,8 @@
   },
   "RF152112009": {
     "company": "SEDNA-HANBAEK\n(20211202-253)",
-    "wp_date": "22.01.25\n22.02.02",
-    "delivery_date": "22.01.25\n22.02.02",
+    "wp_date": "22.02.02",
+    "delivery_date": "22.02.02",
     "model": "",
     "qty": "",
     "project": "SRF150-C50-1set (모터사급: 2.5KW (1FL6090-1AC61-2AA1) 380V/TC/EP/EPDM_자켓 (W-CLAMP)/ PRCM12-2DP PNP)",
@@ -32711,7 +32711,7 @@
   "BRF202202001": {
     "company": "유빅스인터네셔날",
     "wp_date": "22.02.16",
-    "delivery_date": "22.03.14\n22.04.12",
+    "delivery_date": "22.03.14",
     "model": "",
     "qty": "",
     "project": "SRFT200-1set (1.5KW지멘스 4P 60HZ/10:1/세라믹볼/EP/EPDM_자켓)",
@@ -33759,8 +33759,8 @@
   },
   "DM102204079,DM102204080,DM102204081,DM102204082,DM102204083,DM102204084": {
     "company": "비티알\n(유니메드-1 / SFC-5)",
-    "wp_date": "22.04.13-1\n22.04.29-5",
-    "delivery_date": "22.05.18\n22.05.31",
+    "wp_date": "22.04.13-1",
+    "delivery_date": "22.05.18",
     "model": "",
     "qty": "",
     "project": "SDM100-6set (0.37KW지멘스 2P 60HZ/7.5:1/TC열박음/EP/EPDM_싱글-4 / 자켓-2)",
@@ -33846,7 +33846,7 @@
   "DM152201035,DM152201036,DM152201037,DM152201038": {
     "company": "윤성에프엔씨\n(녹십자 PD2 분획실)",
     "wp_date": "22.02.16",
-    "delivery_date": "22.05.26\n\n22.06.02",
+    "delivery_date": "22.05.26",
     "model": "",
     "qty": "",
     "project": "SDM150-4set (0.75KW지멘스 2P 60HZ/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/(근접센서 PRCM12-2DN)",
@@ -33860,7 +33860,7 @@
   "DM152201039,DM152201040,DM152201041": {
     "company": "윤성에프엔씨\n(녹십자 PD2 분획실)",
     "wp_date": "22.02.16",
-    "delivery_date": "22.05.26\n\n22.06.02",
+    "delivery_date": "22.06.02",
     "model": "",
     "qty": "",
     "project": "SDM150-3set (0.75KW효성 2P 60HZ D2G4/7.5:1/TC열박음/EP/PTFE_자켓 (W-CLAMP)/(근접센서 PRCM12-2DN)",
@@ -33873,7 +33873,7 @@
   "DM202201001": {
     "company": "윤성에프엔씨\n(녹십자 PD2 분획실)",
     "wp_date": "22.02.16",
-    "delivery_date": "22.05.26\n\n22.06.02",
+    "delivery_date": "22.05.26",
     "model": "",
     "qty": "",
     "project": "SDM200-1set (0.75KW효성 4P 60HZ D2G4/5:1/TC열박음/EP/PTFE_자켓 (W-BOLT)/(근접센서 PRCM12-2DN)",
@@ -35659,7 +35659,7 @@
   "DF62207005,DF62207006,DF62207007,DF62207008": {
     "company": "SEDNA-HANBAEK\n(20220725-096)",
     "wp_date": "22.08.26",
-    "delivery_date": "22.08.26\n22.08.26\n22.08.26\n22.09.08",
+    "delivery_date": "22.08.26",
     "model": "SDF60-EX",
     "qty": "4EA",
     "project": "감속기만사급: 0.4KW효성 2P 60HZ (ATEX,CE,B5, IP55)/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -35673,7 +35673,7 @@
   "DF102207018,DF102207019": {
     "company": "SEDNA-HANBAEK\n(20220725-096)",
     "wp_date": "22.08.26",
-    "delivery_date": "22.08.26\n22.08.26\n22.08.26\n22.09.08",
+    "delivery_date": "22.08.26",
     "model": "SDF100-EX",
     "qty": "2EA",
     "project": "감속기만사급: 0.4KW효성 2P 60HZ (ATEX,CE,B5, IP55)/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -35685,7 +35685,7 @@
   "DF222207001,DF222207002,DF222207003": {
     "company": "SEDNA-HANBAEK\n(20220725-096)",
     "wp_date": "22.08.26",
-    "delivery_date": "22.08.26\n22.08.26\n22.08.26\n22.09.08",
+    "delivery_date": "22.08.26",
     "model": "SDF220-EX",
     "qty": "3EA",
     "project": "감속기만사급: 2.2KW효성 4P 60HZ (ATEX,CE,B5, IP55)/NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -35698,7 +35698,7 @@
   "DF222207004": {
     "company": "SEDNA-HANBAEK\n(20220725-096)",
     "wp_date": "22.08.26",
-    "delivery_date": "22.08.26\n22.08.26\n22.08.26\n22.09.08",
+    "delivery_date": "22.09.08",
     "model": "SDF220-EX/904L",
     "qty": "1EA",
     "project": "감속기만사급: 2.2KW효성 4P 60HZ (ATEX,CE,B5, IP55)/NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)  재질: 904L",
@@ -35801,7 +35801,7 @@
   },
   "RF152204001,RF152204002": {
     "company": "GPC\n(프랑스)",
-    "wp_date": "22.04.29\n(에이제이씨로 출고)",
+    "wp_date": "22.04.29",
     "delivery_date": "22.09.28",
     "model": "SRF150",
     "qty": "2EA",
@@ -35938,7 +35938,7 @@
   "BRF202204002,BRF202204003,BRF202204004": {
     "company": "유빅스인터내셔날\n(태백 농업기술센터)",
     "wp_date": "22.05.11",
-    "delivery_date": "22.08.08(일부 출고)\n22.09.28(나머지출고)",
+    "delivery_date": "22.08.08(일부 출고)",
     "model": "SRFT200",
     "qty": "3EA",
     "project": "1.5KW지멘스 4P 60HZ/10:1/세라믹볼/EP/EPDM_자켓",
@@ -36347,8 +36347,8 @@
   },
   "DM102207117,DM102207118": {
     "company": "SEDNA-HANBAEK\n(20220725-097)",
-    "wp_date": "22.10.07\n22.08.25\n22.08.25\n22.08.25",
-    "delivery_date": "22.10.07\n22.08.25\n22.08.25\nX",
+    "wp_date": "22.10.07",
+    "delivery_date": "22.10.07",
     "model": "SDM100-EX",
     "qty": "2EA",
     "project": "감속기만사급: 0.4KW효성 2P 60HZ (ATEX,CE,B5, IP55)/NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36359,8 +36359,8 @@
   },
   "DM202207107": {
     "company": "SEDNA-HANBAEK\n(20220725-097)",
-    "wp_date": "22.10.07\n22.08.25\n22.08.25\n22.08.25",
-    "delivery_date": "22.10.07\n22.08.25\n22.08.25\nX",
+    "wp_date": "22.08.25",
+    "delivery_date": "22.08.25",
     "model": "SDM200-TC",
     "qty": "1EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓",
@@ -36370,8 +36370,8 @@
   },
   "DM252207099": {
     "company": "SEDNA-HANBAEK\n(20220725-097)",
-    "wp_date": "22.10.07\n22.08.25\n22.08.25\n22.08.25",
-    "delivery_date": "22.10.07\n22.08.25\n22.08.25\nX",
+    "wp_date": "22.08.25",
+    "delivery_date": "22.08.25",
     "model": "SDM250",
     "qty": "1EA",
     "project": "모터감속기사급: 3.0KW NORD 4P 50HZ /NORD 5:1/SIC/EP/EPDM_자켓",
@@ -36569,8 +36569,8 @@
   },
   "ROT62209001,ROT62209002": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "22.11.25",
+    "delivery_date": "22.11.25",
     "model": "SROT60-AIR",
     "qty": "2EA",
     "project": "모터감속기사급: 1.3KW 4AM-ARV-119/ NORD 7.5:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
@@ -36581,8 +36581,8 @@
   },
   "DB62209068": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "22.11.11",
+    "delivery_date": "22.11.11",
     "model": "SDB60-TC/AIR",
     "qty": "1EA",
     "project": "모터감속기사급: 1.3KW 4AM-ARV-119/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36592,8 +36592,8 @@
   },
   "DB102209139": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "SDB100-TC/AIR",
     "qty": "1EA",
     "project": "모터감속기사급: 1.3KW 4AM-ARV-119/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36603,8 +36603,8 @@
   },
   "DM62209069,DM62209070": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "SDM60-TC/AIR",
     "qty": "2EA",
     "project": "모터감속기사급: 1.3KW 4AM-ARV-119/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36615,8 +36615,8 @@
   },
   "DM102209140,DM102209141,DM102209142,DM102209143,DM102209144,DM102209145,DM102209146,DM102209147": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "SDM100-TC/AIR",
     "qty": "8EA",
     "project": "모터감속기사급: 1.3KW 4AM-ARV-119/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36633,8 +36633,8 @@
   },
   "DM102209148,DM102209149,DM102209150,DM102209151,DM102209152": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "SDM100-TC/EX",
     "qty": "5EA",
     "project": "모터감속기사급: 0.75KW ABB 2P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -36648,8 +36648,8 @@
   },
   "DM152209265": {
     "company": "SEDNA-HANBAEK\n(20220930-125)",
-    "wp_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
-    "delivery_date": "22.11.25\n22.11.11\n\"\n\"\n\"\n\"\n\"",
+    "wp_date": "\"",
+    "delivery_date": "\"",
     "model": "SDM150-TC/EX",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW ABB 2P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -37753,7 +37753,7 @@
   "DB252211113,DB252211114,DB252211115,DB252211116": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.31",
     "model": "SDB250-TC",
     "qty": "4EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ /NORD 7.5:1/TC/EP/EPDM_자켓",
@@ -37767,7 +37767,7 @@
   "DB302211044,DB302211045,DB302211046,DB302211047,DB302211048,DB302211049,DB302211050,DB302211051,DB302211052,DB302211053,DB302211054,DB302211055": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.16",
     "model": "SDB300-TC",
     "qty": "12EA",
     "project": "모터감속기사급: 3.0KW NORD 4P 50HZ /NORD 7.5:1/TC/EP/EPDM_자켓",
@@ -37789,7 +37789,7 @@
   "DB402211016,DB402211017": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.31",
     "model": "SDB400-TC",
     "qty": "2EA",
     "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/NORD 12.5:1/TC/EP/EPDM_자켓",
@@ -37801,7 +37801,7 @@
   "DM202211150,DM202211151,DM202211152,DM202211153,DM202211154,DM202211155": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.31",
     "model": "SDM200-TC",
     "qty": "6EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓",
@@ -37817,7 +37817,7 @@
   "DM222211123,DM222211124,DM222211125,DM222211126,DM222211127,DM222211128,DM222211129,DM222211130": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.31",
     "model": "SDM220-TC",
     "qty": "8EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/NORD 5:1/TC/EP/EPDM_자켓",
@@ -37835,7 +37835,7 @@
   "DM252211117,DM252211118,DM252211119,DM252211120,DM252211121,DM252211122": {
     "company": "SEDNA-HANBAEK\n(20221115-149)",
     "wp_date": "22.12.02",
-    "delivery_date": "22.12.31\n\n\n\n22.12.16",
+    "delivery_date": "22.12.31",
     "model": "SDM250-TC",
     "qty": "6EA",
     "project": "모터감속기사급: 3.0KW NORD 4P 50HZ /NORD 5:1/TC/EP/EPDM_자켓",
@@ -38534,7 +38534,7 @@
   "SA152301003,SA152301004,SA152301005,SA152301006,SA152301007,SA152301008": {
     "company": "에이피이\n(엑소코바이오)",
     "wp_date": "23.01.25",
-    "delivery_date": "23.03.13\n23.03.16",
+    "delivery_date": "23.03.13",
     "model": "SA150",
     "qty": "6EA",
     "project": "0.75KW지멘스 2P 60HZ/7.5:1/SIC/EP/PTFE_자켓 (W-CLAMP)/근접센서 홀가공/모터커버제작/IM-테프론코팅 전처리",
@@ -40283,7 +40283,7 @@
   "SN152305002,SN152305003": {
     "company": "한울바이오",
     "wp_date": "23.05.25",
-    "delivery_date": "23.06.12\n23.07.14",
+    "delivery_date": "23.06.12",
     "model": "SSN150",
     "qty": "2EA",
     "project": "3.7KW지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -40295,7 +40295,7 @@
   "DM152305061,DM152305062": {
     "company": "한울바이오",
     "wp_date": "23.05.25",
-    "delivery_date": "23.06.12\n23.07.14",
+    "delivery_date": "23.07.14",
     "model": "SDM150",
     "qty": "2EA",
     "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -40982,7 +40982,7 @@
   },
   "AL152307133,AL152307134,AL152307135": {
     "company": "에코비즈넷",
-    "wp_date": "23.08.03\nX",
+    "wp_date": "23.08.03",
     "delivery_date": "23.08.24",
     "model": "SAL150",
     "qty": "3EA",
@@ -40995,7 +40995,7 @@
   },
   "AL152307136": {
     "company": "에코비즈넷",
-    "wp_date": "23.08.03\nX",
+    "wp_date": "X",
     "delivery_date": "23.08.24",
     "model": "SAL150 (W/P제외)",
     "qty": "1EA",
@@ -41030,7 +41030,7 @@
   "SN222306005,SN222306006": {
     "company": "보광산업\n(진성 FM)",
     "wp_date": "23.06.28",
-    "delivery_date": "23.9월중\n23.07.27",
+    "delivery_date": "23.9월중",
     "model": "SSN220",
     "qty": "2EA",
     "project": "15KW지멘스 2P 60HZ/TC/EP/PTFE_자켓  (4날, V홈, 물방울STATOR사용)",
@@ -41042,7 +41042,7 @@
   "SN222306007": {
     "company": "보광산업\n(진성 FM)",
     "wp_date": "23.06.28",
-    "delivery_date": "23.9월중\n23.07.27",
+    "delivery_date": "23.07.27",
     "model": "SSN220",
     "qty": "1EA",
     "project": "11KW지멘스 2P 60HZ/TC/EP/PTFE_자켓  (4날, V홈, 물방울STATOR사용)",
@@ -41960,8 +41960,8 @@
   },
   "RF102308008,RF102308009,RF102308010,RF102308011": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SRF100-C120",
     "qty": "4EA",
     "project": "모터사급: 200W(1FL6032-2AF21-1AA1)/ PGX62-H-10-1 10:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -41974,8 +41974,8 @@
   },
   "RF102308012": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.09.15",
+    "delivery_date": "23.09.15",
     "model": "SRF100-C50",
     "qty": "1EA",
     "project": "모터사급: 200W(1FL6032-2AF21-1AA1)/ PBL62-H-14-1 14:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -41985,8 +41985,8 @@
   },
   "RF152308005": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SRF150-C200",
     "qty": "1EA",
     "project": "모터사급: 400W(1FL6034-2AF21-1AA1)/ PBL62-H-14-1 14:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -41996,8 +41996,8 @@
   },
   "DM62308037": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SDM60-F",
     "qty": "1EA",
     "project": "모터감속기사급: 0.25KW SEW 4P 50HZ/ SEW 6.8:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -42007,8 +42007,8 @@
   },
   "DM102308094": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SDM100-F",
     "qty": "1EA",
     "project": "모터감속기사급: 0.25KW SEW 4P 50HZ/ SEW 6.8:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -42018,8 +42018,8 @@
   },
   "DM152308156,DM152308157,DM152308158,DM152308159,DM152308160,DM152308161,DM152308162": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SDM150-F",
     "qty": "7EA",
     "project": "모터감속기사급: 0.37KW SEW 4P 50HZ/ SEW 6.8:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -42035,8 +42035,8 @@
   },
   "DM202308053,DM202308054,DM202308055,DM202308056,DM202308057,DM202308058": {
     "company": "HK-HN-230811-066",
-    "wp_date": "23.10.13\n\n\n23.09.15",
-    "delivery_date": "23.10.13\n\n\n23.09.15",
+    "wp_date": "23.10.13",
+    "delivery_date": "23.10.13",
     "model": "SDM200-F",
     "qty": "6EA",
     "project": "모터감속기사급: 0.75KW SEW 4P 50HZ/ SEW 7.28:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43151,8 +43151,8 @@
   },
   "RF102309015,RF102309016,RF102309017": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SRF100-C100",
     "qty": "3EA",
     "project": "모터감속기사급: 0.25KW NORD 4P 50HZ/ NORD 12.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43164,8 +43164,8 @@
   },
   "RF202309009,RF202309010,RF202309011,RF202309012": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.11.10",
+    "delivery_date": "23.11.10",
     "model": "SRF200-C500",
     "qty": "4EA",
     "project": "모터감속기사급: 0.55KW NORD 4P 50HZ/ NORD 15:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43178,8 +43178,8 @@
   },
   "RF402309010,RF402309011,RF402309012,RF402309013,RF402309014": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SRF400-C2000",
     "qty": "5EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/NORD 18.84:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43193,8 +43193,8 @@
   },
   "DM102309121": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM100-C100",
     "qty": "1EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43204,8 +43204,8 @@
   },
   "DM152309206": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C200-F",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43215,8 +43215,8 @@
   },
   "DM152309207": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C200",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43226,8 +43226,8 @@
   },
   "DM152309208,DM152309209,DM152309210": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C500",
     "qty": "3EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43239,8 +43239,8 @@
   },
   "DM152309211": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C200-F",
     "qty": "1EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43250,8 +43250,8 @@
   },
   "DM152309212": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C500",
     "qty": "1EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43261,8 +43261,8 @@
   },
   "DM152309213,DM152309214": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150-C500-F",
     "qty": "2EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43273,8 +43273,8 @@
   },
   "DM202309065,DM202309066": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM200-C1000",
     "qty": "2EA",
     "project": "모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43285,8 +43285,8 @@
   },
   "DM202309067": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM200-C1000",
     "qty": "1EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43296,8 +43296,8 @@
   },
   "DM222309087,DM222309088,DM222309089,DM222309090,DM222309091,DM222309092,DM222309093,DM222309094,DM222309095,DM222309096": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM220-C2000",
     "qty": "10EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43316,8 +43316,8 @@
   },
   "DM222309097,DM222309098": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM220-C3000",
     "qty": "2EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43328,8 +43328,8 @@
   },
   "DM222309099,DM222309100,DM222309101": {
     "company": "HK-FT-230925-030",
-    "wp_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
-    "delivery_date": "23.12.01\n\n\n\n\n\n\n\n23.11.10",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM220-C3000",
     "qty": "3EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -43342,7 +43342,7 @@
   "DM102311150,DM102311151": {
     "company": "HK-FT-231103-034",
     "wp_date": "23.12.01",
-    "delivery_date": "23.12.01\n\n23.12.15",
+    "delivery_date": "23.12.01",
     "model": "SDM100",
     "qty": "2EA",
     "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43354,7 +43354,7 @@
   "DM152311245": {
     "company": "HK-FT-231103-034",
     "wp_date": "23.12.01",
-    "delivery_date": "23.12.01\n\n23.12.15",
+    "delivery_date": "23.12.15",
     "model": "SDM150",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43365,7 +43365,7 @@
   "DM62311048,DM62311049,DM62311050,DM62311051,DM62311052": {
     "company": "HK-FT-231103-034",
     "wp_date": "23.12.01",
-    "delivery_date": "23.12.01\n\n23.12.15",
+    "delivery_date": "23.12.01",
     "model": "SDM60-904L",
     "qty": "5EA",
     "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP) 재질: 904L",
@@ -43973,8 +43973,8 @@
   },
   "DM152310234": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM150",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -43984,8 +43984,8 @@
   },
   "DM302310016,DM302310017,DM302310018": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.22",
+    "delivery_date": "23.12.22",
     "model": "SDM300",
     "qty": "3EA",
     "project": "모터감속기사급: 4.0KW NORD 4P 50HZ / NORD 5:1/SIC/EP/EPDM_자켓",
@@ -43997,8 +43997,8 @@
   },
   "DM502310003,DM502310004": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.27",
+    "delivery_date": "24.01.19",
     "model": "SDM500",
     "qty": "2EA",
     "project": "모터감속기사급: 11KW SEW 4P 50HZ/ SEW 7.21:1/TC/EP/EPDM_자켓 / 자력이탈장치",
@@ -44009,8 +44009,8 @@
   },
   "DM252310031,DM252310032": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM250 HO+RO+MO",
     "qty": "2EA",
     "project": "감속기사급: 4.0KW효성 4P D2G4/ NORD 5:1_자켓",
@@ -44021,8 +44021,8 @@
   },
   "DM302310019": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM300-904L",
     "qty": "1EA",
     "project": "모터감속기사급: 4.0KW NORD 4P 50HZ / NORD 5:1/SIC/EP/EPDM_자켓 (재질: 904L)",
@@ -44032,8 +44032,8 @@
   },
   "DM222310114": {
     "company": "HK-HN-231018-102",
-    "wp_date": "23.12.01\n\n23.12.22\n\n23.12.27",
-    "delivery_date": "23.12.01\n\n23.12.22\n\n24.01.19",
+    "wp_date": "23.12.01",
+    "delivery_date": "23.12.01",
     "model": "SDM220-904L IM+BE+W/P",
     "qty": "1EA",
     "project": "SIC/EP/EPDM (재질: 904L)",
@@ -44044,7 +44044,7 @@
   "DM102310148": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.05",
     "model": "SDM100-TC-EX",
     "qty": "1EA",
     "project": "감속기사급: 0.4KW효성 2P 60HZ IP55 D2G4, PTC센서,ATEX CE/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -44055,7 +44055,7 @@
   "DM152310238,DM152310239,DM152310240,DM152310241": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.30",
     "model": "SDM150-TC-EX",
     "qty": "4EA",
     "project": "감속기사급: 0.75KW효성 2P 60HZ IP55 D2G4, PTC센서,ATEX CE/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -44069,7 +44069,7 @@
   "DM152310242": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.05",
     "model": "SDM150-TC-EX",
     "qty": "1EA",
     "project": "감속기사급: 0.75KW효성 2P 60HZ IP55 D2G4, PTC센서,ATEX CE/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 근접센서NPN",
@@ -44080,7 +44080,7 @@
   "DM202310075,DM202310076": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.05",
     "model": "SDM200-TC-EX",
     "qty": "2EA",
     "project": "감속기사급: 1.5KW효성 4P 60HZ D2G4 PTC센서,ATEX,CE/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -44092,7 +44092,7 @@
   "DM222310116,DM222310117,DM222310118,DM222310119": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.05",
     "model": "SDM220-TC-EX",
     "qty": "4EA",
     "project": "감속기사급: 2.2KW효성 4P 60HZ D2G4 PTC센서,ATEX,CE/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
@@ -44106,7 +44106,7 @@
   "DM202310077": {
     "company": "HK-HN-231030-110",
     "wp_date": "23.12.08",
-    "delivery_date": "24.01.05\n\n\n\n\n\n\n24.01.30",
+    "delivery_date": "24.01.05",
     "model": "SDM200-904L-TC-EX (W/P제외)",
     "qty": "1EA",
     "project": "감속기사급: 1.5KW효성 4P 60HZ D2G4 PTC센서,ATEX,CE/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT) / W/P제외/ 재질: 904L",
@@ -48077,8 +48077,8 @@
   },
   "RF102406005": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SRF100-C200",
     "qty": "1EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)/근접센서 2DP",
@@ -48088,8 +48088,8 @@
   },
   "RF152406003,RF152406004": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.07.12",
+    "delivery_date": "24.07.12",
     "model": "SRF150-C200",
     "qty": "2EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-CLAMP)/근접센서 2DP",
@@ -48100,8 +48100,8 @@
   },
   "RF302406001": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SRF300-C3000",
     "qty": "1EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 14.40:1/TC/EP/EPDM_자켓 (W-BOLT)/근접센서 2DP/ 자력이탈장치",
@@ -48111,8 +48111,8 @@
   },
   "RF302406002,RF302406003,RF302406004": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SRF300-C2000",
     "qty": "3EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 14.40:1/TC/EP/EPDM_자켓 (W-BOLT)/근접센서 2DP/ 자력이탈장치",
@@ -48124,8 +48124,8 @@
   },
   "RF62406005,RF62406006": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SRF60-C20",
     "qty": "2EA",
     "project": "모터사급: 400W(1FL6042-1AF61-2AA1)/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -48136,8 +48136,8 @@
   },
   "DM202406055": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SDM200-S/F",
     "qty": "1EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/근접센서 2DP",
@@ -48147,8 +48147,8 @@
   },
   "DM222406027": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SDM220-S/F",
     "qty": "1EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/근접센서 2DP",
@@ -48158,8 +48158,8 @@
   },
   "DB222406028,DB222406029,DB222406030,DB222406031": {
     "company": "HK-HN-240607-085",
-    "wp_date": "24.06.21\n\n\n\n\n24.07.12",
-    "delivery_date": "24.08.02\n\n\n\n\n24.07.12",
+    "wp_date": "24.06.21",
+    "delivery_date": "24.08.02",
     "model": "SDB220-S/F",
     "qty": "4EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)/근접센서 2DP",
@@ -48262,8 +48262,8 @@
   },
   "DM152407231": {
     "company": "HK-HN-240729-113",
-    "wp_date": "24.08.30\n24.08.16",
-    "delivery_date": "24.08.30\n24.08.30",
+    "wp_date": "24.08.30",
+    "delivery_date": "24.08.30",
     "model": "SDM150-EX",
     "qty": "1EA",
     "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 (B5,IP55,PTC)/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
@@ -48273,8 +48273,8 @@
   },
   "DM152407232": {
     "company": "HK-HN-240729-113",
-    "wp_date": "24.08.30\n24.08.16",
-    "delivery_date": "24.08.30\n24.08.30",
+    "wp_date": "24.08.16",
+    "delivery_date": "24.08.30",
     "model": "SDM150-904L",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP) 소재: 904L",
@@ -48450,7 +48450,7 @@
   },
   "RF62407007,RF62407008,RF62407009": {
     "company": "BIOTECHNO (24-03)",
-    "wp_date": "24.08.20\n24.07.26\n24.07.26",
+    "wp_date": "24.08.20",
     "delivery_date": "24.09.11",
     "model": "SRF60",
     "qty": "3EA",
@@ -48463,7 +48463,7 @@
   },
   "RF102407007,RF102407008,RF102407009,RF102407010": {
     "company": "BIOTECHNO (24-03)",
-    "wp_date": "24.08.20\n24.07.26\n24.07.26",
+    "wp_date": "24.07.26",
     "delivery_date": "24.09.11",
     "model": "SRF100",
     "qty": "4EA",
@@ -48477,7 +48477,7 @@
   },
   "RF202407005,RF202407006,RF202407007": {
     "company": "BIOTECHNO (24-03)",
-    "wp_date": "24.08.20\n24.07.26\n24.07.26",
+    "wp_date": "24.07.26",
     "delivery_date": "24.09.11",
     "model": "SRF200",
     "qty": "3EA",
@@ -49606,7 +49606,7 @@
   "DM102406054,DM102406055,DM102406056,DM102406057,DM102406058,DM102406059,DM102406060,DM102406061,DM102406062,DM102406063,DM102406064,DM102406065,DM102406066,DM102406067,DM102406068,DM102406069": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM100",
     "qty": "16EA",
     "project": "0.37KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/PTFE_자켓 (W-CLAMP) /모터커버포함",
@@ -49632,7 +49632,7 @@
   "DM152406120,DM152406121,DM152406122,DM152406123,DM152406124,DM152406125,DM152406126,DM152406127,DM152406128,DM152406129,DM152406130,DM152406131,DM152406132,DM152406133,DM152406134,DM152406135,DM152406136,DM152406137,DM152406138,DM152406139,DM152406140,DM152406141,DM152406142,DM152406143,DM152406144,DM152406145,DM152406146,DM152406147": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "22대 출고",
     "model": "SDM150",
     "qty": "28EA",
     "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/PTFE_자켓 (W-CLAMP) /모터커버포함",
@@ -49670,7 +49670,7 @@
   "DM152406148,DM152406149,DM152406150,DM152406151,DM152406152,DM152406153,DM152406154": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.11.15",
     "model": "SDM150",
     "qty": "7EA",
     "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/PTFE_자켓 (W-CLAMP) /모터커버포함 / 자력이탈장치",
@@ -49687,7 +49687,7 @@
   "DM202406051,DM202406052,DM202406053,DM202406054": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "52대 출고",
     "model": "SDM200-3대 출고",
     "qty": "4EA",
     "project": "1.5KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함",
@@ -49701,7 +49701,7 @@
   "DM222406023,DM222406024": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM220",
     "qty": "2EA",
     "project": "2.2KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함",
@@ -49713,7 +49713,7 @@
   "DM222406025": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM220",
     "qty": "1EA",
     "project": "2.2KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함 / 자력이탈장치",
@@ -49724,7 +49724,7 @@
   "DM252406005,DM252406006": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM250",
     "qty": "2EA",
     "project": "3.7KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함",
@@ -49736,7 +49736,7 @@
   "DM252406007,DM252406008,DM252406009,DM252406010,DM252406011,DM252406012,DM252406013,DM252406014,DM252406015": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM250",
     "qty": "9EA",
     "project": "3.7KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함 / 자력이탈장치",
@@ -49755,7 +49755,7 @@
   "DM302406008,DM302406009,DM302406010,DM302406011,DM302406012": {
     "company": "에스이씨(주)\n(ST팜)  2차",
     "wp_date": "24.07.23",
-    "delivery_date": "24.10.02\n22대 출고\n\n\n\n24.11.15\n52대 출고",
+    "delivery_date": "24.10.02",
     "model": "SDM300",
     "qty": "5EA",
     "project": "5.5KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT) /모터커버포함 / 자력이탈장치",
@@ -50429,7 +50429,7 @@
   "DM252411039": {
     "company": "우원\n(에이치티엘)",
     "wp_date": "24.11.20",
-    "delivery_date": "24.12.11\n24.12.19",
+    "delivery_date": "24.12.11",
     "model": "SDM250",
     "qty": "1EA",
     "project": "3.7KW지멘스 2P 60HZ/ 7.5:1/TC/EP/EPDM_자켓",
@@ -50440,7 +50440,7 @@
   "DM252411040,DM252411041": {
     "company": "우원\n(에이치티엘)",
     "wp_date": "24.11.20",
-    "delivery_date": "24.12.11\n24.12.19",
+    "delivery_date": "24.12.19",
     "model": "SDM250",
     "qty": "2EA",
     "project": "3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓",
@@ -50596,7 +50596,7 @@
   },
   "DM102412145,DM102412146": {
     "company": "HK-HN-241204-148",
-    "wp_date": "24.12.17\n24.12.31",
+    "wp_date": "24.12.17",
     "delivery_date": "24.12.31",
     "model": "SDM100-904L",
     "qty": "2EA",
@@ -50608,7 +50608,7 @@
   },
   "DM152412313": {
     "company": "HK-HN-241204-148",
-    "wp_date": "24.12.17\n24.12.31",
+    "wp_date": "24.12.31",
     "delivery_date": "24.12.31",
     "model": "SDM150-EX",
     "qty": "1EA",
@@ -50773,8 +50773,8 @@
   },
   "DM152412311": {
     "company": "HK-HN-241202-147",
-    "wp_date": "24.12.31\n25.01.17\n25.01.17",
-    "delivery_date": "24.12.31\n25.01.17\n25.01.17",
+    "wp_date": "24.12.31",
+    "delivery_date": "24.12.31",
     "model": "SDM150",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -50784,8 +50784,8 @@
   },
   "RF102412016": {
     "company": "HK-HN-241202-147",
-    "wp_date": "24.12.31\n25.01.17\n25.01.17",
-    "delivery_date": "24.12.31\n25.01.17\n25.01.17",
+    "wp_date": "25.01.17",
+    "delivery_date": "25.01.17",
     "model": "SRF100-C40",
     "qty": "1EA",
     "project": "모터감속기사급: 0.18KW NORD 4P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -50795,8 +50795,8 @@
   },
   "RF152412007": {
     "company": "HK-HN-241202-147",
-    "wp_date": "24.12.31\n25.01.17\n25.01.17",
-    "delivery_date": "24.12.31\n25.01.17\n25.01.17",
+    "wp_date": "25.01.17",
+    "delivery_date": "25.01.17",
     "model": "SRF150-C150",
     "qty": "1EA",
     "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
@@ -51153,7 +51153,7 @@
   "DM102412149,DM102412150,DM102412151,DM102412152,DM102412153,DM102412154,DM102412155,DM102412156,DM102412157,DM102412158": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.01.17",
     "model": "SDM100",
     "qty": "10EA",
     "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -51173,7 +51173,7 @@
   "DM152412338,DM152412339,DM152412340,DM152412341,DM152412342,DM152412343,DM152412344,DM152412345,DM152412346,DM152412347,DM152412348,DM152412349,DM152412350": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.01.17",
     "model": "SDM150",
     "qty": "13EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
@@ -51196,7 +51196,7 @@
   "DM202412106,DM202412107,DM202412108,DM202412109,DM202412110,DM202412111,DM202412112": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.01.17",
     "model": "SDM200",
     "qty": "7EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓",
@@ -51213,7 +51213,7 @@
   "DM222412129": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.01.17",
     "model": "SDM220",
     "qty": "1EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓",
@@ -51224,7 +51224,7 @@
   "DM102412159,DM102412160": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.02.10",
     "model": "SDM100-F44",
     "qty": "2EA",
     "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (소재: F44(SMO254)",
@@ -51236,7 +51236,7 @@
   "DM152412351,DM152412352,DM152412353,DM152412354": {
     "company": "HK-HN-241217-153",
     "wp_date": "25.01.17",
-    "delivery_date": "25.01.17\n25.01.17\n25.01.17\n25.01.17\n25.02.10\n25.02.10",
+    "delivery_date": "25.02.10",
     "model": "SDM150-F44",
     "qty": "4EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (소재: F44(SMO254)",
@@ -51679,8 +51679,8 @@
   },
   "DP222411003,DP222411004,DP222411005,DP222411006,DP222411007,DP222411008": {
     "company": "BIOTECHNO(24-04)",
-    "wp_date": "?\n24.12.08\n24.12.08\n24.12.08\n24.12.08",
-    "delivery_date": "24.12.08\n25.02.08\n25.02.08\n25.02.08\n25.02.08",
+    "wp_date": "?",
+    "delivery_date": "24.12.08",
     "model": "SDP220",
     "qty": "6EA",
     "project": "5.5KW지멘스 6P 50HZ CE IE3/TC/EP/EPDM FDA_자켓 (W-BOLT)",
@@ -51695,8 +51695,8 @@
   },
   "RF62411010": {
     "company": "BIOTECHNO(24-04)",
-    "wp_date": "?\n24.12.08\n24.12.08\n24.12.08\n24.12.08",
-    "delivery_date": "24.12.08\n25.02.08\n25.02.08\n25.02.08\n25.02.08",
+    "wp_date": "24.12.08",
+    "delivery_date": "25.02.08",
     "model": "SRF60",
     "qty": "1EA",
     "project": "0.12KW NORD 4P 50HZ(SK92072.1AH-63S/4 F)/ NORD 8.67:1/강제팬/TC/EP/EPDM FDA_자켓",
@@ -51706,8 +51706,8 @@
   },
   "RF62411011,RF62411012,RF62411013,RF62411014,RF62411015": {
     "company": "BIOTECHNO(24-04)",
-    "wp_date": "?\n24.12.08\n24.12.08\n24.12.08\n24.12.08",
-    "delivery_date": "24.12.08\n25.02.08\n25.02.08\n25.02.08\n25.02.08",
+    "wp_date": "24.12.08",
+    "delivery_date": "25.02.08",
     "model": "SRF60",
     "qty": "5EA",
     "project": "0.12KW NORD 4P 50HZ(SK92072.1AH-63S/4 F)/ NORD 8.67:1/강제팬/TC/EP/EPDM FDA_자켓",
@@ -51721,8 +51721,8 @@
   },
   "RF222411002,RF222411003": {
     "company": "BIOTECHNO(24-04)",
-    "wp_date": "?\n24.12.08\n24.12.08\n24.12.08\n24.12.08",
-    "delivery_date": "24.12.08\n25.02.08\n25.02.08\n25.02.08\n25.02.08",
+    "wp_date": "24.12.08",
+    "delivery_date": "25.02.08",
     "model": "SRF220",
     "qty": "2EA",
     "project": "0.55KW NORD 4P 50HZ(SK92072.1AH-80S/4 F)/ NORD 8.67:1/강제팬/TC/EP/EPDM FDA_자켓",
@@ -51733,8 +51733,8 @@
   },
   "RF302411006,RF302411007,RF302411008,RF302411009,RF302411010,RF302411011,RF302411012,RF302411013,RF302411014,RF302411015,RF302411016,RF302411017": {
     "company": "BIOTECHNO(24-04)",
-    "wp_date": "?\n24.12.08\n24.12.08\n24.12.08\n24.12.08",
-    "delivery_date": "24.12.08\n25.02.08\n25.02.08\n25.02.08\n25.02.08",
+    "wp_date": "24.12.08",
+    "delivery_date": "25.02.08",
     "model": "SRF300",
     "qty": "12EA",
     "project": "1.5KW NORD 4P 50HZ(SK92372.1AH-90LP/4 TF F)/ NORD 14.12:1/강제팬/TC/EP/EPDM FDA_자켓",
@@ -52023,7 +52023,7 @@
   },
   "RF62411017": {
     "company": "BIOTECHNO(24-05)",
-    "wp_date": "25.01.06\n24.12.13\n24.12.13\n24.12.13",
+    "wp_date": "25.01.06",
     "delivery_date": "25.03.31",
     "model": "SRF60",
     "qty": "1EA",
@@ -52034,7 +52034,7 @@
   },
   "RF102411015": {
     "company": "BIOTECHNO(24-05)",
-    "wp_date": "25.01.06\n24.12.13\n24.12.13\n24.12.13",
+    "wp_date": "24.12.13",
     "delivery_date": "25.03.31",
     "model": "SRF100",
     "qty": "1EA",
@@ -52045,7 +52045,7 @@
   },
   "RF222411004,RF222411005": {
     "company": "BIOTECHNO(24-05)",
-    "wp_date": "25.01.06\n24.12.13\n24.12.13\n24.12.13",
+    "wp_date": "24.12.13",
     "delivery_date": "25.03.31",
     "model": "SRF220",
     "qty": "2EA",
@@ -52057,7 +52057,7 @@
   },
   "RF302411018,RF302411019": {
     "company": "BIOTECHNO(24-05)",
-    "wp_date": "25.01.06\n24.12.13\n24.12.13\n24.12.13",
+    "wp_date": "24.12.13",
     "delivery_date": "25.03.31",
     "model": "SRF300",
     "qty": "2EA",
@@ -52340,7 +52340,7 @@
   "SA252503005,SA252503006": {
     "company": "보광산업\n(태경농심)",
     "wp_date": "25.03.26",
-    "delivery_date": "25.04.14\n25.03.26",
+    "delivery_date": "25.04.14",
     "model": "SA250",
     "qty": "2EA",
     "project": "3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EPDM_자켓",
@@ -52352,7 +52352,7 @@
   "SN222503004": {
     "company": "보광산업\n(태경농심)",
     "wp_date": "25.03.26",
-    "delivery_date": "25.04.14\n25.03.26",
+    "delivery_date": "25.03.26",
     "model": "SSN220 IM+BE+스테이터",
     "qty": "1EA",
     "project": "TC/EP/EPDM (4SKF/ V홈, 물방울 STATOR 사용)",
@@ -53074,7 +53074,7 @@
   "BDP222412010,BDP222412011,BDP222412012,BDP222412013,BDP222412014,BDP222412015": {
     "company": "팀스\n(삼양식품 밀양)",
     "wp_date": "25.01.07",
-    "delivery_date": "25.02.11-2대\n25.04.29-나머지",
+    "delivery_date": "25.02.11-2대",
     "model": "SDP220",
     "qty": "6EA",
     "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_싱글",
@@ -53090,7 +53090,7 @@
   "BSA302412033": {
     "company": "팀스\n(삼양식품 밀양)",
     "wp_date": "25.01.07",
-    "delivery_date": "25.02.11-2대\n25.04.29-나머지",
+    "delivery_date": "25.04.29-나머지",
     "model": "SA300",
     "qty": "1EA",
     "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_싱글",
@@ -55168,7 +55168,7 @@
   },
   "DM102507078,DM102507079": {
     "company": "HK-HN-250724-068",
-    "wp_date": "25.08.14\n25.08.14\n25.08.14\n25.08.01",
+    "wp_date": "25.08.14",
     "delivery_date": "25.08.14",
     "model": "SDM100",
     "qty": "2EA",
@@ -55180,7 +55180,7 @@
   },
   "DM152507218,DM152507219,DM152507220,DM152507221": {
     "company": "HK-HN-250724-068",
-    "wp_date": "25.08.14\n25.08.14\n25.08.14\n25.08.01",
+    "wp_date": "25.08.14",
     "delivery_date": "25.08.14",
     "model": "SDM150",
     "qty": "4EA",
@@ -55194,7 +55194,7 @@
   },
   "DM202507099,DM202507100": {
     "company": "HK-HN-250724-068",
-    "wp_date": "25.08.14\n25.08.14\n25.08.14\n25.08.01",
+    "wp_date": "25.08.14",
     "delivery_date": "25.08.14",
     "model": "SDM200",
     "qty": "2EA",
@@ -56075,7 +56075,7 @@
   "DM62508054": {
     "company": "HK-HN-250826-079",
     "wp_date": "25.09.26",
-    "delivery_date": "25.09.26\n25.10.13",
+    "delivery_date": "25.09.26",
     "model": "SDM60-S",
     "qty": "1EA",
     "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ 근접센서 PRCM12-2DN (NPN)",
@@ -56086,7 +56086,7 @@
   "RFT202508012": {
     "company": "HK-HN-250826-079",
     "wp_date": "25.09.26",
-    "delivery_date": "25.09.26\n25.10.13",
+    "delivery_date": "25.10.13",
     "model": "SRFT200-M500",
     "qty": "1EA",
     "project": "모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 7.5:1/SI3N4/EP/EPDM_자켓 (W-BOLT) 근접센서 PRCM12-2DN (NPN)",
@@ -56195,7 +56195,7 @@
   },
   "DM102509088": {
     "company": "HK-HN-250910-084",
-    "wp_date": "25.09.25 \n\n25.10.13",
+    "wp_date": "25.09.25",
     "delivery_date": "25.10.13",
     "model": "SDM100-904L",
     "qty": "1EA",
@@ -56206,7 +56206,7 @@
   },
   "DM222509118,DM222509119": {
     "company": "HK-HN-250910-084",
-    "wp_date": "25.09.25 \n\n25.10.13",
+    "wp_date": "25.10.13",
     "delivery_date": "25.10.13",
     "model": "SDM220-904L",
     "qty": "2EA",
@@ -56218,7 +56218,7 @@
   },
   "DM252509085": {
     "company": "HK-HN-250910-084",
-    "wp_date": "25.09.25 \n\n25.10.13",
+    "wp_date": "25.09.25",
     "delivery_date": "25.10.13",
     "model": "SDM250",
     "qty": "1EA",
@@ -56229,7 +56229,7 @@
   },
   "DM252509086": {
     "company": "HK-HN-250910-084",
-    "wp_date": "25.09.25 \n\n25.10.13",
+    "wp_date": "25.09.25",
     "delivery_date": "25.10.13",
     "model": "SDM250 IM+BE",
     "qty": "1EA",
@@ -56721,7 +56721,7 @@
   "DM102507070,DM102507071,DM102507072,DM102507073,DM102507074,DM102507075": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM100",
     "qty": "6EA",
     "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/PTFE_자켓 (W-CLAMP)",
@@ -56737,7 +56737,7 @@
   "DM152507209,DM152507210,DM152507211,DM152507212,DM152507213,DM152507214,DM152507215,DM152507216": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM150",
     "qty": "8EA",
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/PTFE_자켓 (W-CLAMP)",
@@ -56755,7 +56755,7 @@
   "DM202507091,DM202507092,DM202507093,DM202507094,DM202507095,DM202507096,DM202507097,DM202507098": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM200",
     "qty": "8EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/PTFE_자켓(W-BOLT)",
@@ -56773,7 +56773,7 @@
   "DM222507085,DM222507086,DM222507087,DM222507088,DM222507089,DM222507090,DM222507091,DM222507092,DM222507093,DM222507094,DM222507095,DM222507096,DM222507097,DM222507098,DM222507099,DM222507100,DM222507101,DM222507102,DM222507103,DM222507104": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM220",
     "qty": "20EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/PTFE_자켓(W-BOLT)",
@@ -56803,7 +56803,7 @@
   "DM252507028,DM252507029,DM252507030,DM252507031,DM252507032,DM252507033,DM252507034,DM252507035,DM252507036,DM252507037,DM252507038,DM252507039,DM252507040,DM252507041,DM252507042,DM252507043,DM252507044,DM252507045,DM252507046,DM252507047,DM252507048,DM252507049,DM252507050,DM252507051,DM252507052,DM252507053,DM252507054,DM252507055,DM252507056,DM252507057,DM252507058,DM252507059,DM252507060,DM252507061,DM252507062,DM252507063,DM252507064,DM252507065,DM252507066,DM252507067,DM252507068,DM252507069": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.09.19",
     "model": "SDM250",
     "qty": "42EA",
     "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/PTFE_자켓 (W-BOLT)",
@@ -56855,7 +56855,7 @@
   "DM252507070,DM252507071": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.09.19",
     "model": "SDM250-EX",
     "qty": "2EA",
     "project": "모터감속기사급: 4.0KW BEIDE 4P 1MT0003-1BB23-3FB4-Z/B44+F70+X86/ NORD 5:1/SIC/EP/PTFE_자켓 (W-BOLT)",
@@ -56867,7 +56867,7 @@
   "DM302507026,DM302507027,DM302507028,DM302507029,DM302507030,DM302507031,DM302507032,DM302507033,DM302507034,DM302507035,DM302507036,DM302507037,DM302507038,DM302507039,DM302507040,DM302507041,DM302507042,DM302507043,DM302507044,DM302507045,DM302507046,DM302507047,DM302507048,DM302507049,DM302507050,DM302507051": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.10.01",
     "model": "SDM300",
     "qty": "26EA",
     "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/PTFE_자켓 (W-BOLT)",
@@ -56903,7 +56903,7 @@
   "DM402507003,DM402507004,DM402507005,DM402507006,DM402507007,DM402507008,DM402507009,DM402507010,DM402507011,DM402507012,DM402507013,DM402507014": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.10.17",
     "model": "SDM400",
     "qty": "12EA",
     "project": "모터감속기사급: 7.5KW NORD 4P 50HZ/ NORD 7.18:1/TC/EP/PTFE_자켓 (W-BOLT)/자력이탈장치-1대",
@@ -56925,7 +56925,7 @@
   "RF402507001,RF402507002,RF402507003,RF402507004,RF402507005,RF402507006,RF402507007,RF402507008,RF402507009,RF402507010,RF402507011,RF402507012,RF402507013,RF402507014,RF402507015,RF402507016,RF402507017,RF402507018,RF402507019,RF402507020": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.10.31",
     "model": "SRF403-LSFB/EX",
     "qty": "20EA",
     "project": "모터감속기사급: 5.5KW BEIDE 4P 1MT0003-1CB03-3FB4-Z/B44+F70+X86/ NORD 8.85:1/TC/EP/PTFE_자켓 (W-BOLT)",
@@ -56955,7 +56955,7 @@
   "DM10T250721-01": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM100 베어링툴",
     "qty": "1EA",
     "project": "베어링 툴",
@@ -56966,7 +56966,7 @@
   "DM15T250721-01": {
     "company": "HK-HN-250718-065",
     "wp_date": "25.07.25",
-    "delivery_date": "25.08.29\n25.08.29\n25.08.29\n25.08.29\n25.09.19\n25.09.19\n25.10.01\n25.10.17\n25.10.31\n25.08.29\n25.08.29",
+    "delivery_date": "25.08.29",
     "model": "SDM150 베어링툴",
     "qty": "1EA",
     "project": "베어링 툴",
@@ -57106,7 +57106,7 @@
   },
   "DF102510003,DF102510004,DF102510005,DF102510006": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.11.14",
     "delivery_date": "25.11.14",
     "model": "SDF100",
     "qty": "4EA",
@@ -57120,7 +57120,7 @@
   },
   "DF102510007": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.11.14",
     "delivery_date": "25.11.14",
     "model": "SDF100-SMO254",
     "qty": "1EA",
@@ -57131,7 +57131,7 @@
   },
   "DF152510001,DF152510002,DF152510003,DF152510004": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.11.14",
     "delivery_date": "25.11.14",
     "model": "SDF150",
     "qty": "4EA",
@@ -57145,7 +57145,7 @@
   },
   "DF152510005": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.10.24",
     "delivery_date": "25.11.14",
     "model": "SDF150-904L",
     "qty": "1EA",
@@ -57156,7 +57156,7 @@
   },
   "DF202510002,DF202510003": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.11.14",
     "delivery_date": "25.11.14",
     "model": "SDF200",
     "qty": "2EA",
@@ -57168,7 +57168,7 @@
   },
   "DF202510004": {
     "company": "HK-HN-251010-094",
-    "wp_date": "25.11.14\n25.11.14\n25.11.14\n25.10.24\n25.11.14\n25.11.14\n25.10.24",
+    "wp_date": "25.11.14",
     "delivery_date": "25.11.14",
     "model": "SDF200-EX",
     "qty": "1EA",
@@ -57260,8 +57260,8 @@
   },
   "DM202509113": {
     "company": "HK-HN-250919-088",
-    "wp_date": "25.11.07\n25.11.07\n25.11.21",
-    "delivery_date": "25.11.07\n25.11.07\n25.11.21",
+    "wp_date": "25.11.07",
+    "delivery_date": "25.11.07",
     "model": "SDM200-TC/EX/L",
     "qty": "1EA",
     "project": "감속기사급: 1.5KW효성 4P 60HZ D2G4,B5,IP55,PTC/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 고정형 자력이탈장치",
@@ -57271,8 +57271,8 @@
   },
   "DM222509120": {
     "company": "HK-HN-250919-088",
-    "wp_date": "25.11.07\n25.11.07\n25.11.21",
-    "delivery_date": "25.11.07\n25.11.07\n25.11.21",
+    "wp_date": "25.11.07",
+    "delivery_date": "25.11.07",
     "model": "SDM220-TC/EX/L",
     "qty": "1EA",
     "project": "감속기사급: 2.2KW효성 4P 60HZ D2G4,B5,IP55,PTC/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 고정형 자력이탈장치",
@@ -57282,8 +57282,8 @@
   },
   "RFT402509001": {
     "company": "HK-HN-250919-088",
-    "wp_date": "25.11.07\n25.11.07\n25.11.21",
-    "delivery_date": "25.11.07\n25.11.07\n25.11.21",
+    "wp_date": "25.11.21",
+    "delivery_date": "25.11.21",
     "model": "SRFT400-M4000",
     "qty": "1EA",
     "project": "모터감속기사급: 7.5KW 4P 50HZ B5/ NORD 7.18:1/SI3N4/EP/EPDM_자켓 (W-BOLT)/ 분리형 자력이탈장치",
@@ -57522,8 +57522,8 @@
   },
   "DM202510117": {
     "company": "HK-HN-251030-099",
-    "wp_date": "25.11.28\n25.11.28\nX",
-    "delivery_date": "25.11.28\n25.11.28\n25.12.12",
+    "wp_date": "25.11.28",
+    "delivery_date": "25.11.28",
     "model": "SDM200",
     "qty": "1EA",
     "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓(W-BOLT)",
@@ -57533,8 +57533,8 @@
   },
   "DM222510125,DM222510126,DM222510127,DM222510128,DM222510129,DM222510130,DM222510131,DM222510132,DM222510133,DM222510134": {
     "company": "HK-HN-251030-099",
-    "wp_date": "25.11.28\n25.11.28\nX",
-    "delivery_date": "25.11.28\n25.11.28\n25.12.12",
+    "wp_date": "25.11.28",
+    "delivery_date": "25.11.28",
     "model": "SDM220",
     "qty": "10EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓(W-BOLT)",
@@ -57553,8 +57553,8 @@
   },
   "DM222510135,DM222510136,DM222510137,DM222510138": {
     "company": "HK-HN-251030-099",
-    "wp_date": "25.11.28\n25.11.28\nX",
-    "delivery_date": "25.11.28\n25.11.28\n25.12.12",
+    "wp_date": "X",
+    "delivery_date": "25.12.12",
     "model": "SDM220-SMO254",
     "qty": "4EA",
     "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (소재: SMO254)",
