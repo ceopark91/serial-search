@@ -231,7 +231,7 @@ header p{
   background:var(--card);
   border:2px solid var(--border);
   border-radius:16px;
-  padding:clamp(24px,4vw,32px);
+  padding:clamp(20px,4vw,28px);
   box-shadow:0 8px 32px var(--shadow);
   animation:fadeIn 0.4s ease;
   transition:all 0.3s ease;
@@ -242,18 +242,18 @@ header p{
 }
 
 .card-header{
-  margin-bottom:20px;
-  padding-bottom:16px;
+  margin-bottom:16px;
+  padding-bottom:12px;
   border-bottom:2px solid var(--border);
 }
 .card-title{
-  font-size:clamp(18px,4vw,20px);
+  font-size:clamp(17px,4vw,19px);
   font-weight:700;
   color:var(--sedna-green);
-  margin-bottom:8px;
+  margin-bottom:6px;
 }
 .copy-notice{
-  font-size:12px;
+  font-size:11px;
   color:var(--muted);
   opacity:0.8;
 }
@@ -261,17 +261,17 @@ header p{
 /* ===== PRIMARY INFO ===== */
 .primary-info{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));
-  gap:14px;
-  margin-bottom:20px;
-  padding-bottom:20px;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));
+  gap:12px;
+  margin-bottom:16px;
+  padding-bottom:16px;
   border-bottom:1px solid var(--border);
 }
 .primary-item{
   background:linear-gradient(135deg,rgba(56,189,248,0.12),rgba(6,214,160,0.08));
   border:2px solid rgba(56,189,248,0.25);
-  border-radius:12px;
-  padding:16px;
+  border-radius:10px;
+  padding:12px 14px;
   transition:all 0.3s ease;
   cursor:pointer;
   position:relative;
@@ -279,8 +279,8 @@ header p{
 }
 .primary-item:hover{
   border-color:var(--accent);
-  transform:translateY(-3px);
-  box-shadow:0 8px 20px rgba(56,189,248,0.25);
+  transform:translateY(-2px);
+  box-shadow:0 6px 16px rgba(56,189,248,0.25);
 }
 .primary-item:active{
   transform:scale(0.97);
@@ -289,15 +289,15 @@ header p{
 /* ===== SECONDARY INFO ===== */
 .secondary-info{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));
-  gap:14px;
-  margin-bottom:24px;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+  margin-bottom:18px;
 }
 .secondary-item{
   background:var(--input-bg);
   border:2px solid var(--border);
-  border-radius:12px;
-  padding:14px;
+  border-radius:10px;
+  padding:10px 12px;
   transition:all 0.3s ease;
   cursor:pointer;
   position:relative;
@@ -311,25 +311,29 @@ header p{
 .secondary-item:active{
   transform:scale(0.97);
 }
+.secondary-item:nth-child(4){
+  grid-column:1 / -1;
+}
 
 .info-label{
-  font-size:11px; 
+  font-size:10px; 
   color:var(--muted);
-  margin-bottom:6px;
+  margin-bottom:5px;
   text-transform:uppercase;
   letter-spacing:0.5px;
   font-weight:500;
 }
 .info-value{
-  font-size:clamp(14px,3vw,15px);
-  line-height:1.6;
+  font-size:clamp(13px,3vw,14px);
+  line-height:1.5;
   color:var(--text);
   font-weight:500;
   word-break:break-word;
 }
 .primary-item .info-value{
-  font-size:clamp(15px,3.5vw,17px);
+  font-size:clamp(14px,3.5vw,16px);
   font-weight:600;
+  line-height:1.4;
 }
 
 /* 복사 피드백 */
@@ -358,34 +362,34 @@ header p{
 
 /* ===== CERTIFICATE ===== */
 .cert-section{
-  padding-top:24px;
+  padding-top:16px;
   border-top:2px solid var(--border);
 }
 .cert-btn{
   display:block;
-  padding:16px 24px;
+  padding:12px 20px;
   background:linear-gradient(135deg,var(--accent),var(--accent-hover));
   color:#fff;
-  border-radius:12px;
+  border-radius:10px;
   text-decoration:none;
   font-weight:700;
-  font-size:clamp(14px,3vw,16px);
+  font-size:clamp(13px,3vw,15px);
   text-align:center;
   transition:all 0.3s ease;
   box-shadow:0 4px 12px rgba(56,189,248,0.3);
 }
 .cert-btn:hover{
-  transform:translateY(-3px);
-  box-shadow:0 8px 24px rgba(56,189,248,0.5);
+  transform:translateY(-2px);
+  box-shadow:0 6px 20px rgba(56,189,248,0.5);
 }
 .cert-unavailable{
   text-align:center;
-  padding:16px;
+  padding:12px;
   color:var(--muted);
   background:var(--input-bg);
-  border-radius:12px;
+  border-radius:10px;
   border:2px dashed var(--border);
-  font-size:clamp(13px,3vw,14px);
+  font-size:clamp(12px,3vw,13px);
 }
 
 /* ===== EMPTY STATE ===== */
@@ -432,8 +436,11 @@ footer{
   .search-box{padding:20px; margin-bottom:32px}
   .btn-group{gap:10px}
   .btn{padding:12px 20px}
-  .secondary-info{gap:12px}
-  .result-card{padding:20px}
+  .primary-info{gap:10px}
+  .secondary-info{gap:10px; grid-template-columns:repeat(2,1fr)}
+  .secondary-item:nth-child(3),
+  .secondary-item:nth-child(4){grid-column:span 1}
+  .result-card{padding:18px}
   footer{margin-top:40px}
   .theme-toggle{top:16px; right:16px; padding:6px 12px}
   .theme-text{display:none}
@@ -442,6 +449,12 @@ footer{
 @media(max-width:480px){
   .btn-group{grid-template-columns:1fr}
   .status-badge{font-size:11px; padding:4px 10px}
+  .primary-info{grid-template-columns:1fr}
+  .secondary-info{grid-template-columns:1fr}
+  .secondary-item:nth-child(n){grid-column:span 1}
+  .result-card{padding:16px}
+  .card-header{margin-bottom:14px; padding-bottom:10px}
+  .cert-section{padding-top:14px}
 }
 </style>
 </head>
@@ -503,11 +516,11 @@ function toggleTheme(){
   body.classList.toggle('dark-mode');
   
   if(body.classList.contains('dark-mode')){
-    icon.textContent = '\u2600\uFE0F';
+    icon.textContent = '☀️';
     text.textContent = 'Light';
     localStorage.setItem('theme', 'dark');
   }else{
-    icon.textContent = '\uD83C\uDF19';
+    icon.textContent = '🌙';
     text.textContent = 'Dark';
     localStorage.setItem('theme', 'light');
   }
@@ -518,7 +531,7 @@ function loadTheme(){
   const savedTheme = localStorage.getItem('theme');
   if(savedTheme === 'dark'){
     document.body.classList.add('dark-mode');
-    document.getElementById('themeIcon').textContent = '\u2600\uFE0F';
+    document.getElementById('themeIcon').textContent = '☀️';
     document.getElementById('themeText').textContent = 'Light';
   }
 }
@@ -545,9 +558,9 @@ async function loadDB(){
     ]);
     SERIAL_DB = sdb;
     CERT_DB = cdb;
-    console.log('\u2713 DB loaded:', {serials: Object.keys(SERIAL_DB).length, certs: Object.keys(CERT_DB).length});
+    console.log('✓ DB loaded:', {serials: Object.keys(SERIAL_DB).length, certs: Object.keys(CERT_DB).length});
   }catch(e){
-    console.error('\u2717 DB load failed:', e);
+    console.error('✗ DB load failed:', e);
   }
 }
 
@@ -570,20 +583,20 @@ function copyToClipboard(text, el){
   navigator.clipboard.writeText(cleanText).then(()=>{
     const feedback = document.createElement('div');
     feedback.className = 'copy-feedback';
-    feedback.textContent = '\u2713 Copied!';
+    feedback.textContent = '✓ Copied!';
     el.appendChild(feedback);
     setTimeout(()=>feedback.remove(), 1500);
   }).catch(()=>{
-    alert('\uBCF5\uC0AC \uC2E4\uD328 / Copy failed');
+    alert('복사 실패 / Copy failed');
   });
 }
 
 function render(hit){
   if(!hit) return `
     <div class="empty">
-      <div class="empty-icon">\uD83D\uDD0D</div>
+      <div class="empty-icon">🔍</div>
       <div class="empty-text">No Results Found</div>
-      <div class="empty-sub">\uAC80\uC0C9 \uACB0\uACFC\uAC00 \uC5C6\uC2B5\uB2C8\uB2E4. \uC2DC\uB9AC\uC5BC \uB118\uBC84\uB97C \uB2E4\uC2DC \uD655\uC778\uD574\uC8FC\uC138\uC694.</div>
+      <div class="empty-sub">검색 결과가 없습니다. 시리얼 넘버를 다시 확인해주세요.</div>
     </div>`;
   
   const escapeHtml = (str) => (str||'').replace(/'/g, '&#39;').replace(/"/g, '&quot;');
@@ -591,44 +604,44 @@ function render(hit){
   return `
     <div class="result-card">
       <div class="card-header">
-        <div class="card-title">\u2713 Lookup Result (\uC870\uD68C \uACB0\uACFC)</div>
-        <div class="copy-notice">\uD83D\uDCA1 Click any field to copy to clipboard</div>
+        <div class="card-title">✓ Lookup Result (조회 결과)</div>
+        <div class="copy-notice">💡 Click any field to copy to clipboard</div>
       </div>
       
       <div class="primary-info">
         <div class="primary-item" onclick="copyToClipboard('${escapeHtml(hit.company)}', this)">
-          <div class="info-label">Company (\uC5C5\uCCB4\uBA85)</div>
+          <div class="info-label">Company (업체명)</div>
           <div class="info-value">${nl(hit.company)||'-'}</div>
         </div>
         <div class="primary-item" onclick="copyToClipboard('${escapeHtml(hit.model)}', this)">
-          <div class="info-label">Model (\uBAA8\uB378\uBA85)</div>
+          <div class="info-label">Model (모델명)</div>
           <div class="info-value">${nl(hit.model)||'-'}</div>
         </div>
       </div>
       
       <div class="secondary-info">
         <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.delivery_date)}', this)">
-          <div class="info-label">Delivery Date (\uB0A9\uD488\uC77C)</div>
+          <div class="info-label">Delivery Date (납품일)</div>
           <div class="info-value">${nl(hit.delivery_date)||'-'}</div>
         </div>
         <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.wp_date)}', this)">
-          <div class="info-label">W/P Date (W/P \uB0A9\uD488\uC77C)</div>
+          <div class="info-label">W/P Date (W/P 납품일)</div>
           <div class="info-value">${nl(hit.wp_date)||'-'}</div>
         </div>
         <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.qty)}', this)">
-          <div class="info-label">Quantity (\uC218\uB7C9)</div>
+          <div class="info-label">Quantity (수량)</div>
           <div class="info-value">${nl(hit.qty)||'-'}</div>
         </div>
         <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.project)}', this)">
-          <div class="info-label">Project (\uD504\uB85C\uC81D\uD2B8)</div>
+          <div class="info-label">Project (프로젝트)</div>
           <div class="info-value">${nl(hit.project)||'-'}</div>
         </div>
       </div>
       
       <div class="cert-section">
         ${hit.certificate
-          ? `<a href="${hit.certificate}" target="_blank" rel="noopener" class="cert-btn">\uD83D\uDCE5 Download Certificate (\uC131\uC801\uC11C \uB2E4\uC6B4\uB85C\uB4DC)</a>`
-          : `<div class="cert-unavailable">\uD83D\uDCC4 Certificate Not Available (\uC131\uC801\uC11C \uBBF8\uB4F1\uB85D)</div>`
+          ? `<a href="${hit.certificate}" target="_blank" rel="noopener" class="cert-btn">📥 Download Certificate (성적서 다운로드)</a>`
+          : `<div class="cert-unavailable">📄 Certificate Not Available (성적서 미등록)</div>`
         }
       </div>
     </div>`;
@@ -644,9 +657,9 @@ async function search(){
   if(!v){
     box.innerHTML=`
       <div class="empty">
-        <div class="empty-icon">\u26A0\uFE0F</div>
+        <div class="empty-icon">⚠️</div>
         <div class="empty-text">Input Required</div>
-        <div class="empty-sub">\uC2DC\uB9AC\uC5BC \uB118\uBC84\uB97C \uC785\uB825\uD574\uC8FC\uC138\uC694.</div>
+        <div class="empty-sub">시리얼 넘버를 입력해주세요.</div>
       </div>`;
     input.focus();
     return;
@@ -655,7 +668,7 @@ async function search(){
   isLoading = true;
   const searchBtn = document.querySelector('.btn-search');
   searchBtn.disabled = true;
-  searchBtn.textContent = '\u23F3 Searching...';
+  searchBtn.textContent = '⏳ Searching...';
   
   box.innerHTML = `
     <div class="loading">
@@ -669,7 +682,7 @@ async function search(){
   box.innerHTML = render(hit);
   
   searchBtn.disabled = false;
-  searchBtn.textContent = '\uD83D\uDD0E Lookup (\uC870\uD68C)';
+  searchBtn.textContent = '🔎 Lookup (조회)';
   isLoading = false;
 }
 
