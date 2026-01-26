@@ -48,6 +48,7 @@ body{
   transition:background 0.3s ease, color 0.3s ease;
 }
 .wrapper{max-width:900px; margin:auto; padding:40px 20px 80px; position:relative}
+.hidden{display:none !important}
 
 /* ===== THEME TOGGLE ===== */
 .theme-toggle{
@@ -591,6 +592,128 @@ function copyToClipboard(text, el){
   });
 }
 
+let isChinaUser = false;
+
+async function detectChinaIP(){
+  const params = new URLSearchParams(location.search);
+  if(params.has('cn')){
+    const flag = params.get('cn');
+    isChinaUser = flag === '1' || flag === 'true';
+    const box = document.getElementById("result");
+    if(box){
+      applyChinaVisibility(box);
+      applyChinaLocalization(box);
+    }
+    applyChinaLocalization(document);
+    return;
+  }
+  try{
+    const data = await fetchGeoData();
+    isChinaUser = data && (data.country_code === 'CN' || data.country === 'China' || data.countryCode === 'CN');
+  }catch(_err){
+    isChinaUser = false;
+  }finally{
+    const box = document.getElementById("result");
+    if(box){
+      applyChinaVisibility(box);
+      applyChinaLocalization(box);
+    }
+    applyChinaLocalization(document);
+  }
+}
+
+async function fetchGeoData(){
+  const primary = await fetchGeoJson('https://ipapi.co/json/', data => data);
+  if(primary) return primary;
+  return await fetchGeoJson('https://ipwho.is/', data => data && data.success === false ? null : data);
+}
+
+async function fetchGeoJson(url, normalize){
+  try{
+    const res = await fetch(url);
+    if(!res.ok) return null;
+    const data = await res.json();
+    return normalize ? normalize(data) : data;
+  }catch(_err){
+    return null;
+  }
+}
+
+function applyChinaVisibility(root){
+  if(!isChinaUser || !root) return;
+  root.querySelectorAll('.china-hide').forEach(el => el.classList.add('hidden'));
+}
+
+function applyChinaLocalization(root){
+  if(!isChinaUser || !root) return;
+  root.querySelectorAll('.info-label').forEach(el => {
+    el.textContent = el.textContent.replace(/\s*\([^)]*\)\s*/g, '').trim();
+  });
+  const title = root.querySelector('.card-title');
+  if(title) title.textContent = '✓ Lookup Result';
+  const notice = root.querySelector('.copy-notice');
+  if(notice) notice.textContent = 'Click any field to copy to clipboard';
+  root.querySelectorAll('.cert-btn, .cert-unavailable').forEach(el => {
+    el.textContent = el.textContent.replace(/\s*\([^)]*\)\s*/g, '').trim();
+  });
+  root.querySelectorAll('.empty-sub').forEach(el => {
+    if(el.textContent.includes('검색 결과')){
+      el.textContent = 'No results found. Please verify the serial number.';
+    }else if(el.textContent.includes('시리얼 넘버')){
+      el.textContent = 'Please enter a serial number.';
+    }
+  });
+  const headerNote = document.querySelector('header p');
+  if(headerNote) headerNote.textContent = 'Powered by SEDNA Database · Serial Number Lookup System';
+  root.querySelectorAll('.info-label').forEach(el => {
+    if(el.textContent === 'Project'){
+      const value = el.parentElement ? el.parentElement.querySelector('.info-value') : null;
+      if(value){
+        value.textContent = sanitizeChinaProjectValue(value.textContent);
+      }
+    }
+  });
+  const searchBtn = document.querySelector('.btn-search');
+  if(searchBtn) searchBtn.textContent = '🔎 Lookup';
+  const resetBtn = document.querySelector('.btn-reset');
+  if(resetBtn) resetBtn.textContent = '↻ Reset';
+}
+
+function sanitizeChinaProjectValue(text){
+  let output = text || '';
+  const replacements = [
+    [/모터감속기사급:/g, ''],
+    [/모터사급:/g, ''],
+    [/감속기사급:/g, ''],
+    [/베어링 툴/g, 'Bearing tool'],
+    [/자켓/g, 'jacket'],
+    [/강제팬/g, 'forced fan'],
+    [/소재:/g, 'material:'],
+    [/소재/g, 'material'],
+    [/고정형/g, 'fixed'],
+    [/분리형/g, 'detachable'],
+    [/자력이탈장치/g, 'magnetic decoupler'],
+    [/PNP근접센서/g, 'PNP proximity sensor'],
+    [/근접센서/g, 'proximity sensor'],
+    [/세라믹베어링/g, 'ceramic bearing'],
+    [/세라믹/g, 'ceramic'],
+    [/질화규소/g, 'silicon nitride'],
+    [/효성/g, 'Hyosung'],
+    [/지멘스/g, 'Siemens'],
+    [/노드/g, 'NORD'],
+    [/모터바리오/g, 'Motovario'],
+    [/용접형/g, 'welded'],
+    [/탑플레이트/g, 'top plate'],
+    [/출고/g, 'delivery'],
+    [/싱글/g, 'single'],
+    [/\+코팅\(알루미나\)/g, '+ coating (alumina)']
+  ];
+  replacements.forEach(([pattern, replacement]) => {
+    output = output.replace(pattern, replacement);
+  });
+  return output.replace(/\s+/g, ' ').trim();
+}
+
 function render(hit){
   if(!hit) return `
     <div class="empty">
@@ -620,11 +743,11 @@ function render(hit){
       </div>
       
       <div class="secondary-info">
-        <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.delivery_date)}', this)">
+        <div class="secondary-item china-hide" onclick="copyToClipboard('${escapeHtml(hit.delivery_date)}', this)">
           <div class="info-label">Delivery Date (납품일)</div>
           <div class="info-value">${nl(hit.delivery_date)||'-'}</div>
         </div>
-        <div class="secondary-item" onclick="copyToClipboard('${escapeHtml(hit.wp_date)}', this)">
+        <div class="secondary-item china-hide" onclick="copyToClipboard('${escapeHtml(hit.wp_date)}', this)">
           <div class="info-label">W/P Date (W/P 납품일)</div>
           <div class="info-value">${nl(hit.wp_date)||'-'}</div>
         </div>
@@ -680,9 +803,11 @@ async function search(){
   
   const hit = findSerial(v);
   box.innerHTML = render(hit);
+  applyChinaVisibility(box);
+  applyChinaLocalization(box);
   
   searchBtn.disabled = false;
-  searchBtn.textContent = '🔎 Lookup (조회)';
+  searchBtn.textContent = isChinaUser ? '🔎 Lookup' : '🔎 Lookup (조회)';
   isLoading = false;
 }
 
@@ -698,6 +823,7 @@ document.getElementById("serialInput").addEventListener("keypress", e=>{
 
 window.addEventListener("load", async ()=>{
   loadTheme();
+  detectChinaIP();
   await loadDB();
   const p = new URLSearchParams(location.search);
   if(p.get("sn")){
