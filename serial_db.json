@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "한풍제약",
+    "company": "(주)에스이씨",
     "wp_date": "X",
-    "delivery_date": "26.01.28",
-    "model": "SSP200 BEARING",
+    "delivery_date": "26.01.27",
+    "model": "SDM100 IM+BE",
     "qty": "1EA",
-    "project": "TC (IM-140파이) 가공 후 후면 용접 필수",
+    "project": "TC/EPDM",
     "sn_list": [
       "X"
     ]
@@ -58313,6 +58313,31 @@
     "project": "SIC/EP/EPDM",
     "sn_list": [
       "DM202601011"
+    ]
+  },
+  "DM152511297,DM152511298,DM152511299,DM152511300": {
+    "company": "에스이씨(주)",
+    "wp_date": "25.12.15",
+    "delivery_date": "26.01.27",
+    "model": "SDM150",
+    "qty": "4EA",
+    "project": "0.75KW효성 4P 60HZ D2G4/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-BOLT)",
+    "sn_list": [
+      "DM152511297",
+      "DM152511298",
+      "DM152511299",
+      "DM152511300"
+    ]
+  },
+  "DM152601007": {
+    "company": "MONOVATE(일본)",
+    "wp_date": "26.01.21",
+    "delivery_date": "26.01.21",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터사급: 0.75KW 4P 50HZ/ NORD 5:1/TC/EP/바이톤 (W-CLAMP)",
+    "sn_list": [
+      "DM152601007"
     ]
   }
 }
