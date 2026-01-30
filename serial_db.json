@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "(주)에스이씨",
+    "company": "HP ens\n(하림 익산)",
     "wp_date": "X",
-    "delivery_date": "26.01.27",
-    "model": "SDM100 IM+BE",
+    "delivery_date": "26.01.29",
+    "model": "SP200 A/S",
     "qty": "1EA",
-    "project": "TC/EPDM",
+    "project": "TC/  STS모터(3.75KW 220/380V)",
     "sn_list": [
       "X"
     ]
@@ -58338,6 +58338,120 @@
     "project": "모터사급: 0.75KW 4P 50HZ/ NORD 5:1/TC/EP/바이톤 (W-CLAMP)",
     "sn_list": [
       "DM152601007"
+    ]
+  },
+  "DM152512305,DM152512306,DM152512307": {
+    "company": "HK-HN-251218-112",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.01.23",
+    "model": "SDM150",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152512305",
+      "DM152512306",
+      "DM152512307"
+    ]
+  },
+  "DM152512308": {
+    "company": "HK-HN-251218-112",
+    "wp_date": "\"",
+    "delivery_date": "\"",
+    "model": "SDM150-EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4,B5,IP55,PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM152512308"
+    ]
+  },
+  "DM202512134,DM202512135,DM202512136": {
+    "company": "HK-HN-251218-112",
+    "wp_date": "\"",
+    "delivery_date": "\"",
+    "model": "SDM200",
+    "qty": "3EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓(W-BOLT)",
+    "sn_list": [
+      "DM202512134",
+      "DM202512135",
+      "DM202512136"
+    ]
+  },
+  "DM222512152": {
+    "company": "HK-HN-251218-112",
+    "wp_date": "\"",
+    "delivery_date": "\"",
+    "model": "SDM220",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓(W-BOLT)",
+    "sn_list": [
+      "DM222512152"
+    ]
+  },
+  "RFT102512008": {
+    "company": "HK-HN-251218-112",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SRFT100-M200",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 4P 50HZ/ NORD 7.5:1/SI3N4/EP/EPDM_자켓(W-BOLT)",
+    "sn_list": [
+      "RFT102512008"
+    ]
+  },
+  "DM222512154": {
+    "company": "HK-HN-251225-116",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SDM220-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓(W-BOLT)/ PNP근접센서",
+    "sn_list": [
+      "DM222512154"
+    ]
+  },
+  "DM302512077,DM302512078,DM302512079,DM302512080,DM302512081": {
+    "company": "HK-HN-251225-116",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SDM300-S",
+    "qty": "5EA",
+    "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)/ PNP근접센서",
+    "sn_list": [
+      "DM302512077",
+      "DM302512078",
+      "DM302512079",
+      "DM302512080",
+      "DM302512081"
+    ]
+  },
+  "DM222601001,DM222601002": {
+    "company": "HK-HN-260108-003",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SDM220-TC",
+    "qty": "2EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM222601001",
+      "DM222601002"
+    ]
+  },
+  "DM252601001,DM252601002,DM252601003,DM252601004,DM252601005,DM252601006,DM252601007": {
+    "company": "HK-HN-260108-003",
+    "wp_date": "26.01.30",
+    "delivery_date": "26.01.30",
+    "model": "SDM250-TC",
+    "qty": "7EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM252601001",
+      "DM252601002",
+      "DM252601003",
+      "DM252601004",
+      "DM252601005",
+      "DM252601006",
+      "DM252601007"
     ]
   }
 }
