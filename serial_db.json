@@ -58453,5 +58453,17 @@
       "DM252601006",
       "DM252601007"
     ]
+  },
+  "HM102512003,HM102512004": {
+    "company": "HTS  S.A\n(아르헨티나)",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.01.30",
+    "model": "SHM100",
+    "qty": "2EA",
+    "project": "모터사급: 0.37KW 방폭 4P 380V/ NORD 5:1/TC/EP/EPDM_싱글 (W-BOLT)",
+    "sn_list": [
+      "HM102512003",
+      "HM102512004"
+    ]
   }
 }
