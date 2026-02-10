@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "HP ens\n(하림 익산)",
-    "wp_date": "X",
-    "delivery_date": "26.01.29",
-    "model": "SP200 A/S",
+    "company": "데모테스트용",
+    "wp_date": "긴급",
+    "delivery_date": "긴급",
+    "model": "SSN220",
     "qty": "1EA",
-    "project": "TC/  STS모터(3.75KW 220/380V)",
+    "project": "15KW지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)/ 4날/V홈 스테이터 사용",
     "sn_list": [
       "X"
     ]
@@ -58558,6 +58558,20 @@
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
     "sn_list": [
       "DM152601009"
+    ]
+  },
+  "SA152601001,SA152601002,SA152601003,SA152601004": {
+    "company": "국진과미래",
+    "wp_date": "26.01.15",
+    "delivery_date": "26.02.09",
+    "model": "SA150",
+    "qty": "4EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EPDM_싱글 (W-CLAMP)",
+    "sn_list": [
+      "SA152601001",
+      "SA152601002",
+      "SA152601003",
+      "SA152601004"
     ]
   }
 }
