@@ -58573,5 +58573,16 @@
       "SA152601003",
       "SA152601004"
     ]
+  },
+  "DM62601003": {
+    "company": "MONOVATE(일본)",
+    "wp_date": "26.02.05",
+    "delivery_date": "26.02.12",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.2KW 미츠비시 4P 60HZ 220V/ 미츠비시 3:1/TC/EP/FEP_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62601003"
+    ]
   }
 }
