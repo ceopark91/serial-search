@@ -58584,5 +58584,16 @@
     "sn_list": [
       "DM62601003"
     ]
+  },
+  "AL202512137": {
+    "company": "바이오시스템이엔지(안동농업기술센터)",
+    "wp_date": "26.01.13",
+    "delivery_date": "26.02.10",
+    "model": "SAL200",
+    "qty": "1EA",
+    "project": "0.75KW NORD 4P 60HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-BOLT) / IM-350파이",
+    "sn_list": [
+      "AL202512137"
+    ]
   }
 }
