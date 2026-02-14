@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "데모테스트용",
-    "wp_date": "긴급",
-    "delivery_date": "긴급",
-    "model": "SSN220",
+    "company": "한국인삼공사 KGC\n원주",
+    "wp_date": "X",
+    "delivery_date": "26.01.21",
+    "model": "SA200 IM+M/B",
     "qty": "1EA",
-    "project": "15KW지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)/ 4날/V홈 스테이터 사용",
+    "project": "TC/EPDM",
     "sn_list": [
       "X"
     ]
