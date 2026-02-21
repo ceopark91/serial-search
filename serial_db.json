@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "한국인삼공사 KGC\n원주",
+    "company": "코리아이플랫폼\n(SK마이크로웍스)",
     "wp_date": "X",
-    "delivery_date": "26.01.21",
-    "model": "SA200 IM+M/B",
-    "qty": "1EA",
-    "project": "TC/EPDM",
+    "delivery_date": "26.02.19",
+    "model": "SDM150 IM+BE",
+    "qty": "2EA",
+    "project": "TC/EPDM   (택배발송시 거래명세서 첨부할것)",
     "sn_list": [
       "X"
     ]
@@ -58594,6 +58594,152 @@
     "project": "0.75KW NORD 4P 60HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-BOLT) / IM-350파이",
     "sn_list": [
       "AL202512137"
+    ]
+  },
+  "RFT102601001": {
+    "company": "HK-HN-260105-002",
+    "wp_date": "26.02.20",
+    "delivery_date": "26.02.20",
+    "model": "SRFT100-M150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 4P 50HZ/ NORD 7.5:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "RFT102601001"
+    ]
+  },
+  "RFT202601001": {
+    "company": "HK-HN-260105-002",
+    "wp_date": "26.02.20",
+    "delivery_date": "26.02.20",
+    "model": "SRFT200-M400",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 4P 50HZ/ NORD 7.83:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "RFT202601001"
+    ]
+  },
+  "DM202601007": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM200-S/L",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치",
+    "sn_list": [
+      "DM202601007"
+    ]
+  },
+  "DM202601008,DM202601009": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM200-TC/S/L",
+    "qty": "2EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치",
+    "sn_list": [
+      "DM202601008",
+      "DM202601009"
+    ]
+  },
+  "DM202601010": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM200-SMO254/TC/S/L",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치/ 소재: SMO254",
+    "sn_list": [
+      "DM202601010"
+    ]
+  },
+  "DM252601008": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM250-S/L",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치",
+    "sn_list": [
+      "DM252601008"
+    ]
+  },
+  "DM252601009,DM252601010": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM250-TC/S/L",
+    "qty": "2EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치",
+    "sn_list": [
+      "DM252601009",
+      "DM252601010"
+    ]
+  },
+  "DM252601011": {
+    "company": "HK-HN-260113-004",
+    "wp_date": "26.01.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM250-SMO254/TC/S/L",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 자력이탈장치/ 소재: SMO254",
+    "sn_list": [
+      "DM252601011"
+    ]
+  },
+  "DM62601002": {
+    "company": "HK-HN-260123-008",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62601002"
+    ]
+  },
+  "DP222601001": {
+    "company": "HK-FT-260123-001",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDP220",
+    "qty": "1EA",
+    "project": "모터사급: 5.5KW NORD 6P 50HZ IE3/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DP222601001"
+    ]
+  },
+  "DP10T26012901": {
+    "company": "HK-FT-260129-002",
+    "wp_date": "X",
+    "delivery_date": "26.02.23",
+    "model": "SDP100 IMPELLER TOOL",
+    "qty": "1EA",
+    "project": "",
+    "sn_list": [
+      "DP10T26012901"
+    ]
+  },
+  "DP15T26012901": {
+    "company": "HK-FT-260129-002",
+    "wp_date": "X",
+    "delivery_date": "26.02.23",
+    "model": "SDP150 IMPELLER TOOL",
+    "qty": "1EA",
+    "project": "",
+    "sn_list": [
+      "DP15T26012901"
+    ]
+  },
+  "DM202601014,DM202601015": {
+    "company": "HK-FT-260130-003",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.02.23",
+    "model": "SDM200",
+    "qty": "2EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202601014",
+      "DM202601015"
     ]
   }
 }
