@@ -58752,5 +58752,38 @@
     "sn_list": [
       "DM102602007"
     ]
+  },
+  "DM202601002": {
+    "company": "한울바이오\n(동국제약)",
+    "wp_date": "26.01.14",
+    "delivery_date": "26.02.24",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_싱글 (W-BOLT)/ 근접센서",
+    "sn_list": [
+      "DM202601002"
+    ]
+  },
+  "DM202601003": {
+    "company": "한울바이오\n(동국제약)",
+    "wp_date": "26.01.14",
+    "delivery_date": "26.02.24",
+    "model": "SDM200 D/U",
+    "qty": "1EA",
+    "project": "0.37KW NORD 4P 60HZ/ NORD 25:1/ AC 220 단상/ 임펠러 고정 마그네트",
+    "sn_list": [
+      "DM202601003"
+    ]
+  },
+  "RF202511014": {
+    "company": "케이비이\n(씨젠)",
+    "wp_date": "25.12.12",
+    "delivery_date": "26.02.23",
+    "model": "SRF200",
+    "qty": "1EA",
+    "project": "1.5KW지멘스 2P 60HZ, 타력팬 3상/ 7.5:1/TC/EP/EPDM_자켓 (W/P -25T로 제작)",
+    "sn_list": [
+      "RF202511014"
+    ]
   }
 }
