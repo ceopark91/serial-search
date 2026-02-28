@@ -58785,5 +58785,28 @@
     "sn_list": [
       "RF202511014"
     ]
+  },
+  "DC202508001,DC202508002": {
+    "company": "화인에프에이",
+    "wp_date": "25.08.20",
+    "delivery_date": "26.02.27",
+    "model": "SDC200",
+    "qty": "2EA",
+    "project": "2.2KW 정우 4P 60HZ/임펠라 330*110, 시로코팬/고열그리스볼베아링/실리콘오링",
+    "sn_list": [
+      "DC202508001",
+      "DC202508002"
+    ]
+  },
+  "DM202601012": {
+    "company": "화인에프에이",
+    "wp_date": "26.01.22",
+    "delivery_date": "26.02.27",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202601012"
+    ]
   }
 }
