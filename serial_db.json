@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "서울우유(신양주)",
+    "company": "에이피이, 비피에이\n(휴온스)",
     "wp_date": "X",
     "delivery_date": "26.02.26",
-    "model": "SAL250 IMPELLER",
-    "qty": "2EA",
-    "project": "TC/EPDM",
+    "model": "SDM150 IM+BE",
+    "qty": "1EA",
+    "project": "TC",
     "sn_list": [
       "X"
     ]
