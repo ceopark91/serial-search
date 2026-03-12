@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "에이피이, 비피에이\n(휴온스)",
-    "wp_date": "X",
-    "delivery_date": "26.02.26",
-    "model": "SDM150 IM+BE",
+    "company": "HK-HN-260212-S01",
+    "wp_date": "26.03.13",
+    "delivery_date": "X",
+    "model": "W-150-2507",
     "qty": "1EA",
-    "project": "TC",
+    "project": "W-CLAMP  소재: 2507",
     "sn_list": [
       "X"
     ]
@@ -59102,6 +59102,28 @@
     "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
     "sn_list": [
       "DM302602008"
+    ]
+  },
+  "DM152602037": {
+    "company": "SENA (26-01)",
+    "wp_date": "26.03.03",
+    "delivery_date": "26.03.16",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152602037"
+    ]
+  },
+  "DP152602001": {
+    "company": "SENA (26-01)",
+    "wp_date": "26.03.03",
+    "delivery_date": "26.03.16",
+    "model": "SDP150",
+    "qty": "1EA",
+    "project": "2.2KW 지멘스 4P 50HZ/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DP152602001"
     ]
   }
 }
