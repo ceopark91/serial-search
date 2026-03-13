@@ -59125,5 +59125,108 @@
     "sn_list": [
       "DP152602001"
     ]
+  },
+  "BRF152602003": {
+    "company": "셀텍",
+    "wp_date": "26.02.24",
+    "delivery_date": "26.03.10",
+    "model": "SRF150",
+    "qty": "1EA",
+    "project": "0.37KW NORD 4P 60HZ/ NORD 10:1/TC/EP/EPDM_자켓 (W-CLAMP)/ 터빈,폼블레이드제외",
+    "sn_list": [
+      "BRF152602003"
+    ]
+  },
+  "DM22603001,DM22603002": {
+    "company": "HK-HN-260311-020",
+    "wp_date": "X",
+    "delivery_date": "26.03.13",
+    "model": "SDM20 BEARING",
+    "qty": "2EA",
+    "project": "SIC/EP/FEP",
+    "sn_list": [
+      "DM22603001",
+      "DM22603002"
+    ]
+  },
+  "DM152602015,DM152602016,DM152602017,DM152602018,DM152602019,DM152602020,DM152602021,DM152602022,DM152602023,DM152602024,DM152602025,DM152602026,DM152602027,DM152602028,DM152602029,DM152602030,DM152602031,DM152602032": {
+    "company": "HK-HN-260209-012",
+    "wp_date": "26.02.23",
+    "delivery_date": "26.03.13",
+    "model": "SDM150-TC/EX",
+    "qty": "18EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM152602015",
+      "DM152602016",
+      "DM152602017",
+      "DM152602018",
+      "DM152602019",
+      "DM152602020",
+      "DM152602021",
+      "DM152602022",
+      "DM152602023",
+      "DM152602024",
+      "DM152602025",
+      "DM152602026",
+      "DM152602027",
+      "DM152602028",
+      "DM152602029",
+      "DM152602030",
+      "DM152602031",
+      "DM152602032"
+    ]
+  },
+  "DM222602005": {
+    "company": "HK-HN-260209-012",
+    "wp_date": "26.03.13",
+    "delivery_date": "26.03.13",
+    "model": "SDM220-TC/EX",
+    "qty": "1EA",
+    "project": "감속기사급: 2.2KW효성 4P 60HZ D2G4 B5 IP55 PTC/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM222602005"
+    ]
+  },
+  "DM252602012,DM252602013,DM252602014": {
+    "company": "HK-HN-260209-012",
+    "wp_date": "26.03.13",
+    "delivery_date": "26.03.13",
+    "model": "SDM250-TC/EX",
+    "qty": "3EA",
+    "project": "감속기사급: 4.0KW효성 4P 60HZ D2G4 B5 IP55 PTC/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM252602012",
+      "DM252602013",
+      "DM252602014"
+    ]
+  },
+  "DM302602001,DM302602002,DM302602003,DM302602004,DM302602005,DM302602006,DM302602007": {
+    "company": "HK-HN-260209-012",
+    "wp_date": "26.03.13",
+    "delivery_date": "26.03.13",
+    "model": "SDM300-TC/EX",
+    "qty": "7EA",
+    "project": "감속기사급: 5.5KW효성 4P 60HZ D2G4 B5 IP55 PTC/ NORD 5.12:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM302602001",
+      "DM302602002",
+      "DM302602003",
+      "DM302602004",
+      "DM302602005",
+      "DM302602006",
+      "DM302602007"
+    ]
+  },
+  "DM202603031": {
+    "company": "HK-HN-260302-016",
+    "wp_date": "26.03.13",
+    "delivery_date": "26.03.13",
+    "model": "SDM200-EX",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202603031"
+    ]
   }
 }
