@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "아이마켓코리아\n(매일 상아공장)",
+    "company": "동원에프엔비\n(수원공장)",
     "wp_date": "X",
-    "delivery_date": "26.03.17",
+    "delivery_date": "26.03.19",
     "model": "SDM250 BEARING",
     "qty": "1EA",
-    "project": "TC/EP/EPDM",
+    "project": "TC/EPDM",
     "sn_list": [
       "X"
     ]
@@ -59227,6 +59227,107 @@
     "project": "모터감속기사급: 1.5KW 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)",
     "sn_list": [
       "DM202603031"
+    ]
+  },
+  "DM222602032": {
+    "company": "HK-FT-260227-005",
+    "wp_date": "26.03.20",
+    "delivery_date": "26.03.20",
+    "model": "SDM220",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM222602032"
+    ]
+  },
+  "DM62602006": {
+    "company": "HK-FT-260227-006",
+    "wp_date": "26.03.20",
+    "delivery_date": "26.03.20",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP",
+    "sn_list": [
+      "DM62602006"
+    ]
+  },
+  "DM102602018": {
+    "company": "HK-FT-260227-006",
+    "wp_date": "26.03.20",
+    "delivery_date": "26.03.20",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102602018"
+    ]
+  },
+  "DM152602038,DM152602039": {
+    "company": "HK-FT-260227-006",
+    "wp_date": "26.03.13",
+    "delivery_date": "26.03.20",
+    "model": "SDM150-904L",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ 소재:904L",
+    "sn_list": [
+      "DM152602038",
+      "DM152602039"
+    ]
+  },
+  "DP62602001": {
+    "company": "HK-FT-260227-006",
+    "wp_date": "26.03.20",
+    "delivery_date": "26.03.20",
+    "model": "SDP60",
+    "qty": "1EA",
+    "project": "0.37KW 지멘스 4P 50HZ/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DP62602001"
+    ]
+  },
+  "DM222603033": {
+    "company": "HK-FT-260302-007",
+    "wp_date": "26.03.20",
+    "delivery_date": "26.03.20",
+    "model": "SDM220-TC/S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "sn_list": [
+      "DM222603033"
+    ]
+  },
+  "DM62603008,DM62603009": {
+    "company": "HK-FT-260305-008",
+    "wp_date": "26.03.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM60-SER",
+    "qty": "2EA",
+    "project": "모터사급: 100W (1FL6024-2AF21-1AA1) 220V/ SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62603008",
+      "DM62603009"
+    ]
+  },
+  "SA222602031": {
+    "company": "동산기계\n(OB 이천)",
+    "wp_date": "26.03.10",
+    "delivery_date": "26.03.19",
+    "model": "SA220",
+    "qty": "1EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT) / W-25T",
+    "sn_list": [
+      "SA222602031"
+    ]
+  },
+  "SA222601003": {
+    "company": "우성기계산업\n(하이트진로 베트남)",
+    "wp_date": "26.02.10",
+    "delivery_date": "26.03.19",
+    "model": "SA220",
+    "qty": "1EA",
+    "project": "2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 근접센서4DN/ 탈착형 자력이탈장치",
+    "sn_list": [
+      "SA222601003"
     ]
   }
 }
