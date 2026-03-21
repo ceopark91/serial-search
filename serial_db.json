@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "동원에프엔비\n(수원공장)",
+    "company": "서울우유(안산)",
     "wp_date": "X",
-    "delivery_date": "26.03.19",
-    "model": "SDM250 BEARING",
+    "delivery_date": "26.03.05",
+    "model": "SRFS220 BEARING",
     "qty": "1EA",
-    "project": "TC/EPDM",
+    "project": "TC",
     "sn_list": [
       "X"
     ]
@@ -59328,6 +59328,40 @@
     "project": "2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 근접센서4DN/ 탈착형 자력이탈장치",
     "sn_list": [
       "SA222601003"
+    ]
+  },
+  "DM202601013": {
+    "company": "수산기계이엔지\n(LG화학 청주)",
+    "wp_date": "26.02.05",
+    "delivery_date": "26.03.20",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "0.75KW효성 4P 60HZ D2G4 440V/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202601013"
+    ]
+  },
+  "RF302601001": {
+    "company": "HANA  26-01",
+    "wp_date": "26.02.09",
+    "delivery_date": "26.03.23",
+    "model": "SRF300",
+    "qty": "1EA",
+    "project": "4KW NORD 4P 50HZ/ NORD 5.64:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "RF302601001"
+    ]
+  },
+  "DM202602029,DM202602030": {
+    "company": "HANA (26-02)",
+    "wp_date": "26.03.03",
+    "delivery_date": "26.03.23",
+    "model": "SDM200",
+    "qty": "2EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202602029",
+      "DM202602030"
     ]
   }
 }
