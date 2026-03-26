@@ -59375,5 +59375,101 @@
       "SA302602010",
       "SA302602011"
     ]
+  },
+  "DM102602016,DM102602017": {
+    "company": "HK-HN-260211-015",
+    "wp_date": "26.02.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM100-SMO254",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/소재 SMO254",
+    "sn_list": [
+      "DM102602016",
+      "DM102602017"
+    ]
+  },
+  "DM152602036": {
+    "company": "HK-HN-260211-015",
+    "wp_date": "26.02.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM150-SMO254/EX",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 소재 SMO254",
+    "sn_list": [
+      "DM152602036"
+    ]
+  },
+  "DM202602028": {
+    "company": "HK-HN-260211-015",
+    "wp_date": "26.02.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM200-SMO254",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 소재 SMO254",
+    "sn_list": [
+      "DM202602028"
+    ]
+  },
+  "DM222602029,DM222602030": {
+    "company": "HK-HN-260211-015",
+    "wp_date": "26.02.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM220-SMO254",
+    "qty": "2EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 소재 SMO254",
+    "sn_list": [
+      "DM222602029",
+      "DM222602030"
+    ]
+  },
+  "DM302602009": {
+    "company": "HK-HN-260211-015",
+    "wp_date": "26.02.27",
+    "delivery_date": "26.03.27",
+    "model": "SDM300-SMO254",
+    "qty": "1EA",
+    "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 소재 SMO254",
+    "sn_list": [
+      "DM302602009"
+    ]
+  },
+  "DM62603007": {
+    "company": "HK-HN-260303-017",
+    "wp_date": "X",
+    "delivery_date": "26.03.27",
+    "model": "SDM60 IM+BE",
+    "qty": "1EA",
+    "project": "SIC/EP/EPDM",
+    "sn_list": [
+      "DM62603007"
+    ]
+  },
+  "DM152603041,DM152603042,DM152603043,DM152603044": {
+    "company": "HK-HN-260303-017",
+    "wp_date": "X",
+    "delivery_date": "26.03.27",
+    "model": "SDM150 IM+BE",
+    "qty": "4EA",
+    "project": "SIC/EP/EPDM",
+    "sn_list": [
+      "DM152603041",
+      "DM152603042",
+      "DM152603043",
+      "DM152603044"
+    ]
+  },
+  "DM152603061,DM152603062,DM152603063,DM152603064": {
+    "company": "HK-HN-260311-021",
+    "wp_date": "X",
+    "delivery_date": "26.03.27",
+    "model": "SDM150 HO+RO",
+    "qty": "4EA",
+    "project": "자켓",
+    "sn_list": [
+      "DM152603061",
+      "DM152603062",
+      "DM152603063",
+      "DM152603064"
+    ]
   }
 }
