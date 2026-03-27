@@ -59471,5 +59471,39 @@
       "DM152603063",
       "DM152603064"
     ]
+  },
+  "DM62512068": {
+    "company": "이셀\n(ST팜)",
+    "wp_date": "26.02.24",
+    "delivery_date": "26.03.26",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "0.37KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 모터커버",
+    "sn_list": [
+      "DM62512068"
+    ]
+  },
+  "DM102512115": {
+    "company": "이셀\n(ST팜)",
+    "wp_date": "26.02.24",
+    "delivery_date": "26.03.26",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 모터커버",
+    "sn_list": [
+      "DM102512115"
+    ]
+  },
+  "DM152512314,DM152512315": {
+    "company": "이셀\n(ST팜)",
+    "wp_date": "26.02.24",
+    "delivery_date": "26.03.26",
+    "model": "SDM150",
+    "qty": "2EA",
+    "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 모터커버",
+    "sn_list": [
+      "DM152512314",
+      "DM152512315"
+    ]
   }
 }
