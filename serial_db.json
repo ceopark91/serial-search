@@ -59505,5 +59505,50 @@
       "DM152512314",
       "DM152512315"
     ]
+  },
+  "DM302512082": {
+    "company": "KRONES-IZUMI PROCESSING\n(싱가포르)",
+    "wp_date": "26.01.12",
+    "delivery_date": "26.03.30",
+    "model": "SDM300",
+    "qty": "1EA",
+    "project": "4.0KW NORD 4P 50HZ 400V/ NORD 5:1/TC/EP/EPDM_싱글 / 자력이탈장치",
+    "sn_list": [
+      "DM302512082"
+    ]
+  },
+  "DM402512018,DM402512019": {
+    "company": "KRONES-IZUMI PROCESSING\n(싱가포르)",
+    "wp_date": "26.01.12",
+    "delivery_date": "26.03.30",
+    "model": "SDM400",
+    "qty": "2EA",
+    "project": "5.5KW NORD 4P 50HZ 400V/ NORD 7.18:1/TC/EP/EPDM_싱글",
+    "sn_list": [
+      "DM402512018",
+      "DM402512019"
+    ]
+  },
+  "DM502512003": {
+    "company": "KRONES-IZUMI PROCESSING\n(싱가포르)",
+    "wp_date": "26.01.12",
+    "delivery_date": "26.03.30",
+    "model": "SDM500",
+    "qty": "1EA",
+    "project": "7.5KW NORD 4P 50HZ 400V/ NORD 7.18:1/TC/EP/EPDM_싱글 / 자력이탈장치",
+    "sn_list": [
+      "DM502512003"
+    ]
+  },
+  "RF102602001": {
+    "company": "ALP (26-01)\n(튀르키예)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.04.13",
+    "model": "SRF100",
+    "qty": "1EA",
+    "project": "0.18KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM FDA_자켓 (W-CLAMP)",
+    "sn_list": [
+      "RF102602001"
+    ]
   }
 }
