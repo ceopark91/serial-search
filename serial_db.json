@@ -59736,5 +59736,16 @@
     "sn_list": [
       "DM152603080"
     ]
+  },
+  "DM152603040": {
+    "company": "HK-HN-260303-S02",
+    "wp_date": "X",
+    "delivery_date": "26.04.17",
+    "model": "SDM150-C276/SIC",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ 소재:C276  (W/P 제외)",
+    "sn_list": [
+      "DM152603040"
+    ]
   }
 }
