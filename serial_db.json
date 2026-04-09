@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "서울우유(안산)",
+    "company": "서울우유 거창",
     "wp_date": "X",
-    "delivery_date": "26.03.05",
-    "model": "SRFS220 BEARING",
+    "delivery_date": "26.04.06",
+    "model": "SAL300 IM+M/B",
     "qty": "1EA",
-    "project": "TC",
+    "project": "IM-500파이 / TC",
     "sn_list": [
       "X"
     ]
@@ -59746,6 +59746,18 @@
     "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ 소재:C276  (W/P 제외)",
     "sn_list": [
       "DM152603040"
+    ]
+  },
+  "RF152601001,RF152601002": {
+    "company": "비디이엔에스",
+    "wp_date": "26.01.19",
+    "delivery_date": "26.03.04",
+    "model": "SRF150",
+    "qty": "2EA",
+    "project": "0.75KW NORD 4P 60HZ/ NORD 3.58:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "RF152601001",
+      "RF152601002"
     ]
   }
 }
