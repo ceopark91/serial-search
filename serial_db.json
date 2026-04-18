@@ -60118,5 +60118,111 @@
     "sn_list": [
       "DM15260301-BT"
     ]
+  },
+  "DM102603026": {
+    "company": "HK-FT-260317-012",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM100-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)/ PNP근접센서",
+    "sn_list": [
+      "DM102603026"
+    ]
+  },
+  "DM202603038": {
+    "company": "HK-FT-260317-012",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM200-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "sn_list": [
+      "DM202603038"
+    ]
+  },
+  "DM252603022,DM252603023": {
+    "company": "HK-FT-260317-012",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM250-SMO254/S",
+    "qty": "2EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "sn_list": [
+      "DM252603022",
+      "DM252603023"
+    ]
+  },
+  "DM152603066": {
+    "company": "HK-FT-260317-012",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM150-EX/S",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 방폭근접센서",
+    "sn_list": [
+      "DM152603066"
+    ]
+  },
+  "DM222603043": {
+    "company": "HK-FT-260317-012",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM220-EX/S",
+    "qty": "1EA",
+    "project": "감속기사급: 2.2KW효성 4P 60HZ D2G4 B5 IP55 PTC/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 방폭근접센서",
+    "sn_list": [
+      "DM222603043"
+    ]
+  },
+  "DM62603033": {
+    "company": "HK-FT-260325-013",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.04.20",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62603033"
+    ]
+  },
+  "DM202603050,DM202603051,DM202603052,DM202603053,DM202603054,DM202603055,DM202603056,DM202603057,DM202603058,DM202603059,DM202603060,DM202603061,DM202603062,DM202603063,DM202603064,DM202603065,DM202603066,DM202603067": {
+    "company": "HK-FT-260327-015",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.04.20",
+    "model": "SDM200-EX/FFKM",
+    "qty": "18EA",
+    "project": "모터감속기사급: 1.5KW  4P 50HZ/ NORD 5:1/SIC/EP/FFKM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202603050",
+      "DM202603051",
+      "DM202603052",
+      "DM202603053",
+      "DM202603054",
+      "DM202603055",
+      "DM202603056",
+      "DM202603057",
+      "DM202603058",
+      "DM202603059",
+      "DM202603060",
+      "DM202603061",
+      "DM202603062",
+      "DM202603063",
+      "DM202603064",
+      "DM202603065",
+      "DM202603066",
+      "DM202603067"
+    ]
+  },
+  "DM152604083": {
+    "company": "한울바이오\n(동광제약)",
+    "wp_date": "X",
+    "delivery_date": "26.04.17",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W/P 제외)",
+    "sn_list": [
+      "DM152604083"
+    ]
   }
 }
