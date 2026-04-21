@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "서울우유 거창",
+    "company": "예스이앤씨\n(일동제약 안성)",
     "wp_date": "X",
-    "delivery_date": "26.04.06",
-    "model": "SAL300 IM+M/B",
-    "qty": "1EA",
-    "project": "IM-500파이 / TC",
+    "delivery_date": "26.04.20",
+    "model": "GMP1000 M/B",
+    "qty": "2EA",
+    "project": "TC  (M6 TAP)",
     "sn_list": [
       "X"
     ]
@@ -60223,6 +60223,17 @@
     "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W/P 제외)",
     "sn_list": [
       "DM152604083"
+    ]
+  },
+  "DM252603024": {
+    "company": "에스이씨(주)\n(HK이노엔)",
+    "wp_date": "26.03.27",
+    "delivery_date": "26.04.20",
+    "model": "SDM250",
+    "qty": "1EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치",
+    "sn_list": [
+      "DM252603024"
     ]
   }
 }
