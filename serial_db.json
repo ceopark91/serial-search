@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "예스이앤씨\n(일동제약 안성)",
+    "company": "대상다이브스(논산)",
     "wp_date": "X",
-    "delivery_date": "26.04.20",
-    "model": "GMP1000 M/B",
-    "qty": "2EA",
-    "project": "TC  (M6 TAP)",
+    "delivery_date": "26.04.23",
+    "model": "SSN220 BEARING",
+    "qty": "1EA",
+    "project": "TC/EPDM",
     "sn_list": [
       "X"
     ]
@@ -60234,6 +60234,54 @@
     "project": "2.2KW NORD 4P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치",
     "sn_list": [
       "DM252603024"
+    ]
+  },
+  "DM402603001,DM402603002": {
+    "company": "HK-FT-260326-014",
+    "wp_date": "26.04.27",
+    "delivery_date": "26.04.27",
+    "model": "SDM400",
+    "qty": "2EA",
+    "project": "모터감속기사급: 7.5KW NORD 4P 50HZ/ NORD 7.18:1/TC/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치-1대",
+    "sn_list": [
+      "DM402603001",
+      "DM402603002"
+    ]
+  },
+  "DM502603001,DM502603002": {
+    "company": "HK-FT-260326-014",
+    "wp_date": "26.04.27",
+    "delivery_date": "26.04.27",
+    "model": "SDM500",
+    "qty": "2EA",
+    "project": "모터감속기사급: 11KW SEW 4P 50HZ/ SEW 7.21:1/TC/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치-1대",
+    "sn_list": [
+      "DM502603001",
+      "DM502603002"
+    ]
+  },
+  "DM252603025": {
+    "company": "HK-HN-260326-029",
+    "wp_date": "26.04.24",
+    "delivery_date": "26.04.24",
+    "model": "SDM250",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM252603025"
+    ]
+  },
+  "DM62603035,DM62603036,DM62603037": {
+    "company": "HK-HN-260331-030",
+    "wp_date": "26.04.24",
+    "delivery_date": "26.04.24",
+    "model": "SDM60",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62603035",
+      "DM62603036",
+      "DM62603037"
     ]
   }
 }
