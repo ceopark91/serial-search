@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "대상다이브스(논산)",
+    "company": "케이비이\n(SK G2)",
     "wp_date": "X",
     "delivery_date": "26.04.23",
-    "model": "SSN220 BEARING",
-    "qty": "1EA",
-    "project": "TC/EPDM",
+    "model": "모터감속기",
+    "qty": "2EA",
+    "project": "0.18KW  NORD 7.5:1",
     "sn_list": [
       "X"
     ]
@@ -60282,6 +60282,18 @@
       "DM62603035",
       "DM62603036",
       "DM62603037"
+    ]
+  },
+  "DM62603020,DM62603021": {
+    "company": "유진엔지니어링\n(리노블바이오)",
+    "wp_date": "26.03.19",
+    "delivery_date": "26.04.22",
+    "model": "SDM60",
+    "qty": "2EA",
+    "project": "GGM BL DC(K9BH150NC)/(K9H5B)/(GUB-C150)/TC/EP/EPDM_자켓 (W-CLAMP)/ 근접센서(PRCM-12-2DN)",
+    "sn_list": [
+      "DM62603020",
+      "DM62603021"
     ]
   }
 }
