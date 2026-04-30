@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "케이비이\n(SK G2)",
+    "company": "서울우유(신양주)",
     "wp_date": "X",
-    "delivery_date": "26.04.23",
-    "model": "모터감속기",
-    "qty": "2EA",
-    "project": "0.18KW  NORD 7.5:1",
+    "delivery_date": "26.04.29",
+    "model": "모터 구매 건",
+    "qty": "1EA",
+    "project": "15KW지멘스 2P 60HZ 380V B35 (PTC온도센서 포함)",
     "sn_list": [
       "X"
     ]
@@ -60305,6 +60305,40 @@
     "project": "0.37KW지멘스 4P 60HZ/모터바리오7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
     "sn_list": [
       "AL152604082"
+    ]
+  },
+  "DM222603044": {
+    "company": "HK-FT-260317-S01",
+    "wp_date": "26.04.17",
+    "delivery_date": "26.05.17",
+    "model": "SDM220-GR2/S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/SIC/EPDM_자켓 (W-BOLT)/ PNP근접센서/ 소재:GR2 (WP소재: AL6XN 사급)",
+    "sn_list": [
+      "DM222603044"
+    ]
+  },
+  "DM62603022": {
+    "company": "HK-HN-260317-S03",
+    "wp_date": "26.04.07",
+    "delivery_date": "26.05.01",
+    "model": "SDM60-FFKM/HC276",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/FFKM_자켓 (W-CLAMP) 소재: HC276",
+    "sn_list": [
+      "DM62603022"
+    ]
+  },
+  "SN202512001,SN202512002": {
+    "company": "컬러스앤이팩츠코리아 (무상교체건)",
+    "wp_date": "X",
+    "delivery_date": "26.04.10",
+    "model": "SSN200",
+    "qty": "2EA",
+    "project": "7.5KW지멘스 4P 60HZ/TC/EP/EPDM_자켓",
+    "sn_list": [
+      "SN202512001",
+      "SN202512002"
     ]
   }
 }
