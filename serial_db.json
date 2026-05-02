@@ -60340,5 +60340,72 @@
       "SN202512001",
       "SN202512002"
     ]
+  },
+  "DM202604068,DM202604069": {
+    "company": "HANA (26-03)",
+    "wp_date": "26.04.30",
+    "delivery_date": "26.04.30",
+    "model": "SDM200",
+    "qty": "2EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202604068",
+      "DM202604069"
+    ]
+  },
+  "SN222604001": {
+    "company": "HANA (26-04)",
+    "wp_date": "26.04.07",
+    "delivery_date": "26.04.30",
+    "model": "SSN220",
+    "qty": "1EA",
+    "project": "15KW 지멘스 2P 50HZ CE IE3/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "SN222604001"
+    ]
+  },
+  "SP152604001": {
+    "company": "HANA(26-05)",
+    "wp_date": "X",
+    "delivery_date": "26.04.30",
+    "model": "SSP150",
+    "qty": "1EA",
+    "project": "2.2KW지멘스 2P 50HZ CE/TC/EPDM/ IM-120파이/ 1.5S, 1.0S, 흡입토출, CLAMP",
+    "sn_list": [
+      "SP152604001"
+    ]
+  },
+  "DM202604070": {
+    "company": "HANA(26-05)",
+    "wp_date": "X",
+    "delivery_date": "26.04.30",
+    "model": "SDM200 IM+BE",
+    "qty": "1EA",
+    "project": "TC/EP/EPDM   (아크릴 800PI*900MM(H) 따로포장)->S/N: DM20ACR260409",
+    "sn_list": [
+      "DM202604070"
+    ]
+  },
+  "DM102604041": {
+    "company": "HANA(26-05)",
+    "wp_date": "X",
+    "delivery_date": "26.04.30",
+    "model": "SDM100 IM+BE",
+    "qty": "1EA",
+    "project": "TC/EP/EPDM   (아크릴 800PI*900MM(H) 따로포장)->S/N: DM20ACR260409",
+    "sn_list": [
+      "DM102604041"
+    ]
+  },
+  "RF62604001": {
+    "company": "HANA(26-05)",
+    "wp_date": "X",
+    "delivery_date": "26.04.30",
+    "model": "SRF60 BE+ D/U",
+    "qty": "1EA",
+    "project": "0.18KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_싱글",
+    "sn_list": [
+      "RF62604001"
+    ]
   }
 }
