@@ -60407,5 +60407,113 @@
     "sn_list": [
       "RF62604001"
     ]
+  },
+  "DM62603010,DM62603011,DM62603012,DM62603013": {
+    "company": "HK-FT-260311-009",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.04.13",
+    "model": "SDM60",
+    "qty": "4EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62603010",
+      "DM62603011",
+      "DM62603012",
+      "DM62603013"
+    ]
+  },
+  "DM102603020": {
+    "company": "HK-FT-260311-009",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.04.13",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102603020"
+    ]
+  },
+  "DM152603048,DM152603049,DM152603050": {
+    "company": "HK-FT-260311-009",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.04.13",
+    "model": "SDM150",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152603048",
+      "DM152603049",
+      "DM152603050"
+    ]
+  },
+  "RFT152603001": {
+    "company": "HK-FT-260311-009",
+    "wp_date": "26.05.01",
+    "delivery_date": "26.05.01",
+    "model": "SRFT150-B40",
+    "qty": "1EA",
+    "project": "모터사급: 2.5KW (1FL6090-1AC61-2AA1) 380V/SI3N4/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "RFT152603001"
+    ]
+  },
+  "RFT302603001": {
+    "company": "HK-FT-260311-009",
+    "wp_date": "26.05.01",
+    "delivery_date": "26.05.01",
+    "model": "SRFT300-B500",
+    "qty": "1EA",
+    "project": "모터감속기사급: 9.2KW NORD 4P 50HZ/ NORD 2.65:1/SI3N4/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "RFT302603001"
+    ]
+  },
+  "SN202604001,SN202604002,SN202604003": {
+    "company": "SENA (26-02)",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.05.06",
+    "model": "SSN200",
+    "qty": "3EA",
+    "project": "5.5KW 지멘스 2P 50HZ CE/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "SN202604001",
+      "SN202604002",
+      "SN202604003"
+    ]
+  },
+  "DP222604002,DP222604003,DP222604004": {
+    "company": "SENA (26-02)",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.05.06",
+    "model": "SDP220",
+    "qty": "3EA",
+    "project": "5.5KW 지멘스 6P 50HZ CE/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DP222604002",
+      "DP222604003",
+      "DP222604004"
+    ]
+  },
+  "DM102604042": {
+    "company": "SENA (26-02)",
+    "wp_date": "26.04.20",
+    "delivery_date": "26.05.06",
+    "model": "SDM100 BEARING",
+    "qty": "1EA",
+    "project": "SIC",
+    "sn_list": [
+      "DM102604042"
+    ]
+  },
+  "DM22604003": {
+    "company": "HK-FT-260422-020",
+    "wp_date": "26.05.06",
+    "delivery_date": "26.05.06",
+    "model": "SDM20 HO+RO+W/P",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM22604003"
+    ]
   }
 }
