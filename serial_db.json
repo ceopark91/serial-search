@@ -60575,5 +60575,16 @@
       "DM102605047",
       "DM102605048"
     ]
+  },
+  "SN102605004": {
+    "company": "윤성에프앤씨\n(삼일제약 베트남)",
+    "wp_date": "26.05.14",
+    "delivery_date": "26.05.14",
+    "model": "SSN100",
+    "qty": "1EA",
+    "project": "1.5KW지멘스 2P 60HZ/ TC/EP/FEP_자켓 (W-CLAMP)/ 근접센서 PRCM12-4DN",
+    "sn_list": [
+      "SN102605004"
+    ]
   }
 }
