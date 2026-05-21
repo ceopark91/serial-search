@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "해오름바이오",
+    "company": "엔투비\n(동서식품 부평)",
     "wp_date": "X",
-    "delivery_date": "26.05.14",
-    "model": "SA220 IM+M/B",
+    "delivery_date": "26.05.20",
+    "model": "SAL220 IM+BE",
     "qty": "1EA",
-    "project": "TC/EPDM",
+    "project": "TC/EPDM (IM-450파이)",
     "sn_list": [
       "X"
     ]
@@ -60585,6 +60585,28 @@
     "project": "1.5KW지멘스 2P 60HZ/ TC/EP/FEP_자켓 (W-CLAMP)/ 근접센서 PRCM12-4DN",
     "sn_list": [
       "SN102605004"
+    ]
+  },
+  "RFT102604002": {
+    "company": "Y SPA (이탈리아)",
+    "wp_date": "26.05.21",
+    "delivery_date": "26.05.21",
+    "model": "SRFT100",
+    "qty": "1EA",
+    "project": "모터감속기사급:  세라믹#6004/EP/EPDM_자켓",
+    "sn_list": [
+      "RFT102604002"
+    ]
+  },
+  "DF152603001": {
+    "company": "HK-HN-260318-S04",
+    "wp_date": "26.04.01",
+    "delivery_date": "26.05.31",
+    "model": "SDF150-HC276/TC/EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT) 소재: HC276",
+    "sn_list": [
+      "DF152603001"
     ]
   }
 }
