@@ -60608,5 +60608,64 @@
     "sn_list": [
       "DF152603001"
     ]
+  },
+  "DM152604090": {
+    "company": "HK-HN-260417-032",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152604090"
+    ]
+  },
+  "DM62604043,DM62604044": {
+    "company": "HK-HN-260430-035",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM60",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62604043",
+      "DM62604044"
+    ]
+  },
+  "DM102604044,DM102604045": {
+    "company": "HK-HN-260430-035",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM100",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102604044",
+      "DM102604045"
+    ]
+  },
+  "DM152604094,DM152604095,DM152604096": {
+    "company": "HK-HN-260430-035",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM150",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152604094",
+      "DM152604095",
+      "DM152604096"
+    ]
+  },
+  "DM102605051": {
+    "company": "HK-HN-260509-039",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102605051"
+    ]
   }
 }
