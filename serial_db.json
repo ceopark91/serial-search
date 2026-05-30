@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "동원에프앤비(수원)",
+    "company": "팀스\n(오리온청주공장)",
     "wp_date": "X",
-    "delivery_date": "26.05.22",
-    "model": "SDM250 BEARING",
+    "delivery_date": "26.05.20",
+    "model": "SDM150 IM+BE",
     "qty": "1EA",
-    "project": "TC/EPDM",
+    "project": "TC/EP/EPDM",
     "sn_list": [
       "X"
     ]
@@ -60666,6 +60666,54 @@
     "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
     "sn_list": [
       "DM102605051"
+    ]
+  },
+  "DM152604088,DM152604089": {
+    "company": "HK-HN-260417-031",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM150-EX",
+    "qty": "2EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM152604088",
+      "DM152604089"
+    ]
+  },
+  "DM62604040": {
+    "company": "HK-HN-260417-031",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.05.22",
+    "model": "SDM60-EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.4KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62604040"
+    ]
+  },
+  "DM62605045,DM62605046,DM62605047,DM62605048": {
+    "company": "HK-HN-260507-037",
+    "wp_date": "26.05.29",
+    "delivery_date": "26.05.29",
+    "model": "SDM60",
+    "qty": "4EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62605045",
+      "DM62605046",
+      "DM62605047",
+      "DM62605048"
+    ]
+  },
+  "DM102605052": {
+    "company": "HK-HN-260512-040",
+    "wp_date": "26.05.29",
+    "delivery_date": "26.05.29",
+    "model": "SDM100-EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.4KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM102605052"
     ]
   }
 }
