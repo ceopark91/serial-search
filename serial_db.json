@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "팀스\n(오리온청주공장)",
+    "company": "콜마비엔에이치",
     "wp_date": "X",
-    "delivery_date": "26.05.20",
-    "model": "SDM150 IM+BE",
+    "delivery_date": "26.05.22",
+    "model": "SA250 IM+BE",
     "qty": "1EA",
-    "project": "TC/EP/EPDM",
+    "project": "TC/EPDM",
     "sn_list": [
       "X"
     ]
@@ -60885,6 +60885,17 @@
       "DM152605101",
       "DM152605102",
       "DM152605103"
+    ]
+  },
+  "DM152605104": {
+    "company": "SENA (26-03)",
+    "wp_date": "26.05.22",
+    "delivery_date": "26.06.10",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152605104"
     ]
   }
 }
