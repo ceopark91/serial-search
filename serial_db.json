@@ -70,12 +70,12 @@
     ]
   },
   "X": {
-    "company": "HANA(26-06)",
+    "company": "휴온스",
     "wp_date": "X",
-    "delivery_date": "26.06.25",
-    "model": "SSN150 IM+BE",
+    "delivery_date": "26.06.17",
+    "model": "GMP1000 BEARING",
     "qty": "1EA",
-    "project": "TC/EP/EPDM",
+    "project": "SIC",
     "sn_list": [
       "X"
     ]
@@ -61225,6 +61225,155 @@
     "sn_list": [
       "RF202604002",
       "RF202604003"
+    ]
+  },
+  "DM62605049": {
+    "company": "바이오시스템이엔지",
+    "wp_date": "26.05.18",
+    "delivery_date": "26.06.18",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "0.18KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62605049"
+    ]
+  },
+  "DM152604091,DM152604092,DM152604093": {
+    "company": "바이오시스템이엔지",
+    "wp_date": "26.05.18",
+    "delivery_date": "26.06.18",
+    "model": "SDM150",
+    "qty": "3EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM152604091",
+      "DM152604092",
+      "DM152604093"
+    ]
+  },
+  "SN152604005,SN152604006": {
+    "company": "바이오시스템이엔지",
+    "wp_date": "26.05.18",
+    "delivery_date": "26.06.18",
+    "model": "SSN150",
+    "qty": "2EA",
+    "project": "3.7KW NORD 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)/ 4분할 V자 스테이터",
+    "sn_list": [
+      "SN152604005",
+      "SN152604006"
+    ]
+  },
+  "SN102605005": {
+    "company": "바이오시스템이엔지",
+    "wp_date": "26.05.27",
+    "delivery_date": "26.06.18",
+    "model": "SSN100",
+    "qty": "1EA",
+    "project": "0.75KW지멘스 4P 60HZ/TC/EP/EPDM_자켓 (W-CLAMP)/ 4분할 V자 스테이터",
+    "sn_list": [
+      "SN102605005"
+    ]
+  },
+  "DM62603034": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "0.18KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "DM62603034"
+    ]
+  },
+  "DM202603046,DM202603047,DM202603048": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM200",
+    "qty": "3EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202603046",
+      "DM202603047",
+      "DM202603048"
+    ]
+  },
+  "DM202603049": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "1.5KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM202603049"
+    ]
+  },
+  "DM222603045,DM222603046": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM220",
+    "qty": "2EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM222603045",
+      "DM222603046"
+    ]
+  },
+  "DM222603047": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM220",
+    "qty": "1EA",
+    "project": "2.2KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM222603047"
+    ]
+  },
+  "DM252603026": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM250",
+    "qty": "1EA",
+    "project": "3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM252603026"
+    ]
+  },
+  "DM302603012": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SDM300",
+    "qty": "1EA",
+    "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "DM302603012"
+    ]
+  },
+  "SN102603002": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SSN100",
+    "qty": "1EA",
+    "project": "1.5KW 지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "sn_list": [
+      "SN102603002"
+    ]
+  },
+  "SN152603004": {
+    "company": "제이피이노베이션\n(파마리서치)",
+    "wp_date": "26.04.13",
+    "delivery_date": "26.06.18",
+    "model": "SSN150",
+    "qty": "1EA",
+    "project": "3.7KW 지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)",
+    "sn_list": [
+      "SN152603004"
     ]
   }
 }
