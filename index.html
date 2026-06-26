@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -567,9 +568,19 @@ async function loadDB(){
 
 function findSerial(input){
   const key = normalizeSerial(input);
+  if(!key) return null;
+
   for(const k in SERIAL_DB){
     const row = SERIAL_DB[k];
-    if(row.sn_list && row.sn_list.includes(key)){
+    const candidates = []
+      .concat(row.sn_list || [])
+      .concat(row.welding_sn_list || [])
+      .concat(row.serials || [])
+      .concat(row.sn || [])
+      .map(normalizeSerial)
+      .filter(Boolean);
+
+    if(normalizeSerial(k) === key || candidates.includes(key)){
       return {
         ...row,
         certificate: CERT_DB[key] || ""
@@ -578,7 +589,6 @@ function findSerial(input){
   }
   return null;
 }
-
 function copyToClipboard(text, el){
   const cleanText = text.replace(/<br>/g, '\n');
   navigator.clipboard.writeText(cleanText).then(()=>{
