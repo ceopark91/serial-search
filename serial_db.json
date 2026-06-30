@@ -77783,5 +77783,18 @@
       "RD152605002"
     ],
     "welding_sn_list": []
+  },
+  "DM152606126": {
+    "company": "명우기계",
+    "wp_date": "26.06.23",
+    "delivery_date": "26.06.29",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152606126"
+    ],
+    "welding_sn_list": []
   }
 }
