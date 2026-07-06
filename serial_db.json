@@ -77796,5 +77796,151 @@
       "DM152606126"
     ],
     "welding_sn_list": []
+  },
+  "DM62605051,DM62605052": {
+    "company": "HK-HN-260521-044",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SIB200-DN20-DM60",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62605051",
+      "DM62605052"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102605053,DM102605054,DM102605055": {
+    "company": "HK-HN-260521-044",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SDM100",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102605053",
+      "DM102605054",
+      "DM102605055"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152605106,DM152605107,DM152605108,DM152605109,DM152605110,DM152605111,DM152605112,DM152605113,DM152605114": {
+    "company": "HK-HN-260521-044",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SDM150",
+    "qty": "9EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152605106",
+      "DM152605107",
+      "DM152605108",
+      "DM152605109",
+      "DM152605110",
+      "DM152605111",
+      "DM152605112",
+      "DM152605113",
+      "DM152605114"
+    ],
+    "welding_sn_list": []
+  },
+  "DM22605004": {
+    "company": "HK-HN-260521-045",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SDM20-SER",
+    "qty": "1EA",
+    "project": "모터사급: 400W (1FL6042-1AF61-2AA1) 380V/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM22605004"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102605056,DM102605057,DM102605058,DM102605059,DM102605060": {
+    "company": "HK-HN-260521-045",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SDM100",
+    "qty": "5EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102605056",
+      "DM102605057",
+      "DM102605058",
+      "DM102605059",
+      "DM102605060"
+    ],
+    "welding_sn_list": []
+  },
+  "DM222606066": {
+    "company": "HK-HN-260603-049",
+    "wp_date": "26.06.26",
+    "delivery_date": "26.06.26",
+    "model": "SDM220-EX/FFKM",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW 4P 50HZ/ NORD 5:1/SIC/EP/FFKM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM222606066"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152606123": {
+    "company": "HK-HN-260611-051",
+    "wp_date": "26.07.06",
+    "delivery_date": "26.07.06",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152606123"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152606124": {
+    "company": "HK-HN-260612-052",
+    "wp_date": "26.07.06",
+    "delivery_date": "26.07.06",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152606124"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102606061,DM102606062": {
+    "company": "HK-FT-260603-030",
+    "wp_date": "26.07.10",
+    "delivery_date": "26.07.10",
+    "model": "SDM100-EX",
+    "qty": "2EA",
+    "project": "감속기사급: 0.4KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102606061",
+      "DM102606062"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152606118": {
+    "company": "HK-FT-260603-030",
+    "wp_date": "26.07.10",
+    "delivery_date": "26.07.10",
+    "model": "SDM150-EX",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152606118"
+    ],
+    "welding_sn_list": []
   }
 }
