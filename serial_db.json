@@ -78247,5 +78247,118 @@
       "DL222605063"
     ],
     "welding_sn_list": []
+  },
+  "BDP222605005,BDP222605006,BDP222605007,BDP222605008,BDP222605009,BDP222605010,BDP222605011,BDP222605012": {
+    "company": "팀스\n(삼양식품 중국)",
+    "wp_date": "26.05.27",
+    "delivery_date": "26.07.13",
+    "model": "SDP220",
+    "qty": "8EA",
+    "project": "5.5KW NORD 4P 50HZ CCC인증 /TC/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "BDP222605005",
+      "BDP222605006",
+      "BDP222605007",
+      "BDP222605008",
+      "BDP222605009",
+      "BDP222605010",
+      "BDP222605011",
+      "BDP222605012"
+    ],
+    "welding_sn_list": []
+  },
+  "RD102606001": {
+    "company": "아산이엔지\n(성찬전병)",
+    "wp_date": "26.06.15",
+    "delivery_date": "26.07.15",
+    "model": "SRD100",
+    "qty": "1EA",
+    "project": "1.5KW지멘스 4P 60HZ/TC/EPDM_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RD102606001"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102607089,DM102607090,DM102607091": {
+    "company": "디에스이엔지\n(이지켐)",
+    "wp_date": "X",
+    "delivery_date": "26.07.15",
+    "model": "SDM100 (W/P제외)",
+    "qty": "3EA",
+    "project": "0.37KW지멘스 2P 60HZ/ 모터바리오 7.5:1/TC/EP/EPDM_자켓",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102607089",
+      "DM102607090",
+      "DM102607091"
+    ],
+    "welding_sn_list": []
+  },
+  "DM302606016": {
+    "company": "RENOX (26-01)\n태국",
+    "wp_date": "26.07.03",
+    "delivery_date": "26.07.24",
+    "model": "SDM300",
+    "qty": "1EA",
+    "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302606016"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102607096": {
+    "company": "SK+F (26-02)\n방글라데시",
+    "wp_date": "X",
+    "delivery_date": "26.07.20",
+    "model": "SDM100 IM+BE",
+    "qty": "1EA",
+    "project": "TC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102607096"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102606085": {
+    "company": "한울바이오\n(동광제약)",
+    "wp_date": "26.07.01",
+    "delivery_date": "26.07.20",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102606085"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102606081": {
+    "company": "동산기계 \n(OB맥주 이천)",
+    "wp_date": "26.07.02",
+    "delivery_date": "26.07.23",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102606081"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152606129": {
+    "company": "에이피이\n(메타바이오메드)",
+    "wp_date": "26.06.23",
+    "delivery_date": "26.07.23",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)/ 원형모터커버/ 근접센서 홀가공",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152606129"
+    ],
+    "welding_sn_list": []
   }
 }
