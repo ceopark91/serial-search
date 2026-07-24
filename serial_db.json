@@ -78360,5 +78360,60 @@
       "DM152606129"
     ],
     "welding_sn_list": []
+  },
+  "DM222410113": {
+    "company": "우양",
+    "wp_date": "26년도",
+    "delivery_date": "26년도 이월",
+    "model": "SDM220+ 탱크개조",
+    "qty": "1EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_싱글/ 모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM222410113"
+    ],
+    "welding_sn_list": []
+  },
+  "SN222607002": {
+    "company": "와이텍\n(삼양 애니팜)",
+    "wp_date": "26.07.02",
+    "delivery_date": "26.07.23",
+    "model": "SSN220",
+    "qty": "1EA",
+    "project": "15KW 지멘스 2P 60HZ /TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SN222607002"
+    ],
+    "welding_sn_list": []
+  },
+  "ROT102606002,ROT102606003": {
+    "company": "HK-FT-260609-031",
+    "wp_date": "26.06.09",
+    "delivery_date": "26.07.24",
+    "model": "SROT100-M50",
+    "qty": "2EA",
+    "project": "모터사급: 1.0KW(1FL6062-1AC61-2AA1) 380V/ SI3N4/EP/EPDM_자켓",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "ROT102606002",
+      "ROT102606003"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607142,DM152607143,DM152607144": {
+    "company": "HK-FT-260708-034",
+    "wp_date": "26.07.31",
+    "delivery_date": "26.07.31",
+    "model": "SDM150-EX",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW 2P 50HZ/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607142",
+      "DM152607143",
+      "DM152607144"
+    ],
+    "welding_sn_list": []
   }
 }
