@@ -78415,5 +78415,89 @@
       "DM152607144"
     ],
     "welding_sn_list": []
+  },
+  "DM202607096": {
+    "company": "HK-HN-260701-058",
+    "wp_date": "26.07.31",
+    "delivery_date": "26.07.31",
+    "model": "SDM200-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202607096"
+    ],
+    "welding_sn_list": []
+  },
+  "DM252607040,DM252607041,DM252607042,DM252607043": {
+    "company": "HK-HN-260701-058",
+    "wp_date": "26.07.31",
+    "delivery_date": "26.07.31",
+    "model": "SDM250-S",
+    "qty": "4EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM252607040",
+      "DM252607041",
+      "DM252607042",
+      "DM252607043"
+    ],
+    "welding_sn_list": []
+  },
+  "DM302607017,DM302607018,DM302607019": {
+    "company": "HK-HN-260701-058",
+    "wp_date": "26.07.31",
+    "delivery_date": "26.07.31",
+    "model": "SDM300-S",
+    "qty": "3EA",
+    "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302607017",
+      "DM302607018",
+      "DM302607019"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607139": {
+    "company": "HK-HN-260707-059",
+    "wp_date": "26.07.31",
+    "delivery_date": "26.07.31",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607139"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102607093,DM102607094": {
+    "company": "HK-HN-260708-060",
+    "wp_date": "X",
+    "delivery_date": "26.07.23",
+    "model": "SDM100 HO+RO",
+    "qty": "2EA",
+    "project": "",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102607093",
+      "DM102607094"
+    ],
+    "welding_sn_list": []
+  },
+  "DM15260708~1": {
+    "company": "HK-HN-260708-060",
+    "wp_date": "X",
+    "delivery_date": "26.07.23",
+    "model": "SDM150 베어링툴",
+    "qty": "1EA",
+    "project": "",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM15260708~1"
+    ],
+    "welding_sn_list": []
   }
 }
