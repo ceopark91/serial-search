@@ -78499,5 +78499,18 @@
       "DM15260708~1"
     ],
     "welding_sn_list": []
+  },
+  "DM102606087": {
+    "company": "멤텍에스엔에프",
+    "wp_date": "26.07.03",
+    "delivery_date": "26.07.30",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102606087"
+    ],
+    "welding_sn_list": []
   }
 }
