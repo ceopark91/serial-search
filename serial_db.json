@@ -78512,5 +78512,18 @@
       "DM102606087"
     ],
     "welding_sn_list": []
+  },
+  "AL152607146": {
+    "company": "에코비즈넷",
+    "wp_date": "26.07.20",
+    "delivery_date": "26.08.05",
+    "model": "SAL150",
+    "qty": "1EA",
+    "project": "0.37KW지멘스 4P 60HZ/모터바리오7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "AL152607146"
+    ],
+    "welding_sn_list": []
   }
 }
