@@ -78525,5 +78525,18 @@
       "AL152607146"
     ],
     "welding_sn_list": []
+  },
+  "TS202607001": {
+    "company": "와이텍",
+    "wp_date": "26.07.27",
+    "delivery_date": "26.08.06",
+    "model": "STS200",
+    "qty": "1EA",
+    "project": "0.18KW지멘스 4P 60HZ/ 모터바리오 5:1/싱글루즈 드라이브 유닛",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "TS202607001"
+    ],
+    "welding_sn_list": []
   }
 }
