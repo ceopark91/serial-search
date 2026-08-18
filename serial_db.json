@@ -78657,5 +78657,206 @@
       "DM15260723~1~3"
     ],
     "welding_sn_list": []
+  },
+  "RF252606002": {
+    "company": "HK-FT-260616-032",
+    "wp_date": "26.08.10",
+    "delivery_date": "26.08.10",
+    "model": "SRF250-C1000",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.1KW NORD 4P 50HZ/ NORD 15:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RF252606002"
+    ],
+    "welding_sn_list": []
+  },
+  "RF152606006": {
+    "company": "GPC (26-01)\n프랑스",
+    "wp_date": "26.08.28",
+    "delivery_date": "26.08.28",
+    "model": "SRF150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 4.65:1 UL인증, 타력팬/TC/EP/FEP_자켓",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RF152606006"
+    ],
+    "welding_sn_list": []
+  },
+  "RFT202606004,RFT202606005": {
+    "company": "HK-HN-260624-056",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.08.14",
+    "model": "SRFT200-M250",
+    "qty": "2EA",
+    "project": "모터감속기사급: 1.5KW 4P 50HZ/ SEW 3.83:1/SI3N4/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT202606004",
+      "RFT202606005"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607140": {
+    "company": "HK-FT-260707-033",
+    "wp_date": "26.08.10",
+    "delivery_date": "26.08.10",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607140"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102607092": {
+    "company": "HK-FT-260707-033",
+    "wp_date": "26.08.10",
+    "delivery_date": "26.08.10",
+    "model": "SDM100-F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102607092"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607141": {
+    "company": "HK-FT-260707-033",
+    "wp_date": "26.08.10",
+    "delivery_date": "26.08.10",
+    "model": "SDM150-F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607141"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202607098,DM202607099,DM202607100": {
+    "company": "HK-FT-260707-033",
+    "wp_date": "26.08.10",
+    "delivery_date": "26.08.10",
+    "model": "SDM200-F",
+    "qty": "3EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202607098",
+      "DM202607099",
+      "DM202607100"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152608163,DM152608164": {
+    "company": "HK-HN-260713-062",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.08.14",
+    "model": "SDM150-TC",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608163",
+      "DM152608164"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202608107,DM202608108": {
+    "company": "HK-HN-260713-062",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.08.14",
+    "model": "SDM200-TC",
+    "qty": "2EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202608107",
+      "DM202608108"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607147": {
+    "company": "HK-HN-260717-064",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.08.14",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607147"
+    ],
+    "welding_sn_list": []
+  },
+  "RFT402607001,RFT402607002": {
+    "company": "AS260720-032",
+    "wp_date": "X",
+    "delivery_date": "26.08.14",
+    "model": "SRFT400 TP",
+    "qty": "2EA",
+    "project": "SI3N4/EP/FEP",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT402607001",
+      "RFT402607002"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152608165": {
+    "company": "HK-FT-260805-037",
+    "wp_date": "26.08.18",
+    "delivery_date": "26.08.18",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608165"
+    ],
+    "welding_sn_list": []
+  },
+  "DP15242001~AS~01": {
+    "company": "IBN SINA (26-01)\n방글라데시",
+    "wp_date": "X",
+    "delivery_date": "26.08.12",
+    "model": "SDP150 BEARING",
+    "qty": "1EA",
+    "project": "TC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DP15242001~AS~01"
+    ],
+    "welding_sn_list": []
+  },
+  "ROT62602002": {
+    "company": "정현프랜트",
+    "wp_date": "X",
+    "delivery_date": "26.08.11",
+    "model": "SROT60",
+    "qty": "1EA",
+    "project": "0.2KW Higen방폭 서보모터 220V/세라믹볼베어링/EP/FEP/비파괴검사_싱글 (재질: C276)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "ROT62602002"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607145": {
+    "company": "디에스이엔지\n(한미정밀화학)",
+    "wp_date": "X",
+    "delivery_date": "26.08.14",
+    "model": "SDM150 (W/P제외)",
+    "qty": "1EA",
+    "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607145"
+    ],
+    "welding_sn_list": []
   }
 }
