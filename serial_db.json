@@ -78858,5 +78858,31 @@
       "DM152607145"
     ],
     "welding_sn_list": []
+  },
+  "DM202606094": {
+    "company": "HK-HN-260626-S05",
+    "wp_date": "26.07.16",
+    "delivery_date": "26.08.19",
+    "model": "SDM200-GR2/S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/FEP_자켓 (W-BOLT)/PNP근접센서/ 소재 GR2",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202606094"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102606086": {
+    "company": "MONOVATE (일본)",
+    "wp_date": "26.07.06",
+    "delivery_date": "26.08.07",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터사급: 0.4KW 후지모터 2P 3상 60HZ 200V/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102606086"
+    ],
+    "welding_sn_list": []
   }
 }
