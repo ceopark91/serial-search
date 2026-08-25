@@ -78911,5 +78911,129 @@
       "DM62608073"
     ],
     "welding_sn_list": []
+  },
+  "DM152607152": {
+    "company": "HK-HN-260727-066",
+    "wp_date": "26.08.24",
+    "delivery_date": "26.08.24",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607152"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607153,DM152607154,DM152607155,DM152607156,DM152607157,DM152607158": {
+    "company": "HK-HN-260727-066",
+    "wp_date": "26.08.24",
+    "delivery_date": "26.08.24",
+    "model": "SDM150",
+    "qty": "6EA",
+    "project": "모터감속기사급: 0.75KW NORD(IE5) 4P 50HZ/ NORD 3.58:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607153",
+      "DM152607154",
+      "DM152607155",
+      "DM152607156",
+      "DM152607157",
+      "DM152607158"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202607105": {
+    "company": "HK-HN-260727-066",
+    "wp_date": "26.08.24",
+    "delivery_date": "26.08.24",
+    "model": "SDM200-EX",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW (IE5) 4P 50HZ/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202607105"
+    ],
+    "welding_sn_list": []
+  },
+  "DF202607005": {
+    "company": "HK-HN-260727-067",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.08.24",
+    "model": "SDF200-F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF202607005"
+    ],
+    "welding_sn_list": []
+  },
+  "DF252607002": {
+    "company": "HK-HN-260727-067",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.08.24",
+    "model": "SDF250-F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF252607002"
+    ],
+    "welding_sn_list": []
+  },
+  "DF252607003,DF252607004": {
+    "company": "HK-HN-260727-067",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.08.24",
+    "model": "SDF250-TC/F",
+    "qty": "2EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF252607003",
+      "DF252607004"
+    ],
+    "welding_sn_list": []
+  },
+  "DF302607001,DF302607002": {
+    "company": "HK-HN-260727-067",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.08.24",
+    "model": "SDF300-F",
+    "qty": "2EA",
+    "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF302607001",
+      "DF302607002"
+    ],
+    "welding_sn_list": []
+  },
+  "DF302607003": {
+    "company": "HK-HN-260727-067",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.08.24",
+    "model": "SDF300-EX/F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 5.5KW BEIDE 4P 50HZ/ NORD 5.12:1/SIC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF302607003"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202606095": {
+    "company": "에스이피엔지니어링\n(삼성전자 폐수처리)",
+    "wp_date": "26.07.13",
+    "delivery_date": "26.08.25",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "0.75KW 효성 4P 60HZ/ NORD 5:1/SIC/EP/FEP_자켓 (W-BOLT)/ 소재: C276",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202606095"
+    ],
+    "welding_sn_list": []
   }
 }
