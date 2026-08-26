@@ -79035,5 +79035,18 @@
       "DM202606095"
     ],
     "welding_sn_list": []
+  },
+  "DM402607003": {
+    "company": "PERITONE (26-01)\n말레이시아",
+    "wp_date": "26.07.13",
+    "delivery_date": "26.08.13",
+    "model": "SDM400",
+    "qty": "1EA",
+    "project": "7.5KW NORD 4P 50HZ/ NORD 7.18:1 240/415V /TC/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM402607003"
+    ],
+    "welding_sn_list": []
   }
 }
