@@ -79048,5 +79048,32 @@
       "DM402607003"
     ],
     "welding_sn_list": []
+  },
+  "DM222606068,DM222606069": {
+    "company": "에이이피\n(동국생명과학)",
+    "wp_date": "26.06.19",
+    "delivery_date": "26.08.27",
+    "model": "SDM220",
+    "qty": "2EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)/원형모터커버/근접센서홀가공",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM222606068",
+      "DM222606069"
+    ],
+    "welding_sn_list": []
+  },
+  "RD222606001": {
+    "company": "에이이피\n(동국생명과학)",
+    "wp_date": "26.06.19",
+    "delivery_date": "26.08.27",
+    "model": "SRD220",
+    "qty": "1EA",
+    "project": "7.5KW 지멘스 4P 60HZ/TC/EP/EPDM_싱글 (W-BOLT)/원형모터커버/근접센서홀가공",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RD222606001"
+    ],
+    "welding_sn_list": []
   }
 }
