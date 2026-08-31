@@ -79075,5 +79075,33 @@
       "RD222606001"
     ],
     "welding_sn_list": []
+  },
+  "SP202608001": {
+    "company": "대한약품공업",
+    "wp_date": "X",
+    "delivery_date": "26.08.28",
+    "model": "SP200",
+    "qty": "1EA",
+    "project": "5.5KW정우 2P 60HZ/TC/EP/EPDM/ IM-140파이",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SP202608001"
+    ],
+    "welding_sn_list": []
+  },
+  "SP202608002,SP202608003,SP202608004": {
+    "company": "대한약품공업",
+    "wp_date": "X",
+    "delivery_date": "26.08.28",
+    "model": "SP200",
+    "qty": "3EA",
+    "project": "3.75KW정우 2P 60HZ/TC/EP/EPDM/IM-140파이",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SP202608002",
+      "SP202608003",
+      "SP202608004"
+    ],
+    "welding_sn_list": []
   }
 }
