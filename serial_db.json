@@ -79103,5 +79103,21 @@
       "SP202608004"
     ],
     "welding_sn_list": []
+  },
+  "DM152607159,DM152607160,DM152607161,DM152607162": {
+    "company": "제이피코리아",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.08.31",
+    "model": "SDM150",
+    "qty": "4EA",
+    "project": "0.75KW 지멘스 2P 50HZ/ 모터바리오 7.5:1/TC/EP/FEP_싱글 (W-조립식웰딩)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607159",
+      "DM152607160",
+      "DM152607161",
+      "DM152607162"
+    ],
+    "welding_sn_list": []
   }
 }
