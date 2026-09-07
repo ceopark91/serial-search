@@ -79511,5 +79511,18 @@
       "HM102607001"
     ],
     "welding_sn_list": []
+  },
+  "DM62608072": {
+    "company": "마스터이엔지\n(바이오엔티)",
+    "wp_date": "26.08.13",
+    "delivery_date": "26.09.07",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "0.18KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-CLAMP)/ 조도측정",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62608072"
+    ],
+    "welding_sn_list": []
   }
 }
