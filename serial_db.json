@@ -79050,7 +79050,7 @@
     "welding_sn_list": []
   },
   "DM222606068,DM222606069": {
-    "company": "에이이피\n(동국생명과학)",
+    "company": "에이피이\n(동국생명과학)",
     "wp_date": "26.06.19",
     "delivery_date": "26.08.27",
     "model": "SDM220",
@@ -79064,7 +79064,7 @@
     "welding_sn_list": []
   },
   "RD222606001": {
-    "company": "에이이피\n(동국생명과학)",
+    "company": "에이피이\n(동국생명과학)",
     "wp_date": "26.06.19",
     "delivery_date": "26.08.27",
     "model": "SRD220",
@@ -79522,6 +79522,19 @@
     "source_sheet": "RAW_ALL",
     "sn_list": [
       "DM62608072"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102608107": {
+    "company": "HANA (26-07)",
+    "wp_date": "26.09.15",
+    "delivery_date": "26.09.15",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102608107"
     ],
     "welding_sn_list": []
   }
