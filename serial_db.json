@@ -79537,5 +79537,18 @@
       "DM102608107"
     ],
     "welding_sn_list": []
+  },
+  "SN222607003": {
+    "company": "보광산업\n(MS산업)",
+    "wp_date": "26.08.04",
+    "delivery_date": "26.09.10",
+    "model": "SSN220",
+    "qty": "1EA",
+    "project": "15KW지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)/4날/V홈 물방울 스테이터 사용",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SN222607003"
+    ],
+    "welding_sn_list": []
   }
 }
