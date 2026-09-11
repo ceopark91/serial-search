@@ -79550,5 +79550,144 @@
       "SN222607003"
     ],
     "welding_sn_list": []
+  },
+  "DM102607088": {
+    "company": "에스이씨(주)\nST팜",
+    "wp_date": "26.07.21",
+    "delivery_date": "26.09.11",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "0.37KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/FEP_자켓 (W-CLAMP)/ 사각모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102607088"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152607138": {
+    "company": "에스이씨(주)\nST팜",
+    "wp_date": "26.07.21",
+    "delivery_date": "26.09.11",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/FEP_자켓 (W-BOLT)/ 사각모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152607138"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202607097": {
+    "company": "에스이씨(주)\nST팜",
+    "wp_date": "26.07.21",
+    "delivery_date": "26.09.11",
+    "model": "SDM200",
+    "qty": "1EA",
+    "project": "1.5KW효성 4P 60HZ D2G4/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT)/ 사각모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202607097"
+    ],
+    "welding_sn_list": []
+  },
+  "RFT252607001": {
+    "company": "에스이씨(주)\nST팜",
+    "wp_date": "26.07.21",
+    "delivery_date": "26.09.11",
+    "model": "SRFT250",
+    "qty": "1EA",
+    "project": "3.7KW효성 4P 60HZ D2G4/ NORD 4.69:1/볼베어링/EP/FEP/ 원형모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT252607001"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102608106": {
+    "company": "HK-HN-260824-071",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102608106"
+    ],
+    "welding_sn_list": []
+  },
+  "DM22608006": {
+    "company": "HK-HN-260825-073",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM20",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 60HZ/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM22608006"
+    ],
+    "welding_sn_list": []
+  },
+  "DM62608074,DM62608075,DM62608076,DM62608077": {
+    "company": "HK-HN-260825-073",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM60",
+    "qty": "4EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 60HZ/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62608074",
+      "DM62608075",
+      "DM62608076",
+      "DM62608077"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152608172,DM152608173,DM152608174,DM152608175,DM152608176": {
+    "company": "HK-HN-260825-073",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM150",
+    "qty": "5EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 60HZ/ NORD 7.5:1/SIC/EP/FEP_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608172",
+      "DM152608173",
+      "DM152608174",
+      "DM152608175",
+      "DM152608176"
+    ],
+    "welding_sn_list": []
+  },
+  "DM62608078,DM62608079": {
+    "company": "HK-HN-260825-074",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM60",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.18KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62608078",
+      "DM62608079"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152608177,DM152608178": {
+    "company": "HK-HN-260825-074",
+    "wp_date": "26.09.18",
+    "delivery_date": "26.09.18",
+    "model": "SDM150",
+    "qty": "2EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608177",
+      "DM152608178"
+    ],
+    "welding_sn_list": []
   }
 }
