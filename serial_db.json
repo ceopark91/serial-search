@@ -79689,5 +79689,18 @@
       "DM152608178"
     ],
     "welding_sn_list": []
+  },
+  "DM102608108": {
+    "company": "MONOVATE (일본)",
+    "wp_date": "26.08.31",
+    "delivery_date": "26.09.15",
+    "model": "SDM100",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.4KW미츠비시 4P 60HZ 200V/ 미츠비시 3:1/TC/EP/FEP_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102608108"
+    ],
+    "welding_sn_list": []
   }
 }
