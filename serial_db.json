@@ -79702,5 +79702,34 @@
       "DM102608108"
     ],
     "welding_sn_list": []
+  },
+  "RFT502606001,RFT502606002": {
+    "company": "HK-FT-260602-029",
+    "wp_date": "26.06.15",
+    "delivery_date": "26.08.28",
+    "model": "SRFT500-M5000",
+    "qty": "2EA",
+    "project": "모터감속기사급: 15KW NORD 4P 50HZ/ NORD 6.06:1/SI3N4/EP/EPDM_자켓 (W-BOLT)/ 자력이탈장치",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT502606001",
+      "RFT502606002"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152609202,DM152609203,DM152609204": {
+    "company": "HK-HN-260911-078",
+    "wp_date": "X",
+    "delivery_date": "26.09.18",
+    "model": "SDM150 BEARING",
+    "qty": "3EA",
+    "project": "SIC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152609202",
+      "DM152609203",
+      "DM152609204"
+    ],
+    "welding_sn_list": []
   }
 }
