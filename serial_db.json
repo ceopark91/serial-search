@@ -79803,5 +79803,19 @@
       "CO502512007"
     ],
     "welding_sn_list": []
+  },
+  "SA402608004,SA402608005": {
+    "company": "웰크론한텍\n(OB맥주 광주)",
+    "wp_date": "26.08.14",
+    "delivery_date": "26.09.28",
+    "model": "SA400",
+    "qty": "2EA",
+    "project": "7.5KW NORD 4P 60HZ 440V/ NORD 7.18:1/TC/EPDM_ (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SA402608004",
+      "SA402608005"
+    ],
+    "welding_sn_list": []
   }
 }
