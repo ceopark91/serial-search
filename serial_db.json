@@ -79817,5 +79817,31 @@
       "SA402608005"
     ],
     "welding_sn_list": []
+  },
+  "SN222608005": {
+    "company": "보광산업\n(대상 푸드플러스)",
+    "wp_date": "26.08.27",
+    "delivery_date": "26.09.29",
+    "model": "SSN220",
+    "qty": "1EA",
+    "project": "15KW지멘스 2P 60HZ/TC/EP/EPDM_자켓 (W-BOLT)/4날/V홈 물방울 스테이터 사용",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SN222608005"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152608171": {
+    "company": "한울바이오\n(동광제약)",
+    "wp_date": "26.09.02",
+    "delivery_date": "26.09.29",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608171"
+    ],
+    "welding_sn_list": []
   }
 }
