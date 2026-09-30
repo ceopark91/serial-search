@@ -79843,5 +79843,32 @@
       "DM152608171"
     ],
     "welding_sn_list": []
+  },
+  "DM152609205": {
+    "company": "BLESSINDO\n(인도네시아)",
+    "wp_date": "26.10.08",
+    "delivery_date": "26.10.08",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_싱글 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152609205"
+    ],
+    "welding_sn_list": []
+  },
+  "DM302608023,DM302608024": {
+    "company": "MONOVATE (일본)",
+    "wp_date": "26.09.08",
+    "delivery_date": "26.10.01",
+    "model": "SDM300",
+    "qty": "2EA",
+    "project": "모터사급: 5.5KW미츠비시 4P 60HZ 200V/ NORD 5.12:1/TC/EP/EPDM_자켓 (W-BOLT)/ 분리형 자력이탈장치",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302608023",
+      "DM302608024"
+    ],
+    "welding_sn_list": []
   }
 }
