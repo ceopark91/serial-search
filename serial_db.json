@@ -79870,5 +79870,18 @@
       "DM302608024"
     ],
     "welding_sn_list": []
+  },
+  "DM252608047": {
+    "company": "매일유업 광주",
+    "wp_date": "26.08.28",
+    "delivery_date": "26.08.28",
+    "model": "SDM250",
+    "qty": "1EA",
+    "project": "3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-외경 220파이 가공)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM252608047"
+    ],
+    "welding_sn_list": []
   }
 }
