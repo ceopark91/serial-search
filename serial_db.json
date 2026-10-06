@@ -79883,5 +79883,86 @@
       "DM252608047"
     ],
     "welding_sn_list": []
+  },
+  "DM152608170": {
+    "company": "HK-HN-260824-072",
+    "wp_date": "26.09.04",
+    "delivery_date": "26.10.01",
+    "model": "SDM150-EX/S",
+    "qty": "1EA",
+    "project": "감속기사급: 0.75KW효성 2P 60HZ D2G4 B5 IP55 PTC/ NORD 7.5:1/SIC/EP/EPDM_자켓 (W-BOLT)/ 근접센서(BI2-M12-Y1X-H1141)/ 케이블(RKC4. 221T/TEB)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608170"
+    ],
+    "welding_sn_list": []
+  },
+  "DP152609005,DP152609006": {
+    "company": "HK-HN-260907-075",
+    "wp_date": "26.10.07",
+    "delivery_date": "26.10.07",
+    "model": "SDP150",
+    "qty": "2EA",
+    "project": "2.2KW지멘스 4P 50HZ IE3/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DP152609005",
+      "DP152609006"
+    ],
+    "welding_sn_list": []
+  },
+  "DP202609003,DP202609004": {
+    "company": "HK-HN-260907-075",
+    "wp_date": "26.10.07",
+    "delivery_date": "26.10.07",
+    "model": "SDP200",
+    "qty": "2EA",
+    "project": "4.0KW지멘스 4P 50HZ IE3/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DP202609003",
+      "DP202609004"
+    ],
+    "welding_sn_list": []
+  },
+  "DM252609048,DM252609049": {
+    "company": "HK-HN-260910-076",
+    "wp_date": "26.10.07",
+    "delivery_date": "26.10.07",
+    "model": "SDM250",
+    "qty": "2EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 60HZ 480V/ NORD 5:1/SIC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM252609048",
+      "DM252609049"
+    ],
+    "welding_sn_list": []
+  },
+  "DM102609111": {
+    "company": "HK-HN-260911-077",
+    "wp_date": "26.10.07",
+    "delivery_date": "26.10.07",
+    "model": "SDM100-F",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 4P 50HZ/ NORD 10:1/SIC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102609111"
+    ],
+    "welding_sn_list": []
+  },
+  "DM302609031": {
+    "company": "HK-FT-260917-047",
+    "wp_date": "X",
+    "delivery_date": "26.10.07",
+    "model": "SDM300-EX HO+RO+SH",
+    "qty": "1EA",
+    "project": "",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302609031"
+    ],
+    "welding_sn_list": []
   }
 }
