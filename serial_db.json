@@ -80260,5 +80260,18 @@
       "DM152609209"
     ],
     "welding_sn_list": []
+  },
+  "RFT152608003": {
+    "company": "와이지엔지니어링\n(이지티엠)",
+    "wp_date": "26.08.07",
+    "delivery_date": "26.10.16",
+    "model": "SRFT150",
+    "qty": "1EA",
+    "project": "0.75KW효성 4P 60HZ D2G4/ NORD 5:1/세라믹볼/EP/FEP_자켓 (CIP포트 없음)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT152608003"
+    ],
+    "welding_sn_list": []
   }
 }
