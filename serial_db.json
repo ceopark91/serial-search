@@ -80273,5 +80273,18 @@
       "RFT152608003"
     ],
     "welding_sn_list": []
+  },
+  "RF202609005": {
+    "company": "바이오시스템이엔지",
+    "wp_date": "26.07.30",
+    "delivery_date": "26.10.22",
+    "model": "SRF200",
+    "qty": "1EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/FEP_자켓 (W-BOLT) (121도 멸균/ 블레이드 제외)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RF202609005"
+    ],
+    "welding_sn_list": []
   }
 }
