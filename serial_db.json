@@ -80286,5 +80286,18 @@
       "RF202609005"
     ],
     "welding_sn_list": []
+  },
+  "GPC~26~02~01~04": {
+    "company": "GPC (26-02)\n프랑스",
+    "wp_date": "X",
+    "delivery_date": "26.10.30",
+    "model": "Marine impeller",
+    "qty": "4EA",
+    "project": "316L/ 홀사이즈 12파이, 외경 48파이",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "GPC~26~02~01~04"
+    ],
+    "welding_sn_list": []
   }
 }
