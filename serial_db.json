@@ -80299,5 +80299,18 @@
       "GPC~26~02~01~04"
     ],
     "welding_sn_list": []
+  },
+  "RF222609001": {
+    "company": "퍼멘텍\n(중앙백신)",
+    "wp_date": "26.09.14",
+    "delivery_date": "26.10.27",
+    "model": "SRF220",
+    "qty": "1EA",
+    "project": "0.75KW NORD 4P 60HZ/ NORD 15:1/TC/EP/FEP_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RF222609001"
+    ],
+    "welding_sn_list": []
   }
 }
