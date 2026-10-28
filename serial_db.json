@@ -80312,5 +80312,21 @@
       "RF222609001"
     ],
     "welding_sn_list": []
+  },
+  "DM152608179,DM152608180,DM152608181,DM152608182": {
+    "company": "에스이씨(주)\nST팜",
+    "wp_date": "26.09.07",
+    "delivery_date": "26.10.27",
+    "model": "SDM150",
+    "qty": "4EA",
+    "project": "0.75KW효성 2P 60HZ D2G4/ NORD 7.5:1/TC/EP/FEP_싱글 (W-BOLT)/사각모터커버",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152608179",
+      "DM152608180",
+      "DM152608181",
+      "DM152608182"
+    ],
+    "welding_sn_list": []
   }
 }
