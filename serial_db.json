@@ -80356,5 +80356,19 @@
       "DM252610051"
     ],
     "welding_sn_list": []
+  },
+  "DM102611129,DM102611130": {
+    "company": "KISKUN(26-01)\n헝가리",
+    "wp_date": "X",
+    "delivery_date": "26.11.12",
+    "model": "SDM100 IM+BE",
+    "qty": "2EA",
+    "project": "TC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM102611129",
+      "DM102611130"
+    ],
+    "welding_sn_list": []
   }
 }
