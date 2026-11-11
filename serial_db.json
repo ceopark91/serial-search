@@ -80370,5 +80370,18 @@
       "DM102611130"
     ],
     "welding_sn_list": []
+  },
+  "SA202611127": {
+    "company": "보광산업\n(코스맥스 바이오)",
+    "wp_date": "26.11.11",
+    "delivery_date": "26.11.11",
+    "model": "SA200 IM+BE+W/P",
+    "qty": "1EA",
+    "project": "TC",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SA202611127"
+    ],
+    "welding_sn_list": []
   }
 }
