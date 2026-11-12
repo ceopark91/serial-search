@@ -80383,5 +80383,45 @@
       "SA202611127"
     ],
     "welding_sn_list": []
+  },
+  "DM152610226": {
+    "company": "SENA (26-06)",
+    "wp_date": "26.10.30",
+    "delivery_date": "26.11.16",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152610226"
+    ],
+    "welding_sn_list": []
+  },
+  "DM202610122,DM202610123": {
+    "company": "SENA (26-06)",
+    "wp_date": "26.10.30",
+    "delivery_date": "26.11.16",
+    "model": "SDM200",
+    "qty": "2EA",
+    "project": "1.5KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM202610122",
+      "DM202610123"
+    ],
+    "welding_sn_list": []
+  },
+  "SN152610008": {
+    "company": "SENA (26-06)",
+    "wp_date": "26.10.30",
+    "delivery_date": "26.11.16",
+    "model": "SSN150",
+    "qty": "1EA",
+    "project": "4.0KW 지멘스 2P 50HZ CE/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SN152610008"
+    ],
+    "welding_sn_list": []
   }
 }
