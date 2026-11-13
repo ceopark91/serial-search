@@ -80423,5 +80423,100 @@
       "SN152610008"
     ],
     "welding_sn_list": []
+  },
+  "DF102610001": {
+    "company": "HK-HN-261006-087",
+    "wp_date": "26.11.13",
+    "delivery_date": "26.11.13",
+    "model": "SDF100-TC",
+    "qty": "1EA",
+    "project": "모터감속기사급: 0.37KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF102610001"
+    ],
+    "welding_sn_list": []
+  },
+  "DF152610005,DF152610006,DF152610007": {
+    "company": "HK-HN-261006-087",
+    "wp_date": "26.11.13",
+    "delivery_date": "26.11.13",
+    "model": "SDF150-TC",
+    "qty": "3EA",
+    "project": "모터감속기사급: 0.75KW NORD 2P 50HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF152610005",
+      "DF152610006",
+      "DF152610007"
+    ],
+    "welding_sn_list": []
+  },
+  "DF202610006": {
+    "company": "HK-HN-261006-087",
+    "wp_date": "26.11.13",
+    "delivery_date": "26.11.13",
+    "model": "SDF200-TC",
+    "qty": "1EA",
+    "project": "모터감속기사급: 1.5KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF202610006"
+    ],
+    "welding_sn_list": []
+  },
+  "DF252610005": {
+    "company": "HK-HN-261006-087",
+    "wp_date": "26.11.13",
+    "delivery_date": "26.11.13",
+    "model": "SDF250-TC",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF252610005"
+    ],
+    "welding_sn_list": []
+  },
+  "DF222610005": {
+    "company": "HK-HN-261006-087",
+    "wp_date": "26.11.13",
+    "delivery_date": "26.11.13",
+    "model": "SDF220-TC/SMO254 (W-제외)",
+    "qty": "1EA",
+    "project": "모터감속기사급: 2.2KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-제외) 소재: SMO254",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF222610005"
+    ],
+    "welding_sn_list": []
+  },
+  "SA222610097,SA222610098": {
+    "company": "가온아이비",
+    "wp_date": "26.10.29",
+    "delivery_date": "26.11.12",
+    "model": "SA220+ 탱크개조",
+    "qty": "2EA",
+    "project": "2.2KW NORD 4P 60HZ/ NORD 5:1/TC/EPDM_싱글 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "SA222610097",
+      "SA222610098"
+    ],
+    "welding_sn_list": []
+  },
+  "DM152610230,DM152610231": {
+    "company": "BLESSINDO\n(인도네시아)",
+    "wp_date": "X",
+    "delivery_date": "26.11.16",
+    "model": "SDM150 IM+BE",
+    "qty": "2EA",
+    "project": "TC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152610230",
+      "DM152610231"
+    ],
+    "welding_sn_list": []
   }
 }
