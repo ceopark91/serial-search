@@ -79980,12 +79980,12 @@
     "welding_sn_list": []
   },
   "DM302608022": {
-    "company": "서울우유 신양주\n(공정개선용 데모테스트용)",
+    "company": "서울우유 신양주",
     "wp_date": "X",
-    "delivery_date": "26.08.20",
-    "model": "SDM300 (W/P 제외)",
-    "qty": "1EA",
-    "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EPDM_자켓",
+    "delivery_date": "26.11.16",
+    "model": "SDM300(W/P제외)",
+    "qty": "2EA",
+    "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EPDM_자켓 (W/P제외)",
     "source_sheet": "RAW_ALL",
     "sn_list": [
       "DM302608022"
@@ -80516,6 +80516,19 @@
     "sn_list": [
       "DM152610230",
       "DM152610231"
+    ],
+    "welding_sn_list": []
+  },
+  "DM302610032": {
+    "company": "서울우유 신양주",
+    "wp_date": "X",
+    "delivery_date": "26.11.16",
+    "model": "SDM300(W/P제외)",
+    "qty": "2EA",
+    "project": "4.0KW NORD 4P 60HZ/ NORD 5:1/TC/EPDM_자켓 (W/P제외)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302610032"
     ],
     "welding_sn_list": []
   }
