@@ -80668,5 +80668,18 @@
       "DB102610125"
     ],
     "welding_sn_list": []
+  },
+  "DM62611086": {
+    "company": "MONOVATE(일본)",
+    "wp_date": "X",
+    "delivery_date": "26.11.24",
+    "model": "SDM60 M/B",
+    "qty": "1EA",
+    "project": "TC/EP/EPDM",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62611086"
+    ],
+    "welding_sn_list": []
   }
 }
