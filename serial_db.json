@@ -80681,5 +80681,31 @@
       "DM62611086"
     ],
     "welding_sn_list": []
+  },
+  "DM152610218": {
+    "company": "정현프랜트\n(LG화학 익산)",
+    "wp_date": "26.10.14",
+    "delivery_date": "26.11.20",
+    "model": "SDM150",
+    "qty": "1EA",
+    "project": "0.75KW효성 4P 60HZ D2G4 440V/ NORD 3.97:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM152610218"
+    ],
+    "welding_sn_list": []
+  },
+  "DM62611085": {
+    "company": "마스터이엔지\n(셀락바이오)",
+    "wp_date": "26.11.10",
+    "delivery_date": "26.11.23",
+    "model": "SDM60",
+    "qty": "1EA",
+    "project": "0.18KW NORD 2P 60HZ/ NORD 7.5:1/TC/EP/EPDM_자켓 (W-CLAMP)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM62611085"
+    ],
+    "welding_sn_list": []
   }
 }
