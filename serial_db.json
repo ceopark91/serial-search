@@ -80707,5 +80707,76 @@
       "DM62611085"
     ],
     "welding_sn_list": []
+  },
+  "DM302610033,DM302610034": {
+    "company": "HK-FT-261027-051",
+    "wp_date": "26.11.27",
+    "delivery_date": "26.11.27",
+    "model": "SDM300",
+    "qty": "2EA",
+    "project": "모터감속기사급: 4.0KW NORD 4P 50HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM302610033",
+      "DM302610034"
+    ],
+    "welding_sn_list": []
+  },
+  "DF22610001": {
+    "company": "HK-FT-261028-052",
+    "wp_date": "26.11.27",
+    "delivery_date": "26.11.27",
+    "model": "SDF20-TC/DC-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 120W오리엔탈 220V/ 오리엔탈 5:1/TC/EP/EPDM_자켓 (W-CLAMP)/PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF22610001"
+    ],
+    "welding_sn_list": []
+  },
+  "DF102610002": {
+    "company": "HK-FT-261028-052",
+    "wp_date": "26.11.27",
+    "delivery_date": "26.11.27",
+    "model": "SDF100-TC/DC-S",
+    "qty": "1EA",
+    "project": "모터감속기사급: 400W오리엔탈 220V/ 오리엔탈 5:1/TC/EP/EPDM_자켓 (W-CLAMP)/PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF102610002"
+    ],
+    "welding_sn_list": []
+  },
+  "DF152610008,DF152610009,DF152610010,DF152610011,DF152610012,DF152610013": {
+    "company": "HK-FT-261028-052",
+    "wp_date": "26.11.27",
+    "delivery_date": "26.11.27",
+    "model": "SDF150-TC/DC-S",
+    "qty": "6EA",
+    "project": "모터감속기사급: 750W오리엔탈 220V/ 오리엔탈 5:1/TC/EP/EPDM_자켓 (W-CLAMP)/PNP근접센서",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DF152610008",
+      "DF152610009",
+      "DF152610010",
+      "DF152610011",
+      "DF152610012",
+      "DF152610013"
+    ],
+    "welding_sn_list": []
+  },
+  "DM252611062": {
+    "company": "매일유업 광주",
+    "wp_date": "26.08월",
+    "delivery_date": "26.11.25",
+    "model": "SDM250",
+    "qty": "1EA",
+    "project": "3.0KW NORD 4P 60HZ/ NORD 5:1/TC/EP/EPDM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "DM252611062"
+    ],
+    "welding_sn_list": []
   }
 }
