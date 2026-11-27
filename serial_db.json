@@ -80778,5 +80778,18 @@
       "DM252611062"
     ],
     "welding_sn_list": []
+  },
+  "RFT222609004": {
+    "company": "HK-HN-260917-080",
+    "wp_date": "26.10.30",
+    "delivery_date": "26.10.30",
+    "model": "SRFT220-M600",
+    "qty": "1EA",
+    "project": "모터감속기사급: 3.0KW 4P 50HZ/ NORD 3.43:1/SI3N4/EP/FFKM_자켓 (W-BOLT)",
+    "source_sheet": "RAW_ALL",
+    "sn_list": [
+      "RFT222609004"
+    ],
+    "welding_sn_list": []
   }
 }
